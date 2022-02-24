@@ -1,0 +1,280 @@
+{
+  "id": "gca",
+  "name": "Galactic Corporate Allegiance",
+  "author": "Xekon#2688",
+  "units": {
+    "veteran_sergeant": {
+      "name": "Veteran Sergeant",
+      "description": "",
+      "category": "command",
+      "models": [
+        {
+          "name": "Veteran Sergeant",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": ["pistol", "plasma_grenade", {"id": "heavy_ccw", "count": 3}],
+          "rules": [{"id": "field_orders", "x": 1}, {"id": "wounds", "x": 3}, "leader"],
+          "options": [
+            {"replaceWeapon": ["pistol"], "withWeapon": ["thermal_rifle", "heavy_defense_rifle", "plasma_pistol", "combat_shotgun", "sniper_rifle"]},
+            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}]},
+            {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"name": "Camo-Cloak", "id": "evasive"}, {"name": "Jetpack", "id": "fly"}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "veterans": {
+      "name": "Veterans",
+      "description": "A squad of well-equipped infantry who are deployed to secure and protect corporate property.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Veteran",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["heavy_defense_rifle", "ccw", "plasma_grenade"],
+          "min": 5,
+          "max": 15,
+          "options": [
+            {"replaceWeapon": ["heavy_defense_rifle"], "withWeapon": ["combat_shotgun"]},
+            {"addRule": ["field_radio"], "modelLimit": 1},
+            {"addRule": {"name": "Orbital Insertion", "id": "ambush"}, "modelLimit": "all"},
+            {
+              "replaceWeapon": ["heavy_defense_rifle"],
+              "withWeapon": ["light_machinegun", "fusion_rifle", "flamethrower", "laser_cannon", "plasma_rifle", "thermal_rifle", "grenade_launcher", "sniper_rifle"],
+              "modelLimit": "2/5"
+            }
+          ]
+        }
+      ]
+    },
+    "scouts": {
+      "name": "Scouts",
+      "description": "A squad of elite infantry, specialised in sabotage and stealth",
+      "category": "core",
+      "options": [{"addModel": ["scout_drone"], "modelLimit": 3}],
+      "models": [
+        {
+          "name": "Scout",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 6,
+          "weapons": ["heavy_carbine", "ccw", "plasma_grenade"],
+          "min": 5,
+          "max": 15,
+          "rules": ["scout"],
+          "options": [
+            {"replaceWeapon": "heavy_carbine", "withWeapon": "sniper_rifle", "modelLimit": "2/5"},
+            {"addRule": ["field_radio"], "modelLimit": 1},
+            {"addRule": [{"name": "Camo-Cloak", "id": "evasive"}, {"name": "Jetpack", "id": "fly"}], "modelLimit": "all"}
+          ]
+        }
+      ]
+    },
+    "light_walker": {
+      "name": "Light Combat Walker",
+      "description": "Lightly equipped recon walkers, deployed into battle alongside human infantry.",
+      "category": "strike",
+      "models": [
+        {
+          "name": "Light Combat Walker",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 5,
+          "weapons": ["laser_cannon", "energy_fist"],
+          "options": [
+            {"addWeapon": ["rocket_pod", "strike_missiles"], "limit": 1},
+            {"replaceWeapon": "laser_cannon", "withWeapon": ["missile_launcher", "heavy_machinegun", "heavy_flamethrower", "autocannon", "plasma_cannon", "thermal_lance"]}
+          ],
+          "min": 1,
+          "max": 3
+        }
+      ],
+      "keywords": ["Automata", "Vehicle"],
+      "rules": ["vulnerable_rear", "damage_chart", "scout", "fearless"]
+    },
+    "heavy_walker": {
+      "name": "Heavy Combat Walker",
+      "description": "A heavy-class combat walker, equipped with an array of devastating weapons.",
+      "category": "heavy",
+      "models": [
+        {
+          "name": "Heavy Combat Walker",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 10,
+          "reflexes": 5,
+          "weapons": ["laser_cannon", {"id": "energy_fist", "count": 2}],
+          "options": [
+            {"addWeapon": ["strike_missiles", "rocket_pod"], "limit": 1},
+            {"replaceWeapon": "laser_cannon", "withWeapon": ["missile_launcher", "fusion_cannon", "heavy_machinegun", "autocannon", "plasma_cannon", "thermal_lance"]},
+            {"replaceWeapon": [{"id": "energy_fist", "count": 2}], "withWeapon": ["missile_launcher", "fusion_cannon", "heavy_machinegun", "autocannon", "plasma_cannon", "thermal_lance"]}
+          ],
+          "min": 1,
+          "max": 3
+        }
+      ],
+      "keywords": ["Automata", "Vehicle"],
+      "rules": ["vulnerable_rear", "damage_chart", "fearless"]
+    },
+    "teleporter": {
+      "name": "Teleporter Unit",
+      "description": "Advanced \"borrowed\" Technology allows for quick redeployment and surprise maneuvers during a firefight.",
+      "category": "fortification",
+      "models": [{"name": "Teleporter Unit", "min": 2, "max": 2, "rules": ["terrain", "portal"], "courage": "-", "movement": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-"}],
+      "keywords": ["Fortification"]
+    },
+    "exosuit_devastators": {
+      "name": "Exosuit Devastators",
+      "description": "A squad of exosuit wearing elites, deployed as heavy support to combat enemy resistance that can't be orbitally bombarded.",
+      "category": "specialist",
+      "models": [
+        {
+          "name": "Exosuit Devastator",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": ["plasma_grenade", "marine_rifle", "energy_fist"],
+          "min": 3,
+          "max": 12,
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"]},
+            {"replaceWeapon": ["energy_fist"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"]},
+            {"addWeapon": ["rocket_pod", "railgun", "fusion_cannon", "plasma_cannon", "heavy_machinegun"], "limit": 1, "modelLimit": "1/3"},
+            {"addRule": ["field_radio"], "modelLimit": 1},
+            {"modelLimit": "all", "addRule": [{"name": "Jetpack", "id": "fly"}]}
+          ],
+          "rules": ["ambush"]
+        }
+      ]
+    },
+    "security_drone": {
+      "name": "Security Drones",
+      "description": "Remote controlled drones which are used for surveilance of high-value property.",
+      "keywords": ["Automata", "Infantry"],
+      "category": "core",
+      "models": [
+        {
+          "name": "Security Drone",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": ["light_machinegun", "ccw", "railgun"],
+          "options": [{"replaceWeapon": ["light_machinegun"], "withWeapon": ["laser_cannon", "heavy_flamethrower"]}, {"addRule": ["field_radio"], "modelLimit": 1}],
+          "min": 2,
+          "max": 6,
+          "rules": ["fearless"]
+        }
+      ],
+      "rules": [{"id": "wounds", "x": 2}]
+    },
+    "support_drone": {
+      "name": "Support Drone",
+      "description": "Autonomous drones that can be equipped with weapons and other equipment to fulfill varied tasks.",
+      "category": "specialist",
+      "models": [
+        {
+          "name": "Support Drone",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": ["light_machinegun", "stomp"],
+          "options": [
+            {
+              "replaceWeapon": ["light_machinegun"],
+              "withWeapon": ["fusion_rifle", "rocket_pod", "laser_cannon", "plasma_rifle", "heavy_flamethrower", "mortar", "autocannon", "heavy_machinegun", "thermal_lance"]
+            },
+            {
+              "addWeapon": ["fusion_rifle", "rocket_pod", "laser_cannon", "plasma_rifle", "heavy_flamethrower", "mortar", "autocannon", "heavy_machinegun", "light_machinegun", "thermal_lance"],
+              "limit": 1
+            },
+            {"addRule": ["field_radio", "shield_generator"], "limit": 1, "modelLimit": 1}
+          ],
+          "min": 1,
+          "max": 3,
+          "rules": ["fearless"]
+        }
+      ],
+      "keywords": ["Vehicle"],
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 2}]
+    }
+  },
+  "models": {
+    "scout_drone": {
+      "name": "Scout Drone",
+      "movement": 7,
+      "courage": 5,
+      "shoot": 5,
+      "fight": 5,
+      "defense": 4,
+      "reflexes": 5,
+      "weapons": ["defense_carbine"],
+      "min": 1,
+      "max": 1,
+      "rules": ["scout", "fly"]
+    }
+  },
+  "weapons": {
+    "thermal_rifle": {"name": "Thermal Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["flame", "overcharge"]},
+    "thermal_lance": {"name": "Thermal Lance", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "rules": ["flame", "overcharge"]},
+    "heavy_carbine": {"name": "Heavy Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]}
+  },
+  "rules": {
+    "inspiring": {"name": "Inspiring (Infantry)", "description": "When activated, this unit may perform a group activation with up to 2 other friendly _Infantry_ units within 6\".", "points": 3},
+    "inspiring_x": {
+      "name": "Inspiring",
+      "inputs": ["x"],
+      "description": "When activated, this unit may perform a group activation with up to 2 other friendly units of _X_ type within 6\".",
+      "points": 3
+    },
+    "shield_generator": {
+      "name": "Shield Generator",
+      "description": "Once per round, roll a die for each hit this unit takes. On a 3 or less that hit is prevented. This may be used one additional time per round for each model with this rule.",
+      "points": 5
+    },
+    "portal": {
+      "name": "Portal",
+      "description": "_Infantry_ units may spend a Move action to embark this model. To embark, the unit must all get within 1\" of this model. Immediately disembark from another model with the Portal special rule, making a Move action originating from that model's edge.",
+      "points": 10
+    },
+    "field_orders": {
+      "name": "Field Orders",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "field_radio": {
+      "name": "Field Radio",
+      "description": "If a friendly unit within 3\" uses the _Field Orders_ special rule, you may extend the range of that ability to 24\" as long as the target unit also has a Field Radio.",
+      "points": 5
+    }
+  },
+  "strategies": {},
+  "powers": {}
+}

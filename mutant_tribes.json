@@ -1,0 +1,230 @@
+{
+  "name": "Mutant Tribes",
+  "id": "mutant_tribes",
+  "color": "#6b5c49",
+  "author": "Valgaav#9736",
+  "units": {
+    "shaper": {
+      "name": "Shaper",
+      "description": "A skilled biomancer that guides the Tribe's mutations",
+      "category": "command",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}, "guided_mutation"],
+      "models": [
+        {
+          "name": "Shaper",
+          "movement": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 7,
+          "courage": 5,
+          "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}], "withWeapon": [["tribal_carbine", {"id": "tribal_carbine_melee", "count": 3}]]},
+            {"replaceRule": {"id": "tribal_tactics", "x": 1}, "withRule": {"id": "tribal_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "commander": {
+      "name": "Commander",
+      "description": "The war-leader of a Tribe that guides them in battle",
+      "category": "command",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}],
+      "models": [
+        {
+          "name": "Commander",
+          "movement": 7,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 7,
+          "reflexes": 7,
+          "courage": 6,
+          "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 4}],
+              "withWeapon": [
+                ["tribal_carbine", {"id": "tribal_carbine_melee", "count": 4}],
+                ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}],
+                ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}]
+              ]
+            },
+            {"replaceRule": {"id": "tribal_tactics", "x": 1}, "withRule": {"id": "tribal_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "tribe_warriors": {
+      "name": "Tribal Warriors",
+      "description": "The basic biosoldiers of the mutated tribes",
+      "category": "core",
+      "keywords": ["Infantry"],
+      "rules": [],
+      "models": [
+        {
+          "name": "Tribal Warrior",
+          "movement": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 7,
+          "courage": 5,
+          "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 1}],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "tribe_scouts": {
+      "name": "Tribal Scouts",
+      "description": "Advanced scouting parties used by the mutated tribes to find their prey",
+      "category": "core",
+      "keywords": ["Infantry"],
+      "rules": ["scout"],
+      "models": [
+        {
+          "name": "Tribal Scout",
+          "movement": 7,
+          "shoot": 5,
+          "fight": 6,
+          "reflexes": 7,
+          "courage": 5,
+          "defense": 5,
+          "weapons": ["tribal_carbine", {"id": "tribal_carbine_melee", "count": 1}],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "wild_dogs": {
+      "name": "Wild Dogs",
+      "description": "Tribe members whose mutations failed, these once-proud warriors are now nothing but wild beasts",
+      "category": "strike",
+      "keywords": ["Beasts"],
+      "rules": ["agile"],
+      "models": [{"name": "Wild Dogs", "movement": 14, "shoot": 4, "fight": 6, "reflexes": 7, "courage": 5, "defense": 5, "weapons": [{"id": "heavy_ccw", "count": 2}], "min": 4, "max": 12}]
+    },
+    "mantaurs": {
+      "name": "Quad-Warriors",
+      "description": "Incredibly successful experiments, these quadrapedial warriors cover ground quickly",
+      "category": "strike",
+      "keywords": ["Infantry", "Beasts"],
+      "rules": ["strider"],
+      "models": [
+        {
+          "name": "Quad-Warriors",
+          "movement": 12,
+          "shoot": 5,
+          "fight": 6,
+          "reflexes": 7,
+          "courage": 5,
+          "defense": 7,
+          "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
+          "min": 3,
+          "max": 9,
+          "options": [
+            {
+              "replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
+              "withWeapon": [["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 2}], ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]],
+              "modelLimit": "1/3"
+            }
+          ]
+        }
+      ]
+    },
+    "tribal_ogres": {
+      "name": "Tribal Ogres",
+      "description": "Giant apelike creatures who smash and bash",
+      "category": "specialist",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "wounds", "x": 2}],
+      "models": [{"name": "Tribal Ogres", "movement": 7, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}], "min": 1, "max": 3}]
+    },
+    "special_weapons_squad": {
+      "name": "Tribal Specialists",
+      "description": "A specialized hunting-squad dedicated to taking down a specific prey",
+      "category": "specialist",
+      "keywords": ["Infantry"],
+      "rules": [],
+      "models": [
+        {
+          "name": "Tribal Specialist",
+          "movement": 7,
+          "shoot": 5,
+          "fight": 5,
+          "reflexes": 7,
+          "courage": 5,
+          "defense": 5,
+          "weapons": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}],
+          "min": 3,
+          "max": 9,
+          "options": [{"replaceweapon": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}], "withWeapon": ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]}]
+        }
+      ]
+    },
+    "ogre_riders": {
+      "name": "Ogre Riders",
+      "description": "Warriors with powerful guns mounted on the back of Ogres",
+      "category": "heavy",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "wounds", "x": 2}],
+      "models": [
+        {"name": "Ogre Riders", "movement": 7, "shoot": 5, "fight": 6, "reflexes": 7, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}, "laser_cannon"], "min": 1, "max": 3}
+      ]
+    },
+    "dinosaurus": {
+      "name": "Dinosaur",
+      "description": "Shapers sometimes become more worried about if they can than if they should",
+      "category": "super_heavy",
+      "keywords": ["Monster"],
+      "rules": ["damage_chart", "titanic", "walker", {"id": "impact", "x": 3}],
+      "models": [
+        {"name": "Dinosaur", "movement": 7, "shoot": 5, "fight": 6, "reflexes": 7, "courage": 6, "weapons": [{"id": "dinosaur_claws", "count": 5}, {"id": "laser_cannon", "count": 2}], "defense": 11}
+      ]
+    }
+  },
+  "weapons": {
+    "tribal_rifle": {"name": "Tribal Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+    "tribal_carbine": {"name": "Tribal Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": []},
+    "tribal_tankbuster": {"name": "Tribal Tankbuster", "attacks": 2, "short": 9, "medium": 18, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
+    "tribal_flamethrower": {"name": "Tribal Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
+    "tribal_rifle_melee": {"name": "Tribal Rifle Blade", "attacks": 1, "short": "Melee", "ap": 0, "rules": ["rending"]},
+    "tribal_carbine_melee": {"name": "Tribal Carbine Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
+    "tribal_specialist_melee": {"name": "Specialist Weapon's Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
+    "ogre_fists": {"name": "Ogre Fists", "attacks": 1, "short": "Melee", "ap": 3, "rules": []},
+    "dinosaur_claws": {"name": "Dinosaur Claws and Teeth", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 1}]}
+  },
+  "rules": {
+    "guided_mutation": {"name": "Guided Mutation", "description": "When this unit is activated, you may change the active effect for Adaptive Biophysiology to another effect.", "points": [5]},
+    "tribal_tactics": {
+      "name": "Tribal Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
+      "points": ["rule.x", {"multiply": 10}]
+    }
+  },
+  "strategies": {
+    "natural_camo": {
+      "name": "Natural Camouflage",
+      "phase": "activation",
+      "flavor": "The Mutant Tribes are adept in matching whatever environment they fight in.",
+      "description": "Use this stratagem when this unit is chosen as the target of an attack and would gain the benefit of cover against that attack. Subtract 1 from hit rolls for that attack.",
+      "cost": 1
+    },
+    "adaptive_biophysiology": {
+      "name": "Adaptive Biophysiology",
+      "phase": "activation",
+      "flavor": "With every enemy defeated, the Mutant Tribes learn how to achieve perfection.",
+      "description": "At the beginning of the game, choose one of the following effects: \n * +1 Strength \n +1 Accuracy \n +1 Save \n\n Use before an _Infantry_ unit is attacked, or performs an attack. The unit gets the chosen effect.",
+      "cost": 2
+    }
+  },
+  "powers": {}
+}

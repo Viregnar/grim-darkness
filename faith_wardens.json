@@ -1,0 +1,809 @@
+{
+    "id": "faith_wardens",
+    "name": "Faith Wardens",
+    "author": "guitarninja#5707",
+    "units": {
+        "holy_saint": {
+            "name": "Holy Saint",
+            "description": "A High warden of the Faith Wardens order.",
+            "min": 5,
+            "max": 10,
+            "category": "command",
+            "models": [
+                {
+                    "name": "Holy Saint",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 8,
+                    "reflexes": 7,
+                    "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, "fly", "holy_saint", {"id": "ward", "x": 1}, {"id": "saint_tactics", "x": 2}],
+                    "weapons": ["saints_blade_shoot", {"id": "saints_blade_melee", "count": 6}],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Angel",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": ["fly"],
+                    "weapons": ["marine_pistol", {"id": "energy_sword", "count": 3}, "at_grenade"],
+                    "min": 0,
+                    "max": 2
+                }
+            ]
+        },
+        "battle_pulpit": {
+            "name": "Battle Pulpit",
+            "description": "A mighty religious symbol from which a High Warden leads her troops",
+            "min": 1,
+            "max": 1,
+            "category": "command",
+            "models": [
+                {
+                    "name": "Battle Pulpit",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 9,
+                    "reflexes": 6,
+                    "rules": ["hover", {"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "saint_tactics", "x": 1}],
+                    "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "energy_hammer", "count": 4}]
+                }
+            ]
+        },
+        "greater_high_warden": {
+            "name": "Greater High Warden",
+            "description": "A High warden of the Faith Wardens order.",
+            "min": 5,
+            "max": 10,
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "wardens_tactics", "x": 2}],
+            "models": [
+                {
+                    "name": "High Warden",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["marine_rifle", "at_grenade", {"id": "ccw", "count": 3}],
+                    "options": [
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+                        {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 4}, "withWeapon": [{"id": "energy_sword", "count": 4}, {"id": "energy_mace", "count": 4}, {"id": "energy_axe", "count": 4}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "high_warden": {
+            "name": "High Warden",
+            "description": "A High warden of the Faith Wardens order.",
+            "min": 5,
+            "max": 10,
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "wardens_tactics", "x": 1}],
+            "models": [
+                {
+                    "name": "High Warden",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["marine_rifle", "at_grenade", {"id": "ccw", "count": 3}],
+                    "options": [
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+                        {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 4}, "withWeapon": [{"id": "energy_sword", "count": 4}, {"id": "energy_mace", "count": 4}, {"id": "energy_axe", "count": 4}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "herald_warden": {
+            "name": "Herald Warden",
+            "description": "A warden herald with banner.",
+            "min": 5,
+            "max": 10,
+            "category": "specialist",
+            "rules": ["support", "banner_of_focus", {"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Herald Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["marine_rifle", "at_grenade", {"id": "ccw", "count": 2}],
+                    "options": [
+                        {"addRule": [{"id": {"id": "ward", "x": 1}, "name": "Faith Shield"}]},
+                        {"replaceRule": "banner_of_focus", "withRule": ["banner_of_justice", "banner_of_wrath"], "limit": 1}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "warden_nurse": {
+            "name": "Nurse Warden",
+            "description": "A warden herald with banner.",
+            "min": 5,
+            "max": 10,
+            "category": "specialist",
+            "rules": ["support", "medic", {"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Nurse Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_pistol", "at_grenade", {"id": "ccw", "count": 3}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "warden_preacher": {
+            "name": "Preacher Warden",
+            "description": "A warden preacher with a staff.",
+            "min": 5,
+            "max": 10,
+            "category": "specialist",
+            "rules": ["support", {"id": "wounds", "x": 2}, "preacher"],
+            "models": [
+                {
+                    "name": "Preacher Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_pistol", {"id": "energy_staff", "x": 3}, "at_grenade"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "faith_wardens": {
+            "name": "Faith Wardens",
+            "description": "A group of wardens with marine rifles to pack an extra punch.",
+            "category": "core",
+            "options": [{"modelLimit": 1, "addRule": ["lucky_angel"]}, {"modelLimit": 1, "addRule": ["banner"]}],
+            "models": [
+                {
+                    "name": "Warden Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_rifle", "at_grenade", "ccw"],
+                    "options": [
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+                        {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_mace", "count": 2}, {"id": "energy_axe", "count": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Faith Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_rifle", "at_grenade", "ccw"],
+                    "options": [
+                        {
+                            "replaceWeapon": "marine_rifle",
+                            "withWeapon": ["heavy_machinegun", "heavy_flamethrower", "heavy_fusion_rifle", "flamethrower", "fusion_rifle", "twin_marine_rifle"],
+                            "modelLimit": 1
+                        },
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_marine_rifle"], "modelLimit": 1}
+                    ],
+                    "min": 4,
+                    "max": 14
+                }
+            ]
+        },
+        "seekers": {
+            "name": "Seekers",
+            "description": "A group of faith wardens seeking out evil to eradicate.",
+            "category": "core",
+            "options": [{"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_halberd", "count": 2}]}],
+            "models": [
+                {
+                    "name": "Seeker Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "shield"],
+                    "options": [
+                        {"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Seeker",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "shield"],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "dominion_wardens": {
+            "name": "Dominion Wardens",
+            "description": "A group of wardens with marine rifles to pack an extra punch.",
+            "category": "strike",
+            "options": [{"modelLimit": 1, "addRule": ["lucky_angel"]}, {"modelLimit": 1, "addRule": ["banner"]}],
+            "rules": ["scout"],
+            "models": [
+                {
+                    "name": "Dominion Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_rifle", "at_grenade", "ccw"],
+                    "options": [
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+                        {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_mace", "count": 2}, {"id": "energy_axe", "count": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Dominion Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_rifle", "at_grenade", "ccw"],
+                    "options": [{"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_marine_rifle"], "modelLimit": 4}],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "celestial_wardens": {
+            "name": "Celestial Wardens",
+            "description": "A group of elite wardens with marine rifles to pack an extra punch.",
+            "min": 5,
+            "max": 10,
+            "category": "core",
+            "options": [{"modelLimit": 1, "addRule": ["lucky_angel"]}, {"modelLimit": 1, "addRule": ["banner"]}],
+            "models": [
+                {
+                    "name": "Celestial Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["marine_rifle", "at_grenade", {"id": "ccw", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+                        {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}]]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 3}, "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_mace", "count": 3}, {"id": "energy_axe", "count": 3}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Celestial Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["marine_rifle", "at_grenade", {"id": "ccw", "count": 2}],
+                    "options": [
+                        {
+                            "replaceWeapon": "marine_rifle",
+                            "withWeapon": ["heavy_machinegun", "heavy_flamethrower", "heavy_fusion_rifle", "flamethrower", "fusion_rifle", "twin_marine_rifle"],
+                            "modelLimit": 1
+                        },
+                        {"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_marine_rifle"], "modelLimit": 1}
+                    ],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "redemption_wardens": {
+            "name": "Redemption Wardens",
+            "description": "A group of wardens atoning for their sins with righteous fury.",
+            "min": 5,
+            "max": 10,
+            "category": "specialist",
+            "rules": [{"id": "resilient", "x": 3}],
+            "models": [
+                {
+                    "name": "Redemption Warden Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": [{"id": "shock_whip", "count": 4}, "at_grenade"],
+                    "options": [{"addWeapon": "marine_pistol"}],
+                    "min": 0,
+                    "max": 1
+                },
+                {"name": "Redemption Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 5, "weapons": [{"id": "heavy_chainsword", "count": 2}], "min": 4, "max": 9}
+            ]
+        },
+        "winged_wardens": {
+            "name": "Winged Wardens",
+            "description": "A group of wardens with flying jetpacks.",
+            "min": 5,
+            "max": 10,
+            "category": "strike",
+            "rules": ["fly"],
+            "options": [{"replaceWeapon": {"id": "marine_pistol", "count": 1}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "chainsword", "count": 2}]}],
+            "models": [
+                {
+                    "name": "Winged Warden Superior",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "marine_pistol", "count": 2}, "at_grenade", "ccw"],
+                    "options": [{"replaceWeapon": {"id": "marine_pistol", "count": 1}, "withWeapon": [{"id": "plasma_pistol", "count": 1}]}],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Winged Warden",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "marine_pistol", "count": 2}, "at_grenade", "ccw"],
+                    "options": [
+                        {"replaceWeapon": {"id": "marine_pistol", "count": 2}, "withWeapon": [{"id": "flamethrower_pistol", "count": 2}, {"id": "fusion_pistol", "count": 2}], "modelLimit": 2}
+                    ],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "devastator_wardens": {
+            "name": "Retribution Wardens",
+            "description": "A group of wardens packed with heavy weapons to deal high damage.",
+            "min": 5,
+            "max": 10,
+            "category": "specialist",
+            "options": [{"addModel": "lucky_angel", "modelLimit": 2}, {"modelLimit": 1, "addRule": ["banner"]}],
+            "models": [
+                {
+                    "name": "Retribution Warden Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_rifle", "at_grenade", "ccw"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Retribution Warden",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["marine_rifle", "at_grenade", "ccw"],
+                    "options": [{"replaceWeapon": "marine_rifle", "withWeapon": ["heavy_machinegun", "heavy_flamethrower", "heavy_fusion_rifle"], "modelLimit": 4}],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "redemption_walker": {
+            "name": "Redemption Walker",
+            "description": "A walker atoning for its sins with righteous fury.",
+            "rules": ["walker", "vulnerable_rear", "damage_chart"],
+            "category": "heavy",
+            "keywords": ["Vehicle"],
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "Redemption Walker",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 5,
+                    "defense": 10,
+                    "reflexes": 5,
+                    "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "walker_flail", "count": 4}],
+                    "options": [
+                        {"replaceWeapon": {"id": "heavy_flamethrower", "count": 2}, "withWeapon": [{"id": "heavy_machinegun", "count": 2}]},
+                        {"replaceWeapon": {"id": "walker_flail", "count": 4}, "withWeapon": [{"id": "walker_saw", "count": 4}]},
+                        {"addRule": [{"id": "resilient", "x": 4, "name": "Berzerk"}, "coffin_enclosure"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "apc": {
+            "name": "APC",
+            "description": "A durable transport with optional heavy weapons.",
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
+            "category": "transport",
+            "keywords": ["Vehicle"],
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "APC",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 11,
+                    "reflexes": 6,
+                    "weapons": ["twin_marine_rifle"],
+                    "options": [{"addWeapon": ["twin_marine_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "inferno_apc": {
+            "name": "Inferno APC",
+            "description": "A durable transport with attached heavy weapons.",
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_chart"],
+            "category": "transport",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Inferno Tank",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 12,
+                    "reflexes": 6,
+                    "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "twin_heavy_fusion_rifle"],
+                    "options": [
+                        {"addWeapon": ["twin_marine_rifle", "hunter_missiles"]},
+                        {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]},
+                        {"replaceWeapon": "twin_heavy_fusion_rifle", "withWeapon": ["twin_heavy_machinegun", "twin_heavy_flamethrower"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "repression_apc": {
+            "name": "Repression APC",
+            "description": "A heavy transport with firing slits",
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_chart", {"id": "open_topped", "x": 6}],
+            "category": "transport",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Repression APC",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 12,
+                    "reflexes": 6,
+                    "weapons": [{"id": "heavy_flamethrower", "count": 1}, {"id": "twin_marine_rifle", "count": 1}],
+                    "options": [
+                        {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]},
+                        {"addWeapon": "heavy_flamethrower"}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "organ_tank": {
+            "name": "Organ Tank",
+            "description": "A light tank with a unique organ-shaped missile array.",
+            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_chart"],
+            "category": "heavy",
+            "keywords": ["Vehicle"],
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "Organ Tank",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "organ_missiles"],
+                    "options": [{"addWeapon": ["twin_marine_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "battle_tank": {
+            "name": "Battle Tank",
+            "description": "A main line battle tank.",
+            "category": "heavy",
+            "keywords": ["Vehicle", "Battle Tank"],
+            "rules": ["vulnerable_side_rear", "damage_chart"],
+            "models": [
+                {
+                    "name": "Battle Tank",
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 12,
+                    "movement": 10,
+                    "reflexes": 5,
+                    "weapons": ["battle_cannon", {"id": "heavy_machinegun", "mount": ["Front"]}],
+                    "options": [
+                        {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
+                        {"replaceWeapon": "battle_cannon", "withWeapon": ["twin_autocannon"]},
+                        {"addWeapon": [[{"id": "heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}]], "limit": 1},
+                        {"addWeapon": [{"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+                        {"addWeapon": ["hunter_missiles"]}
+                    ],
+                    "rules": [{"id": "impact", "x": 6}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        }
+    },
+    "models": {"lucky_angel": {"name": "Lucky Angel", "movement": "-", "courage": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-", "rules": ["lucky_angel"], "min": 1, "max": 1}},
+    "weapons": {
+        "saints_blade_melee": {"name": "Saint's Blade (Melee)", "attacks": 1, "ap": 5, "short": "Melee"},
+        "saints_blade_shoot": {"name": "Saint's Blade (Shoot)", "attacks": 3, "ap": 2, "short": 6, "medium": 12},
+        "walker_flail": {"name": "Walker Flail", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "poison", "x": 2}]},
+        "walker_saw": {"name": "Walker Saw", "attacks": 1, "ap": 6, "short": "Melee"},
+        "shock_whip": {"name": "Shock Whip", "attacks": 1, "ap": 1, "short": "Melee", "rules": [{"id": "poison", "x": 2}]},
+        "organ_missiles": {
+            "name": "Organ Missiles",
+            "profiles": [
+                {"name": "HE", "attacks": 2, "ap": 3, "short": 24, "medium": 48, "rules": ["indirect", {"id": "blast", "x": 3}]},
+                {"name": "AT", "attacks": 1, "ap": 6, "short": 18, "medium": 36, "rules": ["indirect", {"id": "critical", "x": 1}]}
+            ]
+        },
+        "legend_vengeance_pistol": {"name": "The Vengeance Pistol", "attacks": 1, "short": 6, "ap": 7, "rules": ["pistol", {"id": "critical", "x": 2}]}
+    },
+    "rules": {
+        "saint_tactics": {
+            "name": "Saint Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
+            "points": ["rule.x", {"multiply": 15}]
+        },
+        "holy_saint": {"name": "Holy Saint", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save when targeted by a Shooting or Fighting attack.", "points": 10},
+        "wardens_tactics": {
+            "name": "Wardens Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+",
+            "points": ["rule.x", {"multiply": 10}]
+        },
+        "preacher": {"name": "Preacher", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Strength when performing a Fight action.", "points": 10},
+        "lucky_angel": {
+            "name": "Lucky Angel",
+            "description": "Once per round, this unit may re-roll one Strength or Accuracy test. This may be used one additional time per round for each model with this rule.",
+            "points": 5
+        },
+        "celestial": {"name": "Celestial", "hidden": true, "description": "This model gets +1 Save.", "description_short": "Save +1", "points": 2},
+        "coffin_enclosure": {"name": "Coffin Enclosure", "hidden": true, "description": "This model gets +1 Save.", "description_short": "Save +1", "points": 10},
+        "legend_rightous_banner": {
+            "name": "Rightous Banner",
+            "description": "Once per round when a Power(x) test is taken within 24\" of any Infantry unit, you may roll a D10. If the value is less than or equal to the test to cast the power, it is prevented."
+        }
+    },
+    "relics": {
+        "legend_gravity_field": {
+            "name": "Gravity Field",
+            "rule": {"id": "tough", "x": 1},
+            "description": "Upgrade one model with Tough(1).",
+            "flavor": "This gravity field generator can be overcharged to bounce even the toughest attacks for a moment.",
+            "points": 10
+        },
+        "legend_rightous_banner": {
+            "name": "The Rightous Banner",
+            "type": "equipment",
+            "rule": "legend_rightous_banner",
+            "description": "Replace one Banner with The Rightous Banner",
+            "flavor": "This banner is blessed with rightous energy to protect those who are worthy.",
+            "points": 5
+        },
+        "legend_vengeance_pistol": {
+            "name": "The Vengeance Pistol",
+            "weapon": "legend_vengeance_pistol",
+            "description": "Replace one Fusion Pistol with The Vengeance Pistol",
+            "flavor": "This pistol is impued with holy fusion that can defeat even the most armored foes.",
+            "points": 5
+        },
+        "legend_living_saint": {
+            "name": "Living Saint",
+            "rule": {"id": "saint_tactics"},
+            "description": "This model replaces their Warden Tactics special rule with the Saint Tactics rule at the same level",
+            "flavor": "This warrior is imbued with unusual faith, even among the Wardens",
+            "points": 10
+        }
+    },
+    "strategies": [
+        {
+            "name": "Miracle",
+            "phase": "activation",
+            "description": "Use when taking a set of skill tests. Re-roll all failed skill tests.",
+            "flavor": "In times of great need, sometimes a miracle can save the day.",
+            "cost": 2
+        },
+        {
+            "name": "Divine Intervention",
+            "phase": "activation",
+            "description": "Use when taking a skill test. You may increase or decrease the result of that test by 1.",
+            "flavor": "Suddenly you witness the hand of fate intervene on your behalf.",
+            "cost": 1
+        },
+        {
+            "phase": "activation",
+            "name": "Holy Protection",
+            "description": "Use when a Power(x) test is taken within 24\" of any Infantry unit. Roll a D10. If the value is less than or equal to the test to cast the power, it is prevented.",
+            "flavor": "Shielded by holy energy, Faith Wardens can protect themselves from psychic powers.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["assault_focus"],
+            "name": "Ferocity",
+            "phase": "activation",
+            "description": "Use this strategy when an _Infantry_ unit charges. All models in that unit may make one additional attack.",
+            "flavor": "Sometimes with disregard for their own life, these faith wardens will stop at nothing to defeat their enemies.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["assault_focus"],
+            "name": "Fury",
+            "phase": "activation",
+            "flavor": "These faith wardens are furious in resolve and can rip through their enemies.",
+            "description": "Use when an _Infantry_ unit makes a Fight action. Hit rolls of 1 or 2 gain +1 AP.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["assault_focus"],
+            "name": "Assault",
+            "phase": "activation",
+            "flavor": "With a furious charge, these faith wardens move into combat quickly.",
+            "description": "Use this strategy when an _Infantry_ unit makes a Move action. That unit gains +3\" of Movement for that action.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["toughness_focus"],
+            "name": "Toughness",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit takes Save rolls. Roll a die for each hit this unit takes. On a 3 or less that hit is prevented.",
+            "flavor": "These Faith Wardens are particularly tough and can take a hit.",
+            "cost": 2
+        },
+        {
+            "subfactions": ["toughness_focus"],
+            "name": "Durability",
+            "phase": "activation",
+            "description": "Use before activating a unit with a Damage Chart. That unit is treated as having no critical damage tokens for this activation.",
+            "flavor": "Some of the most well-maintained vehicles and machinery can operate under great stress.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["toughness_focus"],
+            "name": "Unrelenting",
+            "phase": "activation",
+            "flavor": "These Faith Wardens are battle-ready and focused on the fight.",
+            "description": "Use when an _Infantry_ unit performs a Fight or Shoot action. Ignore any skill modifiers from Shock.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["mobility_focus"],
+            "name": "Encircle",
+            "phase": "pre_game",
+            "description": "Up to half of any force's units, one point for each may be placed in Encirclement reserves before the game begins. At the beginning of any round after the first, that unit may be set up within 6\" of any table edge and more than 12\" from any enemy units. If both players have reserves arriving on the same turn, roll off to see who places theirs first.",
+            "flavor": "With speed a ferocity, these marines can outflank their enemies.",
+            "cost": "1/per"
+        },
+        {
+            "subfactions": ["mobility_focus"],
+            "name": "Moving Fire",
+            "phase": "activation",
+            "flavor": "These marines are trained to shoot while moving to maintain pressure on their enemies.",
+            "description": "Use after an _Infantry_ unit makes a Move action. That unit may make a free shoot action with -1 Accuracy.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["mobility_focus"],
+            "name": "Reliability",
+            "phase": "activation",
+            "description": "Use when a unit Shoots. That unit may re-roll a single hit die.",
+            "flavor": "With expert maintenance, their weapons can perform better than most.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["bravery_focus"],
+            "name": "Courageous",
+            "phase": "activation",
+            "description": "Use when activating a unit. That unit gets +1 Courage.",
+            "flavor": "These Faith Wardens are some of the most courageous ever seen, fighting to the bitter end.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["bravery_focus"],
+            "name": "Overwhelming Firepower",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit performs a Shoot action. Hit rolls of 1 or 2 cause an additional hit.",
+            "flavor": "Massed firepower can be relatively effective in taking down most targets.",
+            "cost": 1
+        },
+        {
+            "subfactions": ["bravery_focus"],
+            "name": "Counter Attack",
+            "phase": "activation",
+            "flavor": "Against all odds, these Faith Wardens will fight on.",
+            "description": "Use when an _Infantry_ unit is targeted by a Fight action. If that unit has not yet activated, it may perform a Counter Attack reaction without testing Initiative.",
+            "cost": 1
+        }
+    ],
+    "buyLinks": [
+        {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+3639190268"},
+        {"name": "OnePageRules", "link": "https://www.myminifactory.com/object/3d-print-battle-wardens-army-bundle-137117"}
+    ]
+}

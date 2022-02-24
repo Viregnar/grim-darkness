@@ -1,0 +1,1010 @@
+{
+    "id": "dimensional_horrors",
+    "name": "Dimensional Horrors",
+    "author": "Caliallie#6369",
+    "background": "Mutated servants of the dark gods able to materialize anywhere their influence is strong enough.",
+    "units": {
+        "greater_daemon_of_change": {
+            "name": "Greater Demon of Change",
+            "description": "A large winged creature enlightened with extreme knowlege and magical powers by the dark god of change.",
+            "subfactions": ["change"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 3}, "fear", "damage_chart"],
+            "category": "command",
+            "keywords": ["monster"],
+            "models": [
+                {
+                    "name": "Greater Demon of Change",
+                    "courage": 7,
+                    "movement": 10,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 12,
+                    "reflexes": 7,
+                    "weapons": ["exalted_staff_of_change"],
+                    "options": [
+                        {"replaceWeapon": "exalted_staff_of_change", "withWeapon": ["exalted_power_hammer", "exalted_power_spear"]},
+                        {"limit": 1, "addWeapon": ["exalted_magic_beam", "exalted_magic_bolt", "change_blast"]}
+                    ],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "greater_daemon_of_excess": {
+            "name": "Greater Demon of Excess",
+            "description": "An enlightened daemon of excess equally capable of leading forces and devestating enemies.",
+            "subfactions": ["excess"],
+            "keywords": ["Monster"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "resilient", "x": 2}, {"id": "power", "x": 2}],
+            "models": [
+                {
+                    "name": "Greater Demon of Excess",
+                    "movement": 12,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 12,
+                    "reflexes": 7,
+                    "weapons": ["splitting_claws", "souleating_sword"],
+                    "rules": [{"id": "leader_x", "x": "Infantry"}, "damage_chart"],
+                    "options": [{"addRule": ["ritual_dagger", "glittering_sheild", "menacing_hand"]}, {"addWeapon": ["living_whip"]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "wrath_monger": {
+            "name": "Greater Demon of War",
+            "description": "The war-god's most exalted warriors are granted the strongest bodies",
+            "keywords": ["Monster"],
+            "category": "command",
+            "subfactions": ["war"],
+            "models": [
+                {
+                    "name": "Greater Demon of War",
+                    "movement": 12,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 12,
+                    "reflexes": 7,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "blessed_axe", "count": 6}, {"id": "blessed_whip", "count": 1}],
+                    "rules": ["fly", {"id": "leader_x", "x": "Infantry"}, "damage_chart"],
+                    "options": [{"replaceWeapon": ["blessed_axe", "blessed_whip"], "withWeapon": {"id": "blessed_greataxe", "count": 6}}]
+                }
+            ]
+        },
+        "greater_demon_of_pestilence": {
+            "name": "Greater Demon of Pestilence",
+            "description": "A corpulent monstrosity blessed by the god of pestilence",
+            "keywords": ["Monster"],
+            "category": "command",
+            "subfactions": ["pestilence"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "resilient", "x": 2}, {"id": "power", "x": 2}],
+            "models": [
+                {
+                    "name": "Greater Demon of Pestilence",
+                    "movement": 5,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 7,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "bileblade", "count": 3}, {"id": "buboe_swarm", "count": 3}, {"id": "corrosive_vomit", "count": 1}, {"id": "dinner_bell", "count": 1}],
+                    "options": [
+                        {"replaceWeapon": {"id": "dinner_bell", "count": 1}, "withWeapon": {"id": "massive_bileblade", "count": 3}},
+                        {"replaceWeapon": {"id": "bileblade", "count": 3}, "withWeapon": {"id": "epic_flail", "count": 3}}
+                    ]
+                }
+            ]
+        },
+        "daemon_champion": {
+            "name": "Demon Champion",
+            "description": "A massive daemon gifted in the art of war.",
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 4}, {"id": "melee_tactics", "x": 1}, {"id": "power", "x": 1}],
+            "keywords": ["Infantry"],
+            "models": [
+                {
+                    "name": "Demon Champion",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 10,
+                    "reflexes": 7,
+                    "weapons": [{"id": "daemon_sword", "count": 4}, {"id": "daemon_claws", "count": 2}],
+                    "options": [
+                        {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}, {"id": "power", "x": 3}]},
+                        {"replaceWeapon": {"id": "daemon_sword", "count": 4}, "withWeapon": [{"id": "daemon_axe", "count": 4}, {"id": "daemon_claws", "count": 6}]},
+                        {"addRule": "wings"}
+                    ],
+                    "rules": [],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "champion_of_change": {
+            "name": "Champion of Change",
+            "description": "A frightening leader of the forces of change.",
+            "subfactions": ["none", "change"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}, "herald"],
+            "keywords": ["infantry"],
+            "models": [
+                {
+                    "name": "Champion of Change",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": [{"id": "power_staff", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": {"id": "power_staff", "count": 2}, "withWeapon": {"id": "ritual_dagger", "count": 2}},
+                        {"limit": 1, "addWeapon": ["magic_beam", "magic_bolt", "change_blast"]},
+                        {"addRule": ["disk_of_change"]}
+                    ],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "champion_of_change_on_chariot": {
+            "name": "Champion of Change on Chariot",
+            "description": "A frightening leader of the forces of change riding a fearsome chariot pulled by magical lampries.",
+            "subfactions": ["none", "change"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "hover", "damage_chart", "herald"],
+            "keywords": ["infantry"],
+            "models": [
+                {
+                    "name": "Champion of Change on Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "power_staff", "count": 2}, {"id": "parasitic_bite", "count": 6}],
+                    "options": [
+                        {"replaceWeapon": {"id": "power_staff", "count": 2}, "withWeapon": {"id": "ritual_dagger", "count": 2}},
+                        {"limit": 1, "addWeapon": ["magic_beam", "magic_bolt", "change_blast"]}
+                    ],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "blue_scholars": {
+            "name": "Blue Scholars",
+            "description": "Two enlightened blue daemons that travel the world collecting as much new knowlege as they can.",
+            "subfactions": ["none", "change"],
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "min": 1,
+            "max": 1,
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "hover", "psychic_syphon", {"id": "wounds", "x": 2}],
+            "models": [
+                {"name": "Blue Scholars", "movement": 8, "courage": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["quills", "disk_blades"], "min": 1, "max": 1, "rules": []}
+            ]
+        },
+        "the_shifter": {
+            "name": "The Shifter",
+            "description": "A mysterious being able to morph its form into any other being. It enjoys using this ability to trick both enemies and foes with complicated pranks.",
+            "subfactions": ["none", "change"],
+            "keywords": ["infantry"],
+            "category": "command",
+            "min": 1,
+            "max": 1,
+            "rules": [{"id": "power", "x": 1}, "hover", {"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}],
+            "models": [{"name": "The Shifter", "movement": 8, "courage": 6, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 5, "weapons": ["tricksters_staff"], "min": 1, "max": 1, "rules": []}]
+        },
+        "chromatic_horrors": {
+            "name": "Chromatic Horrors",
+            "description": "Twisting warriors of change known for shifting forms before the very eyes of their victims.",
+            "keywords": ["infantry"],
+            "category": "core",
+            "subfactions": ["none", "change"],
+            "min": 10,
+            "max": 30,
+            "options": [
+                {"modelLimit": 1, "addRule": ["banner"]},
+                {"modelLimit": 1, "addRule": ["musician"]},
+                {"modelLimit": 1, "addRule": ["champion"]},
+                {"modelLimit": 1, "addRule": [{"id": "power", "x": 1}]}
+            ],
+            "models": [
+                {
+                    "name": "Flame Demon",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 4,
+                    "fight": 4,
+                    "defense": 5,
+                    "reflexes": 4,
+                    "weapons": [{"id": "ccw", "count": 2}],
+                    "options": [{"replaceModel": ["blue_warriors", "pink_warriors"]}],
+                    "min": 10,
+                    "max": 30
+                }
+            ]
+        },
+        "exalted_flame_daemon": {
+            "name": "Exalted Flame Demon",
+            "description": "A daemon made of twisting, living flame held together by pure magic that acts as a leader for minor flame daemons.",
+            "category": "specialist",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "change"],
+            "rules": ["hover", {"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Exalted Flame Demon",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["changing_flames", "flame_tongues"],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "flame_daemon": {
+            "name": "Flame Demons",
+            "description": "A shifting daemon of living flames.",
+            "category": "specialist",
+            "subfactions": ["none", "change"],
+            "min": 3,
+            "max": 9,
+            "rules": ["hover"],
+            "models": [
+                {
+                    "name": "Flame Demon",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 6,
+                    "fight": 4,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": ["flickering_flames", {"id": "ccw", "count": 2}],
+                    "min": 3,
+                    "max": 9,
+                    "rules": []
+                }
+            ]
+        },
+        "manta_daemons": {
+            "name": "Manta Demons",
+            "description": "Fast-flying manta-like daemons capable of close-range carnage.",
+            "subfactions": ["none", "change"],
+            "category": "strike",
+            "min": 3,
+            "max": 9,
+            "rules": ["fly"],
+            "models": [{"name": "Manta Demon", "movement": 8, "courage": 5, "shoot": 4, "fight": 5, "defense": 7, "reflexes": 5, "weapons": [{"id": "parasitic_bite", "count": 3}], "min": 3, "max": 9}]
+        },
+        "flame_chariot": {
+            "name": "Flame Chariot",
+            "description": "An intimidating construction of flame and manta daemons summoned to provide heavy support on the battlefeild.",
+            "keywords": ["Cavalry"],
+            "subfactions": ["none", "change"],
+            "category": "heavy",
+            "min": 1,
+            "max": 1,
+            "rules": ["fear", "hover", "damage_chart"],
+            "models": [
+                {
+                    "name": "Flame Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": ["changing_flames", {"id": "parasitic_bite", "count": 6}, "flame_tongues"],
+                    "options": [{"addRule": ["chanting_warriors"]}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "giant_daemon_spawn": {
+            "name": "Giant Demon Spawn",
+            "description": "A giant mutated creature able to wreak havoc on the battlefeild.",
+            "keywords": ["monster"],
+            "subfactions": ["none", "change", "war", "pestilence", "excess"],
+            "category": "heavy",
+            "rules": ["agile", {"id": "resilient", "x": 3}],
+            "models": [
+                {
+                    "name": "Giant Demon Spawn",
+                    "movement": 10,
+                    "courage": 7,
+                    "shoot": 4,
+                    "fight": 5,
+                    "defense": 8,
+                    "reflexes": 8,
+                    "weapons": ["fangs_and_claws"],
+                    "min": 1,
+                    "max": 1,
+                    "rules": ["mutations"]
+                }
+            ]
+        },
+        "daemon_machine": {
+            "name": "Demon Machine",
+            "description": "An unholy melding of daemon and machine into a horrifying weapon.",
+            "keywords": ["Vehicle"],
+            "subfactions": ["none", "change", "war", "pestilence", "excess"],
+            "category": "heavy",
+            "rules": ["fear", "walker", "damage_chart"],
+            "models": [
+                {
+                    "name": "Demon Machine",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 11,
+                    "reflexes": 5,
+                    "weapons": ["power_cannon", {"id": "power_claw", "count": 2}, {"id": "daemon_sword", "count": 3}, "phlegm_cannon"],
+                    "options": [{"replaceWeapon": "daemon_sword", "withWeapon": "daemon_claw"}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "soul_mirror": {
+            "name": "Soul Mirror",
+            "description": "A contorted, corrupted mirror able to show its enemies their greatest fears.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 2}, "no_escape"],
+            "models": [
+                {
+                    "name": "Soul Mirror",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "lashing_tentacles", "count": 2}, {"id": "sweeping_claws", "count": 6}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "excess_champion": {
+            "name": "Champion of Excess",
+            "description": "A leader of the forces of excess.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["infantry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "herald"],
+            "models": [
+                {
+                    "name": "Champion of Excess",
+                    "movement": 7,
+                    "courage": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": [{"id": "sweeping_claws", "count": 3}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "excess_champion_on_exalted_chariot": {
+            "name": "Champion of Excess on Exalted Chariot",
+            "description": "A leader of the forces of excess on a contorted chariot.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "impact", "x": 2}, "herald", "damage_chart"],
+            "models": [
+                {
+                    "name": "Champion of Excess on Exalted Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "lashing_tentacles", "count": 2}, {"id": "sweeping_claws", "count": 5}],
+                    "options": [{"addWeapon": "tormenting_whips"}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "excess_champion_reaper_chariot": {
+            "name": "Champion of Excess on Reaper Chariot",
+            "description": "A leader of the forces of excess on a bladed chariot made to reap souls on the battlefield.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "herald", "damage_chart"],
+            "models": [
+                {
+                    "name": "Champion of Excess on Reaper Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "lashing_tentacles", "count": 2}, {"id": "sweeping_claws", "count": 5}, "reaper_axle"],
+                    "options": [{"addWeapon": "tormenting_whips"}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "excess_champion_on_chariot": {
+            "name": "Champion of Excess on Chariot",
+            "description": "A leader of the forces of excess on a contorted chariot.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "impact", "x": 2}, "herald"],
+            "models": [
+                {
+                    "name": "Champion of Excess on Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "lashing_tentacles", "count": 2}, {"id": "sweeping_claws", "count": 6}],
+                    "options": [{"addWeapon": "tormenting_whips"}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "beguiling_harpist": {
+            "name": "Beguiling Harpist",
+            "description": "A horribly alluring commander of the forces of excess that plays enthralling melodies on a harp made from her enemies.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["infantry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, "psychic_syphon"],
+            "models": [
+                {
+                    "name": "Beguiling Harpist",
+                    "movement": 7,
+                    "courage": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": ["enrapturing_lyre", {"id": "sweeping_claws", "count": 3}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "deadly_duo": {
+            "name": "Deadly Duo",
+            "description": "Two excess daemons fused in horribly beautiful synchrony.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["monster"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}],
+            "models": [
+                {"name": "Deadly Duo", "movement": 8, "courage": 7, "shoot": 8, "fight": 7, "defense": 9, "reflexes": 5, "weapons": ["daemon_axe", "tormenting_whip"], "min": 1, "max": 1, "rules": []}
+            ]
+        },
+        "mask_of_excess": {
+            "name": "Mask of Excess",
+            "description": "A phantasmic daemon summoned to the battlefield by the forces of excess.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["infantry"],
+            "category": "command",
+            "rules": [{"id": "leader_x", "x": "Infantry"}, "agile"],
+            "models": [{"name": "Mask of Excess", "movement": 8, "courage": 6, "shoot": 7, "fight": 7, "defense": 5, "reflexes": 5, "weapons": ["segmented_claws"], "min": 1, "max": 1, "rules": []}]
+        },
+        "excess_warriors": {
+            "name": "Excess Demons",
+            "description": "The main bulk of the forces of excess, these equally alluring and devastating warriors find pleasure in the pain they inflict on the battlefield.",
+            "subfactions": ["none", "excess"],
+            "keywords": ["infantry"],
+            "category": "core",
+            "min": 10,
+            "max": 30,
+            "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}],
+            "models": [
+                {"name": "Excess Demon", "movement": 7, "courage": 5, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 5, "weapons": [{"id": "sweeping_claws", "count": 2}], "min": 10, "max": 30}
+            ]
+        },
+        "excess_steed": {
+            "name": "Excess Steed",
+            "description": "A seductively mutated beast able to ferry forces fo slaanesh into battle or fight on their own.",
+            "keywords": ["Cavalry"],
+            "subfactions": ["none", "excess"],
+            "category": "specialist",
+            "rules": ["agile"],
+            "min": 1,
+            "max": 9,
+            "models": [
+                {
+                    "name": "Excess Steed",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": [{"id": "sweeping_claws", "count": 4}, "barbed_tail"],
+                    "options": [{"modelLimit": 1, "addWeapon": ["sweeping_claws"]}],
+                    "min": 1,
+                    "max": 9,
+                    "rules": ["psychic_syphon", {"id": "wounds", "x": 2}]
+                }
+            ]
+        },
+        "gargoyles": {
+            "name": "Gargoyles",
+            "description": "Horrible winged demons able to be summoned to assist any of the demon factions.",
+            "keywords": ["infantry"],
+            "subfactions": ["none", "change", "war", "pestilence", "excess"],
+            "category": "strike",
+            "rules": ["fly", "fear"],
+            "min": 5,
+            "max": 20,
+            "models": [
+                {"name": "Gargoyle", "movement": 10, "courage": 4, "shoot": 4, "fight": 5, "defense": 5, "reflexes": 5, "weapons": [{"id": "ccw", "count": 2}], "min": 5, "max": 20, "rules": []}
+            ]
+        },
+        "reaper_chariot": {
+            "name": "Reaper Chariot",
+            "description": "A bladed chariot made to reap souls on the battlefeild.",
+            "subfactions": ["none", "change", "war", "pestilence", "excess"],
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "rules": ["damage_chart"],
+            "models": [
+                {
+                    "name": "Reaper Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "lashing_tentacles", "count": 2}, {"id": "sweeping_claws", "count": 6}, "reaper_axle"],
+                    "options": [{"addWeapon": "tormenting_whips"}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                }
+            ]
+        },
+        "excess_warriors_on_steeds": {
+            "name": "Excess Demons on Steeds",
+            "description": "A seductively mutated beast able to ferring forces of slaanesh into battle.",
+            "keywords": ["Cavalry"],
+            "category": "strike",
+            "rules": ["agile"],
+            "subfactions": ["none", "excess"],
+            "min": 5,
+            "max": 20,
+            "options": [{"limit": 1, "addRule": ["musician", "banner"]}],
+            "models": [
+                {
+                    "name": "Deathseeker",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": [{"id": "sweeping_claws", "count": 2}, {"id": "lashing_tentacles"}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": []
+                },
+                {
+                    "name": "Excess Steed",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": [{"id": "sweeping_claws", "count": 2}, {"id": "lashing_tentacles"}],
+                    "min": 4,
+                    "max": 19,
+                    "rules": []
+                }
+            ]
+        },
+        "warleader_champion": {
+            "name": "Champion of War",
+            "description": "The greatest of the war-god's tacticians, chosen to lead his forces to battle",
+            "keywords": ["infantry"],
+            "category": "command",
+            "rules": [],
+            "subfactions": ["none", "war"],
+            "models": [
+                {
+                    "name": "Champion of War",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": [{"id": "war_sword", "count": 4}],
+                    "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 2}, "herald"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "warleader_throne": {
+            "name": "Champion of War on Skull Throne",
+            "description": "A great general of the war-god, atop a throne befitting his status",
+            "keywords": ["Cavalry"],
+            "category": "command",
+            "rules": [],
+            "subfactions": ["none", "war"],
+            "models": [
+                {
+                    "name": "Champion of War on Skull Throne",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 7,
+                    "reflexes": 5,
+                    "defense": 9,
+                    "rules": [{"id": "impact", "x": 2}, "damage_chart", {"id": "leader", "x": "Infantry"}, "herald"],
+                    "weapons": [{"id": "war_sword", "count": 6}, {"id": "throne_mouth", "count": 2}]
+                }
+            ]
+        },
+        "wrath_dogs": {
+            "name": "Wrath Dogs",
+            "description": "Cry havoc!  The dogs of war bite seek only to tear their master's foes asunder.",
+            "keywords": ["Cavalry"],
+            "category": "strike",
+            "rules": [],
+            "subfactions": ["none", "war"],
+            "min": 5,
+            "max": 10,
+            "models": [
+                {
+                    "name": "Dog of War",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 6,
+                    "min": 5,
+                    "max": 20,
+                    "rules": [{"id": "ward", "x": 1}],
+                    "weapons": [{"id": "hounds_teeth", "count": 4}]
+                }
+            ]
+        },
+        "wrath_warriors": {
+            "name": "Wrath Demons",
+            "description": ["Minions of the war-god, these ferocious demons know no rest, only battle."],
+            "keywords": ["infantry"],
+            "category": "core",
+            "subfactions": ["none", "war"],
+            "min": 10,
+            "max": 30,
+            "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}],
+            "models": [
+                {
+                    "name": "Wrath Demon",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "min": 10,
+                    "max": 30,
+                    "weapons": [{"id": "war_sword", "count": 1}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner_of_blood"]}, {"modelLimit": 1, "addRule": ["instrument_of_blood"]}, {"modelLimit": 1, "addRule": ["horrible_icon"]}]
+                }
+            ]
+        },
+        "war_Cavalry": {
+            "name": "War Breakers",
+            "description": "Cavalry of the war-god, designed to overrun the hardest armies",
+            "keywords": ["Cavalry"],
+            "category": "strike",
+            "subfactions": ["none", "war"],
+            "models": [
+                {
+                    "name": "War Breaker",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 4,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "min": 3,
+                    "max": 12,
+                    "weapons": [{"id": "war_Cavalry_sword", "count": 3}, {"id": "warbeast_horns", "count": 3}],
+                    "rules": [{"id": "impact", "x": 2}, {"id": "wounds", "x": 2}]
+                }
+            ]
+        },
+        "pestilent_champion": {
+            "name": "Pestilent Champion",
+            "description": "A feculent champion of the god of pestilence",
+            "keywords": ["infantry"],
+            "category": "command",
+            "subfactions": ["none", "pestilence"],
+            "models": [
+                {
+                    "name": "Pestilent Champion",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "bileblade", "count": 3}],
+                    "rules": [{"id": "power", "x": 1}, {"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "herald"]
+                }
+            ]
+        },
+        "pestilent_warriors": {
+            "name": "Pestilent Demons",
+            "description": "Plagues given flesh, trying to spread themselves on the edge of a sword",
+            "keywords": ["infantry"],
+            "category": "core",
+            "subfactions": ["none", "pestilence"],
+            "models": [
+                {
+                    "name": "Pestilent Demon",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "min": 10,
+                    "max": 30,
+                    "weapons": [{"id": "lesser_bileblade", "count": 1}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}]
+                }
+            ]
+        },
+        "buboes": {
+            "name": "Buboe Swarm",
+            "description": "More symptoms than plauges, buboes are only threats in swarms",
+            "keywords": ["Cavalry"],
+            "category": "core",
+            "subfactions": ["none", "pestilence"],
+            "models": [
+                {
+                    "name": "Buboe Swarm",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 4,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "min": 3,
+                    "max": 9,
+                    "weapons": [{"id": "buboe_swarm", "count": 5}],
+                    "rules": [{"id": "wounds", "x": 2}]
+                }
+            ]
+        },
+        "rot_flies": {
+            "name": "Rot Flies",
+            "description": "Pestilent warriors flying on horrid beasts to spread their infection",
+            "keywords": ["Cavalry"],
+            "category": "strike",
+            "subfactions": ["none", "pestilence"],
+            "models": [
+                {
+                    "name": "Rot Flies",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "min": 3,
+                    "max": 9,
+                    "weapons": [{"id": "lesser_bileblade", "count": 1}, {"id": "horrid_proboscis", "count": 4}, {"id": "infected_parts", "count": 2}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}]
+                }
+            ]
+        }
+    },
+    "models": {
+        "pink_warriors": {"name": "Pink Demon", "movement": 6, "courage": 5, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 5, "weapons": ["twisting_flames", "ccw"], "min": 10, "max": 30},
+        "blue_warriors": {"name": "Blue Demon", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["twisting_flames", "ccw"], "min": 0, "max": 30}
+    },
+    "weapons": {
+        "exalted_staff_of_change": {"name": "Exalted Staff of Change", "attacks": 5, "short": "Melee", "ap": 4},
+        "exalted_power_hammer": {"name": "Exalted Power Hammer", "attacks": 4, "short": "Melee", "ap": 5},
+        "exalted_power_spear": {"name": "Exalted Power Spear", "attacks": 3, "short": "Melee", "ap": 7},
+        "exalted_magic_beam": {"name": "Exalted Magic Beam", "attacks": 6, "short": 6, "medium": 12, "ap": 2},
+        "exalted_magic_bolt": {"name": "Exalted Magic Bolt", "attacks": 3, "short": 6, "medium": 12, "ap": 5},
+        "change_blast": {"name": "Change Blast", "attacks": 1, "short": 9, "medium": 18, "ap": 7},
+        "power_staff": {"name": "Power Staff", "attacks": 1, "short": "Melee", "ap": 2},
+        "ritual_dagger": {"name": "Ritual Dagger", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["leeching"]},
+        "magic_beam": {"name": "Magic Beam", "attacks": 2, "short": 6, "ap": 2},
+        "magic_bolt": {"name": "Magic Bolt", "attacks": 2, "short": 6, "medium": 12, "ap": 4},
+        "parasitic_bite": {"name": "Parasitic Bite", "attacks": 1, "short": "Melee", "ap": 4},
+        "quills": {"name": "Quills", "attacks": 2, "short": "Melee"},
+        "disk_blades": {"name": "Disk Blades", "attacks": 2, "short": "Melee", "ap": 1},
+        "tricksters_staff": {
+            "name": "Trickster's Staff",
+            "profiles": [
+                {"name": "Staff Form", "attacks": 6, "short": "Melee"},
+                {"name": "Sword Form", "attacks": 4, "short": "Melee", "ap": 5},
+                {"name": "Hammer Form", "attacks": 2, "short": "Melee", "ap": 7}
+            ]
+        },
+        "magical_ccw": {"name": "Magical CCW", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["rending"]},
+        "twisting_flames": {"name": "Twisting Flames", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
+        "changing_flames": {
+            "name": "Changing Flames",
+            "profiles": [
+                {"name": "Blue Flame", "attacks": 3, "short": 9, "medium": 18, "ap": 7, "rules": ["flame"]},
+                {"name": "Pink Flame", "attacks": 6, "short": 6, "medium": 12, "ap": 3, "rules": ["flame"]}
+            ]
+        },
+        "flame_tongues": {"name": "Flame Tongues", "attacks": 3, "short": "Melee", "ap": 2},
+        "flickering_flames": {"name": "Flickering Flames", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["pistol", "flame"]},
+        "fangs_and_claws": {"name": "Fangs and Claws", "attacks": 9, "short": "Melee", "ap": 7},
+        "power_cannon": {"name": "Power Cannon", "attacks": 3, "short": 24, "medium": 48, "ap": 4},
+        "power_claw": {"name": "Power Claw", "attacks": 1, "short": "Melee", "ap": 6},
+        "phlegm_cannon": {"name": "Phlegm Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "blast", "x": 3}]},
+        "daemon_claw": {"name": "Demon Claw", "attacks": 10, "short": "Melee", "ap": 6},
+        "lashing_tentacles": {"name": "Lashing Tentacles", "attacks": 1, "short": "Melee", "ap": 3},
+        "sweeping_claws": {"name": "Sweeping Claws", "attacks": 1, "short": "Melee", "ap": 0, "rules": ["rending"]},
+        "tormenting_whips": {"name": "Tormenting Whips", "attacks": 3, "short": 6, "ap": 1, "rules": ["pistol"]},
+        "reaper_axle": {"name": "Reaper Axle", "attacks": 3, "short": "Melee", "ap": 5},
+        "enrapturing_lyre": {
+            "name": "Enrapturing Lyre",
+            "profiles": [{"name": "Raucous Melody", "attacks": 6, "short": 9, "medium": 18, "ap": 1}, {"name": "Melodious Blast", "attacks": 1, "short": 12, "medium": 24, "ap": 6}]
+        },
+        "splitting_claws": {"name": "Splitting Claws", "attacks": 6, "short": "Melee", "ap": 4, "rules": ["rending"]},
+        "souleating_sword": {"name": "Soul-eating Sword", "attacks": 6, "short": "Melee", "ap": 6},
+        "living_whip": {"name": "Living Whip", "attacks": 6, "short": 6, "ap": 4},
+        "tormenting_whip": {
+            "name": "Tormenting Whip",
+            "profiles": [{"name": "Melee", "attacks": 8, "short": "Melee", "ap": 1, "rules": ["blast"]}, {"name": "Shooting", "attacks": 3, "short": 6, "ap": 2}]
+        },
+        "segmented_claws": {"name": "Segmented Claws", "attacks": 5, "short": "Melee", "ap": 2, "rules": ["rending"]},
+        "barbed_tail": {"name": "Barbed Tail", "attacks": 1, "short": "Melee", "ap": 2},
+        "war_sword": {"name": "War-Blessed Sword", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
+        "throne_mouth": {"name": "War-Throne's Mashing Gnaw", "attacks": 1, "short": "Melee", "ap": 3},
+        "hounds_teeth": {"name": "Hound's Jaws", "attacks": 1, "short": "Melee", "ap": 1},
+        "blessed_axe": {"name": "War-Blessed Axe", "attacks": 1, "short": "Melee", "ap": 8},
+        "blessed_whip": {"name": "War-Blessed Whip", "attacks": 1, "short": 6, "medium": 12, "ap": 5, "rules": ["pistol"]},
+        "blessed_greataxe": {
+            "name": "War-Blessed Greataxe",
+            "profiles": [{"name": "Sweeping Attack", "attacks": 5, "short": "Melee", "ap": 5}, {"name": "Mighty Strike", "attacks": 2, "short": "Melee", "ap": 10}]
+        },
+        "warbeast_horns": {"name": "Warbeast's Horns", "attacks": 1, "short": "Melee", "ap": 2},
+        "war_Cavalry_sword": {"name": "Cavalry Blessed Sword", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]},
+        "bileblade": {"name": "Bileblade", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["pestilence"]},
+        "buboe_swarm": {"name": "Buboe Swarm", "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "corrosive_vomit": {"name": "Corrosive Vomit", "attacks": 4, "ap": 5, "short": 3, "medium": 6, "rules": ["pestilence", "pistol"]},
+        "dinner_bell": {"name": "Dinner Bell", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["none", "pestilence"]},
+        "massive_bileblade": {"name": "Massive Bileblade", "attacks": 1, "ap": 6, "short": "Melee", "rules": ["pestilence"]},
+        "epic_flail": {"name": "Epic Flail", "ap": 5, "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "lesser_bileblade": {"name": "Lesser Bileblade", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "horrid_proboscis": {"name": "Horrid Proboscis", "ap": 2, "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "infected_parts": {"name": "Infected Body Parts", "ap": 1, "attacks": 1, "short": 6, "medium": 12, "rules": ["pestilence"]}
+    },
+    "rules": {
+        "melee_tactics": {
+            "name": "Melee Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
+            "points": 10
+        },
+        "herald": {"name": "Herald", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 5},
+        "psychic_syphon": {"name": "Psychic Syphon", "description": "Enemy models within 12\" of this model suffer -1 to their psychic tests.", "points": 5},
+        "chanting_warriors": {"name": "Chanting Demons", "description": "Enemy units must subtract one from psychic tests within 9\" of this model.", "points": 5},
+        "no_escape": {"name": "No Escape", "description": "Enemy units attempting to fall back from this unit take their Initiative test at -2.", "points": 1},
+        "ritual_dagger": {"name": "Ritual Dagger", "description": "After this model fights in Melee, one enemy unit in its engagement range takes 2 automatic hits."},
+        "glittering_sheild": {"name": "Glittering Sheild", "description": "This model gains Resilient(+1).", "points": 2},
+        "menacing_hand": {"name": "Menacing Hand", "description": "After this model fights, if any non-vehicle model was slain by this model, this model regains 2 lost wounds."},
+        "legend_hunting_hound": {"name": "Hunting Hound", "description": "This model and all models in its unit gain +2 strength when targeting models with Leader or Support"}
+    },
+    "strategies": {
+        "summoning": {
+            "name": "Summoning",
+            "phase": "pre_game",
+            "description": "Up to half of any force's units, one point for each may be placed in _Ambush Reserves_ instead of deployed on the field.",
+            "flavor": "Dimensional horrors can be summoned out of thin air and in huge masses.",
+            "cost": "1/per"
+        },
+        "terror": {
+            "name": "Terror",
+            "phase": "activation",
+            "description": "Use when a unit within 6\" takes a Courage test. That unit suffers -1 Courage until the end of its activation.",
+            "flavor": "Their nightmarish form can terrorize even the strongest of wills.",
+            "cost": 1
+        },
+        "teleportation": {
+            "name": "Teleportation",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit makes a Move action. It may ignore any models and terrain for that move.",
+            "flavor": "Dimensional horrors have a terrifying ability to move swiftly between enemies with very little to stop them.",
+            "cost": 1
+        },
+        "resilience_pestilence": {
+            "name": "Resilience",
+            "subfactions": ["pestilence"],
+            "phase": "activation",
+            "flavor": "These demons are so diseased and rotten that they often shrug off some powerful attacks.",
+            "description": "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
+            "cost": 1
+        },
+        "pestilent_aura": {
+            "name": "Pestilent Aura",
+            "subfactions": ["pestilence"],
+            "phase": "activation",
+            "flavor": "Following these demons is an aura of death and disease.",
+            "description": "Use this strategy when you activate one of your _Infantry_ or _Heavy Infantry_ units. Up to 2 units within 6\" take 3 hits with AP 1 each.",
+            "cost": 2
+        }
+    },
+    "relics": {
+        "hunting_hound": {
+            "name": "Hunting Hound",
+            "rule": "legend_hunting_hound",
+            "description": "Upgrade one War Dog model with Hunting Hound",
+            "flavor": "Often, the Dogs of War will be sent to test a powerful leader.",
+            "cost": 10
+        }
+    },
+    "powers": {
+        "beam": {"name": "Invigorating Beam", "description": "Target friendly unit within 12\"may immediately make a free move action.", "charge": 7},
+        "magic_shield": {
+            "name": "Shield",
+            "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
+            "charge": 7
+        },
+        "weakness": {"name": "Weakness", "description": "Target enemy unit within 18\" must re-roll one die of your choice on its next Save test.", "charge": 6},
+        "illusion": {"name": "Encroaching Mutations", "description": "Target enemy unit within 18\" gets -1 to hit the next time it shoots or fights.", "charge": 6},
+        "strike": {"name": "Strike", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 6},
+        "terror": {"name": "Terror", "description": "Target enemy unit within 12\" immediately takes 3 Shock.", "charge": 7}
+    }
+}
