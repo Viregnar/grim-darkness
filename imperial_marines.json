@@ -1469,7 +1469,7 @@
             "models": [
                 {
                     "name": "Cyberwolf",
-                    "movement": 9,
+                    "movement": 10,
                     "courage": 5,
                     "shoot": 0,
                     "fight": 6,
