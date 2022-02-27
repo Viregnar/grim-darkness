@@ -1474,6 +1474,7 @@
                     "shoot": 0,
                     "fight": 6,
                     "defense": 5,
+                    "wounds": 2,
                     "reflexes": 5,
                     "weapons": [{"id": "claws_and_bite", "count": 3}],
                     "points":15,
