@@ -1417,11 +1417,7 @@
             "subfactions": ["wolf_marines"],
             "category": "strike",
             "options": [
-                {"replaceWeapon": ["marine_pistol"], "withWeapon": ["marine_rifle", "plasma_pistol"]},
-                {
-                    "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
-                    "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
-                }
+                {"replaceWeapon": ["marine_pistol"], "withWeapon": ["marine_rifle", "plasma_pistol"]}
             ],
             "models": [
                 {
@@ -1437,7 +1433,7 @@
                         {"replaceWeapon": ["marine_pistol"], "withWeapon": [{"id": "energy_claws", "count": 2}, "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "plasma_pistol"]},
                         {
                             "replaceWeapon": [{"id": "chainsword", "count": 2}],
-                            "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]
+                            "withWeapon": [{"id": "storm_shield", "count": 1},{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]
                         }
                     ],
                     "min": 1,
@@ -1452,12 +1448,17 @@
                     "defense": 8,
                     "reflexes": 6,
                     "weapons": [{"id": "claws_and_bite", "mount": ["Front"]}, "marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
-                    "options": [{"replaceWeapon": ["marine_pistol"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": 2}],
+                    "options": [
+                        {"replaceWeapon": ["marine_pistol"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": 2},
+                        {
+                            "replaceWeapon": [{"id": "chainsword", "count": 2}],
+                            "withWeapon": [{"id": "storm_shield", "count": 1},{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]
+                        }],
                     "min": 2,
                     "max": 8
                 }
             ],
-            "keywords": ["Biker"]
+            "keywords": ["Cavalry"]
         },
         "marine_bikers": {
             "name": "Marine Bikers",
@@ -3031,7 +3032,8 @@
         "power_purge": {"medium": 9, "ap": 1, "attacks": 10},
         "judge_blade": {"name": "Judge Blade", "attacks": 1, "short": "Melee", "ap": 5},
         "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]},
-        "claws_and_bite": {"name": "Griffes et crocs broyeurs", "attacks": 1, "short": "Melee", "ap": 1, "rules":["train_wolf_mount"]}
+        "claws_and_bite": {"name": "Griffes et crocs broyeurs", "attacks": 1, "short": "Melee", "ap": 1, "rules":["train_wolf_mount"]},
+        "storm_shield": {"name": "Bouclier Storm", "attacks": 0, "short": "Melee", "rules":["storm_shield"]}
     },
     "rules": {
         "multi_scanner": {
@@ -3091,7 +3093,8 @@
         "legend_shard": {"name": "Demonic Shard", "description": "This model increases all power charge values by 1.", "points": 1},
         "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1},
         "duelist": {"name": "Duelist", "description": "This model gains +1 strength when targeting enemy Leader models", "points": 3},
-        "train_wolf_mount": {"name": "Attaque loup tonnerre", "description": "Cette figurine peut faire 3 attaque avec ce profil si le cavalier a attaqué.", "points": 5}
+        "train_wolf_mount": {"name": "Attaque loup tonnerre", "description": "Cette figurine peut faire 3 attaque avec ce profil si le cavalier a attaqué.", "points": 5},
+        "storm_shield": {"name": "Bouclier Storm", "description": "Une figurine équipée d'un bouclier Storm gagne +2 sauvegarde.", "points": 10}
     },
     "hidden_relics": [
         {"subfactions": ["none", "wolf_marines"], "rule": "ancient_armor", "flavor": "Ancient armour said to protect the wearer from significant harm."},
