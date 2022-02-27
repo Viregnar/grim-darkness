@@ -3094,7 +3094,7 @@
         "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1},
         "duelist": {"name": "Duelist", "description": "This model gains +1 strength when targeting enemy Leader models", "points": 3},
         "train_wolf_mount": {"name": "Attaque loup tonnerre", "description": "Cette figurine peut faire 3 attaque avec ce profil si le cavalier a attaqué.", "points": 5},
-        "storm_shield": {"name": "Bouclier Storm", "description": "Une figurine équipée d'un bouclier Storm gagne +2 sauvegarde.", "points": 10}
+        "storm_shield": {"name": "Bouclier Storm", "description": "Une figurine équipée d'un bouclier Storm gagne +2 sauvegarde.", "points": 20}
     },
     "hidden_relics": [
         {"subfactions": ["none", "wolf_marines"], "rule": "ancient_armor", "flavor": "Ancient armour said to protect the wearer from significant harm."},
