@@ -3031,7 +3031,7 @@
         "power_purge": {"medium": 9, "ap": 1, "attacks": 10},
         "judge_blade": {"name": "Judge Blade", "attacks": 1, "short": "Melee", "ap": 5},
         "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]},
-        "claws_and_bite": {"name": "Claws and bite", "attacks": 1, "short": "Melee", "ap": 1}
+        "claws_and_bite": {"name": "Griffes et crocs broyeurs", "attacks": 1, "short": "Melee", "ap": 1}
     },
     "rules": {
         "multi_scanner": {
