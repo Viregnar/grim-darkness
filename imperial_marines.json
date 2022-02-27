@@ -3031,7 +3031,7 @@
         "power_purge": {"medium": 9, "ap": 1, "attacks": 10},
         "judge_blade": {"name": "Judge Blade", "attacks": 1, "short": "Melee", "ap": 5},
         "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]},
-        "claws_and_bite": {"name": "Griffes et crocs broyeurs", "attacks": 1, "short": "Melee", "ap": 1}
+        "claws_and_bite": {"name": "Griffes et crocs broyeurs", "attacks": 1, "short": "Melee", "ap": 1, "rules":["train_wolf_mount"]}
     },
     "rules": {
         "multi_scanner": {
@@ -3090,7 +3090,8 @@
         "legend_remembrance": {"name": "Armor of Remembrance", "description": "When this model is hit by an attack, roll a D10. On a 3 or less, that attack is prevented.", "points": 1},
         "legend_shard": {"name": "Demonic Shard", "description": "This model increases all power charge values by 1.", "points": 1},
         "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1},
-        "duelist": {"name": "Duelist", "description": "This model gains +1 strength when targeting enemy Leader models", "points": 3}
+        "duelist": {"name": "Duelist", "description": "This model gains +1 strength when targeting enemy Leader models", "points": 3},
+        "train_wolf_mount": {"name": "Attaque loup tonnerre", "description": "Cette figurine peut faire 3 attaque avec ce profil si le cavalier a attaqué.", "points": 5}
     },
     "hidden_relics": [
         {"subfactions": ["none", "wolf_marines"], "rule": "ancient_armor", "flavor": "Ancient armour said to protect the wearer from significant harm."},
