@@ -1410,6 +1410,55 @@
                 }
             ]
         },
+        "Cavalier_tonnerre": {
+            "name": "Cavalier tonnerre",
+            "description": "imperial marines on wolf.",
+            "rules": [{"id": "impact", "x": 1}],
+            "subfactions": ["wolf_marines"],
+            "category": "strike",
+            "options": [
+                {"replaceWeapon": ["marine_pistol"], "withWeapon": ["marine_rifle", "plasma_pistol"]},
+                {
+                    "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+                    "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+                }
+            ],
+            "models": [
+                {
+                    "name": "Cavalier tonnerre Leader",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": [{"id": "Claws_and_bite", "mount": ["Front"]}, "marine_pistol", "frags", {"id": "chainsword", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": ["marine_pistol"], "withWeapon": [{"id": "energy_claws", "count": 2}, "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "plasma_pistol"]},
+                        {
+                            "replaceWeapon": [{"id": "chainsword", "count": 2}],
+                            "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Cavalier tonnerre",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": [{"id": "Claws_and_bite", "mount": ["Front"]}, "marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
+                    "options": [{"replaceWeapon": ["marine_pistol"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": 2}],
+                    "min": 2,
+                    "max": 8
+                }
+            ],
+            "keywords": ["Biker"]
+        },
         "marine_bikers": {
             "name": "Marine Bikers",
             "description": "imperial marines on combat bikes.",
@@ -2981,7 +3030,8 @@
         "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
         "power_purge": {"medium": 9, "ap": 1, "attacks": 10},
         "judge_blade": {"name": "Judge Blade", "attacks": 1, "short": "Melee", "ap": 5},
-        "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]}
+        "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]},
+        "claws_and_bite": {"name": "Claws and bite", "attacks": 1, "short": "Melee", "ap": 1}
     },
     "rules": {
         "multi_scanner": {
