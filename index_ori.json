@@ -4,6 +4,16 @@
   "author": "guitarninja#5707",
   "reportUrl": "https://github.com/wargame-engine/grim-darkness/issues",
   "factions": {
+    "high_elves": {
+      "version": "1.0",
+      "name": "High Elf Worlds",
+      "id": "high_elves",
+      "url": "high_elves.json",
+      "color": "#295788",
+      "secondary_color": "#e8bb00",
+      "alliance": "elven_coaliation",
+      "description": "The High Elf Worlds are a group of large constructed fleet habitats. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory"
+    },
     "dark_elves": {
       "version": "1.0",
       "name": "Dark Elf Raiders",
@@ -27,6 +37,72 @@
         "hunter_focus": {"name": "Hunter", "id": "hunter_focus", "color": "#3d3354", "description": "An alien cult focused on hunting down targets with stealth and mobility."}
       }
     },
+    "alien_cults": {
+      "version": "1.0",
+      "name": "Alien Cults",
+      "id": "alien_cults",
+      "url": "alien_cults.json",
+      "color": "#606060",
+      "secondary_color": "#7d0a15",
+      "alliance": "alien_swarm",
+      "description": "The Alien Cults are a loose band of alien worshippers who have been infiltrated by an Alien Swarm. They form on unsuspecting planets and eventually grow strong enough to take control. Alien Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics.",
+      "subfactions": {
+        "ambush_focus": {"name": "Ambush", "id": "ambush_focus", "color": "#6a0001", "description": "An alien cult focused on ambushing and killing their foes."},
+        "survival_focus": {"name": "Survival", "id": "survival_focus", "color": "#6a0001", "description": "An alien cult focused on surviving at any cost."},
+        "zeal_focus": {"name": "Zeal", "id": "zeal_focus", "color": "#6a0001", "description": "An alien cult focused on zealous charges."}
+      }
+    },
+    "corrupted_marines": {
+      "version": "1.0",
+      "name": "Corrupted Marines",
+      "id": "corrupted_marines",
+      "url": "corrupted_marines.json",
+      "color": "#343a40",
+      "alliance": "corrupted_pact",
+      "description": "The corrupted marines are a band of marines that betrayed the Human Empire and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry.",
+      "subfactions": {
+        "rage_focus": {"name": "Rage", "id": "rage_focus", "color": "#6a0001", "description": "Corrupted marines focused on anger and brutal close assault to defeat their foes."},
+        "stealth_focus": {"name": "Deception", "id": "stealth_focus", "color": "#6a0001", "description": "Corrupted marines focused on stealth and deception to defeat their foes."},
+        "pestilence_focus": {
+          "name": "Pestilence",
+          "id": "pestilence_focus",
+          "color": "#6a0001",
+          "restricted": true,
+          "description": "Corrupted marines focused on using disease and decay to defeat their foes."
+        },
+        "psychic_focus": {"name": "Psychic", "id": "psychic_focus", "color": "#18abcc", "restricted": true, "description": "Corrupted marines focused on using powerful magic to defeat their foes."},
+        "siege_focus": {"name": "Siege", "id": "siege_focus", "color": "#18abcc", "description": "Corrupted marines focused on destroying enemy fortifications and vehicles."},
+        "destruction_focus": {"name": "Destruction", "id": "destruction_focus", "color": "#6a0001", "description": "Corrupted marines focused on despoilation and destruction."},
+        "excess_focus": {"name": "Excess", "id": "excess_focus", "color": "#561D5E", "description": "Corrupted marines driven to excess by their new freedoms"},
+        "terror_focus": {"name": "Terror", "id": "terror_focus", "color": "#191970", "description": "Corrupted marines who enforce their freedom through fear"},
+        "devotion_focus": {"name": "Devotion", "id": "devotion_focus", "color": "#400002", "description": "Blessed marines who serve their new masters with fervor"}
+      }
+    },
+    "corrupted_defense_force": {
+      "version": "1.0",
+      "name": "Corrupted Defense Force",
+      "id": "corrupted_defense_force",
+      "url": "corrupted_defense_force.json",
+      "color": "#ba7f00",
+      "secondary_color": "#343a40",
+      "alliance": "corrupted_pact",
+      "description": "The corrupted defense force are a band of deserters and other folks out for their own interests. They have gathered much of what they can from the Imperial Defense Force and now fight with the traitors against those that stay loyal."
+    },
+    "dimensional_horrors": {
+      "version": "1.0",
+      "name": "Dimensional Horrors",
+      "id": "dimensional_horrors",
+      "url": "dimensional_horrors.json",
+      "color": "#90305d",
+      "alliance": "corrupted_pact",
+      "description": "The dimensional horrors are a species of demon entities from an unknown dimension controlled by several demon lords. Their existence is largely not understood. They focus on rapid and unpredictable entry and deadly waves of infantry and beasts to surprise and overwhelm their foes.",
+      "subfactions": {
+        "change": {"name": "Magic", "id": "change", "color": "#90305d", "restricted": true, "description": "Horrors with an adept magical skill."},
+        "pestilence": {"name": "Pestilence", "id": "pestilence", "color": "#547588", "restricted": true, "description": "Horrors so disgusting and diseased they refuse to die."},
+        "war": {"name": "War", "id": "war", "color": "#547588", "restricted": true, "description": "Horrors focused on war and all out deadly combat."},
+        "excess": {"name": "Excess", "id": "excess", "color": "#547588", "restricted": true, "description": "Horrors focused on trickery and mind games."}
+      }
+    },
     "undying_machines": {
       "version": "1.0",
       "name": "Undying Machines",
@@ -40,6 +116,15 @@
         "combat_focus": {"name": "Close Combat", "id": "combat_focus", "description": "Undying Machines focused on deadly close assaults."}
       }
     },
+    "elven_keepers": {
+      "version": "1.0",
+      "name": "Elven Keepers",
+      "id": "elven_keepers",
+      "url": "elven_keepers.json",
+      "color": "#7761ab",
+      "alliance": "elven_coaliation",
+      "description": "The Elven Keepers are a race of elves who are tasked with keeping the grand elf library. They have a unique close combat and fast oriented style with deadly weaponry and quick jetbike and hovercraft vehicles."
+    },
     "free_colonies": {
       "version": "1.0",
       "alliance": "federation",
@@ -51,6 +136,59 @@
       "subfactions": {
         "vigilance_focus": {"name": "Vigilance", "id": "vigilance_focus", "description": "Free Colonies troops focused on readyness and vigiliant tactics."},
         "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "Free Colonies troops focused on mobile firing tactics."}
+      }
+    },
+    "mutant_tribes": {
+      "version": "1.0",
+      "name": "Mutant Tribes",
+      "id": "mutant_tribes",
+      "url": "mutant_tribes.json",
+      "color": "#7d6c57",
+      "alliance": "federation",
+      "description": "A strange alien race that joined the Federation to test their self-modifying biotech.  These lightly-armoured warriors attack with a variety of strange beasts and adaptations that can change from turn to turn."
+    },
+    "ascended_astroraptors": {
+      "version": "1.0",
+      "alliance": "federation",
+      "name": "Ascended Astro-Raptors",
+      "id": "ascended_astroraptors",
+      "url": "ascended_astroraptors.json",
+      "color": "#4f90e0",
+      "description": "Uplifted millenia ago by an unknown precursor race, the Ascended Astro-Raptors advanced from feral beasts to exploring the stars. They combine advanced technology with deadly close-ranged and claw-filled assaults.",
+      "hidden_subfactions": {
+        "combat_masters": {"name": "Close Combat", "id": "combat_masters", "color": "#00401f", "description": "An Ascended Astro-Raptors trained and drilled in deadly close combat fighting."},
+        "marksmanship_focus": {"name": "Marksmanship", "id": "marksmanship_focus", "description": "An Ascended Astro-Raptors with the best shooting skill in the galaxy."}
+      },
+      "subfactions": {
+        "claw_masters": {"name": "Close Combat", "id": "claw_masters", "color": "#00401f", "description": "Astro-Raptors who hold closer to the old ways of fighting with tooth and claw."},
+        "raygun_focus": {"name": "Rifle", "id": "raygun_focus", "description": "An Ascended Astro-Raptors force trained especially well with their ranged weapons."},
+        "rayshield_focus": {"name": "Defense", "id": "rayshield_focus", "description": "A force of Astro-Raptors equipped with highly advanced shielding technology."}
+      }
+    },
+    "knight_lords": {
+      "version": "1.0",
+      "name": "Knight Lords",
+      "id": "knight_lords",
+      "url": "knight_lords.json",
+      "color": "#396e9e",
+      "secondary_color": "#9a1115",
+      "alliance": "imperial_alliance",
+      "description": "The Knight Lords are a loose organization of many different knight guilds which build and maintain unique and gigantic war machines. The Knight Lords rely on huge Knight war machines and good old fashioned chivalry to pound their foes."
+    },
+    "faith_wardens": {
+      "version": "1.0",
+      "name": "Faith Wardens",
+      "id": "faith_wardens",
+      "url": "faith_wardens.json",
+      "color": "#383838",
+      "secondary_color": "#9a1115",
+      "alliance": "imperial_alliance",
+      "description": "The Faith Wardens are a sect of the Human Empire which have a uniquely faithful and religious background. The Faith Wardens rely on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies.",
+      "subfactions": {
+        "assault_focus": {"name": "Assault", "id": "assault_focus", "description": "Faith Wardens focused on all-out assaults and aggression."},
+        "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "Faith Wardens focused on taking hits and keeping the fight going."},
+        "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "Faith Wardens focused on mobile tactics."},
+        "bravery_focus": {"name": "Bravery", "id": "bravery_focus", "description": "Faith Wardens focused on bravery against all odds."}
       }
     },
     "machine_guilds": {
@@ -66,6 +204,28 @@
         "firepower_focus": {"name": "Firepower", "id": "firepower_focus", "description": "A Machine Guild focused on overwhelming firepower."},
         "defense_focus": {"name": "Defense", "id": "defense_focus", "description": "A Machine Guild focused on heavy defense and survival."},
         "assault_focus": {"name": "Assault", "id": "assault_focus", "description": "A Machine Guild focused on melee assaults and close quarters fighting."}
+      }
+    },
+    "imperial_defense_force": {
+      "version": "1.0",
+      "name": "Imperial Defence Force",
+      "id": "imperial_defense_force",
+      "url": "imperial_defense_force.json",
+      "color": "#314821",
+      "alliance": "imperial_alliance",
+      "description": "The Imperial Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human soldiers to defend the Empire.",
+      "hidden_subfactions": {
+        "neon_hive": {
+          "name": "Urban",
+          "id": "neon_hive",
+          "description": "This section of the Imperial Defense Force recruits the elite, drafts the reasonable, and drags the hivescum from a large, heavily overpopulated neon-lit world of Megacities and gang-warfare."
+        }
+      },
+      "subfactions": {
+        "survival_focus": {"name": "Survival", "id": "survival_focus", "color": "#6a0001", "description": "An Imperial Defense force with an innate ability to outlast their opponents."},
+        "mechanized_focus": {"name": "Mechanized", "id": "mechanized_focus", "color": "#00401f", "description": "An Imperial Defense force focused on mechanized warfare."},
+        "combat_masters": {"name": "Close Combat", "id": "combat_masters", "color": "#00401f", "description": "An Imperial Defense force trained and drilled in deadly close combat fighting."},
+        "marksmanship_focus": {"name": "Marksmanship", "id": "marksmanship_focus", "description": "An Imperial Defense force with the best shooting skill in the galaxy."}
       }
     },
     "imperial_marines": {
@@ -97,6 +257,21 @@
         "alien_hunters": {"name": "Alien Hunters", "id": "alien_hunters", "color": "#231f20", "description": "Imperial Marines focused on hunting aliens.", "restricted": true}
       }
     },
+    "throne_guardians": {
+      "version": "1.0",
+      "name": "Throne Guardians",
+      "id": "throne_guardians",
+      "url": "throne_guardians.json",
+      "color": "#D4AF37",
+      "secondary_color": "#7d0a15",
+      "alliance": "imperial_alliance",
+      "description": "The Throne Guardians are the defenders of the Human Empire's capital. Only the most elite Imperial Marines are recruited to be Throne Guardians and with that they are the most well-trained. The Throne Guardians rely on the most elite and well-trained infantry along with powerful and ancient war weaponry to defend their home planet.",
+      "subfactions": {
+        "shadow_focus": {"name": "Shadow", "id": "shadow_focus", "description": "A Throne Guardian sect with a focus on stealth and shadow tactics."},
+        "fear_focus": {"name": "Fear", "id": "fear_focus", "description": "A Throne Guardian sect with a focus on fear and intimidation tactics."},
+        "honor_focus": {"name": "Honor", "id": "honor_focus", "description": "A Throne Guardian sect with a focus on swiftness and honor."}
+      }
+    },
     "orc_clans": {
       "version": "1.0",
       "name": "Orc Clans",
@@ -113,6 +288,48 @@
         "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "An Orc Clan that can take a hit and keep on fighting."},
         "scavenge_focus": {"name": "Scavenger", "id": "scavenge_focus", "description": "An Orc Clan that has a knack for scavenging and looting."}
       }
+    },
+    "goblin_hordes": {
+      "version": "1.0",
+      "name": "Goblin Hordes",
+      "id": "goblin_hordes",
+      "url": "goblin_hordes.json",
+      "alliance": "greenskins",
+      "color": "#34533D",
+      "description": "Once part of the Orc Clans, these goblins have left to form their own independent and respected clans. Usually Goblins will not fight on their own, but when they do they bring absurd machinery and great numbers to the fight.",
+      "subfactions": {
+        "mechanized_focus": {"name": "Mech", "id": "mechanized_focus", "description": "Goblins whose focus is on their bizarre machinery"},
+        "revolution_focus": {"name": "Revolution!", "id": "revolution_focus", "description": "Goblins seeking independence from oppressive leaders"}
+      }
+    },
+    "imperial_inquisition": {
+      "version": "1.0",
+      "name": "Imperial Inquisition",
+      "id": "imperial_inquisition",
+      "url": "imperial_inquisition.json",
+      "color": "#7d0a15",
+      "secondary_color": "#010203",
+      "alliance": "imperial_alliance",
+      "description": "The Imperial Inquisition is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the Human Empire. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
+    },
+    "forge_masters": {
+      "version": "1.0",
+      "name": "Forge Masters",
+      "id": "forge_masters",
+      "url": "forge_masters.json",
+      "color": "#7a2007",
+      "secondary_color": "#a82d0a",
+      "description": "The Forge Masters are a mining race of dwarven ancestry. They roam the endless expanse in large fleets searching for exquisite loot and are not opposed to doing a job or two for anyone with the money to pay. They favor heavy armor and deadly close ranged weaponry.",
+      "alliance": "mercenaries"
+    },
+    "gca": {
+      "version": "0.1",
+      "name": "Galactic Corperate Allegiance",
+      "id": "gca",
+      "url": "gca.json",
+      "color": "#657432",
+      "alliance": "mercenaries",
+      "description": "The Galactic Corperate Allegiance is a brittle union of opportunistic arms dealers, cutthroat trading companies and private armies vying for control over lost sectors and profitable regions. They are equipped with the best tech and weapons money can buy and prefer stealth and crafty tactics."
     }
   },
   "alliances": {
