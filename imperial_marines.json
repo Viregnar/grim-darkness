@@ -3056,7 +3056,7 @@
         "judge_blade": {"name": "Judge Blade", "attacks": 1, "short": "Melee", "ap": 5},
         "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]},
         "crushing_claws_and_bite": {"name": "Griffes et crocs broyeurs", "attacks": 1, "short": "Melee", "ap": 1, "rules":["train_wolf_mount"]},
-        "claws_and_bite": {"name": "Griffes et crocs", "attacks": 1, "short": "Melee", "ap": 1},
+        "claws_and_bite": {"name": "Griffes et crocs", "attacks": 1, "short": "Melee", "ap": 1, "points":0},
         "storm_shield": {"name": "Bouclier Storm", "attacks": 0, "short": "Melee", "rules":["storm_shield"]}
     },
     "rules": {
@@ -3119,7 +3119,7 @@
         "duelist": {"name": "Duelist", "description": "This model gains +1 strength when targeting enemy Leader models", "points": 3},
         "train_wolf_mount": {"name": "Attaque loup tonnerre", "description": "Cette figurine peut faire 3 attaque avec ce profil si le cavalier a attaqué.", "points": 5},
         "storm_shield": {"name": "Bouclier Storm", "description": "Une figurine équipée d'un bouclier Storm gagne +2 sauvegarde.", "points": 15},
-        "agile_hunter": {"name": "Chasseur agile", "description": "L'unité peut se déplacer et charger pour 1 action.", "points": 5}
+        "agile_hunter": {"name": "Chasseur agile", "description": "L'unité peut se déplacer et charger pour 1 action.", "points": 0}
     },
     "hidden_relics": [
         {"subfactions": ["none", "wolf_marines"], "rule": "ancient_armor", "flavor": "Ancient armour said to protect the wearer from significant harm."},
