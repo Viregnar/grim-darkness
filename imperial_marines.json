@@ -1432,7 +1432,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": [{"id": "Claws_and_bite", "mount": ["Front"]}, "marine_pistol", "frags", {"id": "chainsword", "count": 2}],
+                    "weapons": [{"id": "claws_and_bite", "mount": ["Front"]}, "marine_pistol", "frags", {"id": "chainsword", "count": 2}],
                     "options": [
                         {"replaceWeapon": ["marine_pistol"], "withWeapon": [{"id": "energy_claws", "count": 2}, "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "plasma_pistol"]},
                         {
@@ -1451,7 +1451,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": [{"id": "Claws_and_bite", "mount": ["Front"]}, "marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
+                    "weapons": [{"id": "claws_and_bite", "mount": ["Front"]}, "marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
                     "options": [{"replaceWeapon": ["marine_pistol"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": 2}],
                     "min": 2,
                     "max": 8
