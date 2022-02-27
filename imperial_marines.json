@@ -1473,7 +1473,7 @@
                     "courage": 5,
                     "shoot": 0,
                     "fight": 6,
-                    "defense": 6,
+                    "defense": 4,
                     "reflexes": 6,
                     "weapons": [{"id": "claws_and_bite", "count": 3}],
                     "min": 1,
