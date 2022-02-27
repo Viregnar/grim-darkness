@@ -1476,6 +1476,7 @@
                     "defense": 5,
                     "reflexes": 5,
                     "weapons": [{"id": "claws_and_bite", "count": 3}],
+                    "points":15,
                     "min": 1,
                     "max": 5
                 }
