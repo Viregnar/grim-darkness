@@ -206,6 +206,7 @@
                     "movement": 5,
                     "weapons": ["heavy_pistol", {"id": "heavy_ccw", "count": 2}],
                     "options": [{"replaceModel": ["orc_boss"], "modelLimit": 1}, {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine"]}],
+                    "points":9,
                     "min": 10,
                     "max": 30
                 }
