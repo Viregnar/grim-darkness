@@ -197,6 +197,21 @@
             ],
             "models": [
                 {
+                    "name": "Boss Nob",
+                    "courage": 5,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "wounds": 2,
+                    "movement": 5,
+                    "weapons": ["Slugga", {"id": "Choppa", "count": 2}],
+                    "options": [{"replaceWeapon": ["Slugga", {"id": "Choppa", "count": 1}], "withWeapon": ["carbine"]}],
+                    "points":9,
+                    "min": 1,
+                    "max": 3 
+                },
+                {
                     "name": "Boy",
                     "courage": 5,
                     "shoot": 4,
@@ -205,10 +220,10 @@
                     "reflexes": 4,
                     "movement": 5,
                     "weapons": ["Slugga", {"id": "Choppa", "count": 2}],
-                    "options": [{"replaceModel": ["orc_boss"], "modelLimit": 1}, {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine"]}],
+                    "options": [{"replaceWeapon": ["Slugga", {"id": "Choppa", "count": 1}], "withWeapon": ["carbine"]}],
                     "points":9,
-                    "min": 10,
-                    "max": 30
+                    "min": 9,
+                    "max": 29
                 }
             ]
         },
