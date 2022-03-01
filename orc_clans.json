@@ -186,25 +186,25 @@
                 {"name": "Goblin", "courage": 4, "shoot": 5, "fight": 5, "defense": 4, "reflexes": 5, "movement": 6, "weapons": ["goblin_rifle", "ccw"], "min": 10, "max": 20}
             ]
         },
-        "orc_mob": {
-            "name": "Orc Mob",
+        "Boyz": {
+            "name": "Boyz",
             "description": "A group of angry orcs.",
             "category": "core",
             "options": [
                 {"addRule": [{"id": "heavy_armor"}], "modelLimit": "all"},
                 {"addWeapon": "fusion_bomb", "modelLimit": 3},
-                {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["rocket_launcher", "heavy_machinegun"], "modelLimit": "1/10"}
+                {"replaceWeapon": ["Slugga", {"id": "Choppa", "count": 1}], "withWeapon": ["rocket_launcher", "heavy_machinegun"], "modelLimit": "1/10"}
             ],
             "models": [
                 {
-                    "name": "Orc",
+                    "name": "Boy",
                     "courage": 5,
                     "shoot": 4,
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 4,
                     "movement": 5,
-                    "weapons": ["heavy_pistol", {"id": "heavy_ccw", "count": 2}],
+                    "weapons": ["Slugga", {"id": "Choppa", "count": 2}],
                     "options": [{"replaceModel": ["orc_boss"], "modelLimit": 1}, {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine"]}],
                     "points":9,
                     "min": 10,
@@ -1262,6 +1262,8 @@
         }
     },
     "weapons": {
+        "Choppa": {"name": "Choppa", "attacks": 1, "short": "Melee", "ap": 2,  "points" : 0},
+        "Slugga": {"name": "Slugga", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol"], "points" : 0},
         "goblin_rifle": {"name": "Goblin Blaster", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
         "tractor_beam": {"name": "Tractor Beam", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["anti_air"]},
         "heavy_tractor_cannon": {"name": "Heavy Tractor Cannon", "attacks": 3, "short": 18, "medium": 36, "ap": 6, "rules": ["anti_air"]},
