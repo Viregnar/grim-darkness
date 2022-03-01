@@ -1366,12 +1366,6 @@
             "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
             "points": ["rule.x", {"multiply": 20}]
         },
-        "Dakka": {
-            "name": "Dakka",
-            "inputs": ["x"],
-            "description": "Une arme avec cette rêgle, ajoute des tire pour chaque résultat 10 sur le dés",
-            "points": 0
-        },
         "speed_pole": {"name": "Big Boss Pole", "description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", "points": 5},
         "goblin_tactics": {
             "name": "Goblin Tactics",
@@ -1385,6 +1379,7 @@
             "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Strength tests of 9+ \n * Re-roll failed Initiative tests of 9+",
             "points": ["rule.x", {"multiply": 10}]
         },
+        "Dakka": {"name": "Dakka","description": "Une arme avec cette rêgle, ajoute des tire pour chaque résultat 10 sur le dés","points": 0},
         "tracks": {"name": "Tracks", "description": "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 5},
         "goblin_assistant": {"name": "Goblin Assistant", "description": "Models in this unit gain +1 to Repair rolls for each model with this rule.", "points": 2},
         "orc_idol": {"name": "Orc Idol", "description": "This model and friendly _Infantry_ units within 6\" gain +1 Courage.", "points": 10},
