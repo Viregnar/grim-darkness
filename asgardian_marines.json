@@ -15,7 +15,7 @@
                 "Infantry"
             ],
             "rules": [
-                "Angels_of_Death"
+                "angels_of_death"
             ],
             "subfactions": [],
             "models": [
@@ -68,7 +68,7 @@
                                     "points": 5
                                 },
                                 {
-                                    "id": "metalgun",
+                                    "id": "meltagun",
                                     "points": 10
                                 },
                                 {
@@ -353,7 +353,7 @@
                 "Infantry"
             ],
             "rules": [
-                "Angels_of_Death"
+                "angels_of_death"
             ],
             "subfactions": [],
             "models": [
@@ -394,7 +394,7 @@
                                     "points": 5
                                 },
                                 {
-                                    "id": "metalgun",
+                                    "id": "meltagun",
                                     "points": 10
                                 },
                                 {
@@ -716,6 +716,63 @@
             "strength": "x2",
             "ap": 2,
             "rules": ["Melee"]
+        },
+        "flamer": {
+            "name": "Flamer",
+            "medium":12,
+            "damage": 1,
+            "attacks": "D6",
+            "strength": 4,
+            "ap": 0,
+            "rules": ["assault"]
+        },
+        "grav_gun": {
+            "name": "Grav-gun",
+            "short":9,
+            "medium":18,
+            "damage": 1,
+            "attacks": 1,
+            "strength": 5,
+            "ap": 3,
+            "rules": ["rapid_fire"]
+        },
+        "meltagun": {
+            "name": "Meltagun",
+            "medium":12,
+            "damage": "D6",
+            "attacks": 1,
+            "strength": 8,
+            "ap": 4,
+            "rules": ["assault"]
+        },
+        "plasma_gun": {
+            "name": "Plasma gun",
+            "profiles": [
+                {
+                    "name": "Standard",
+                    "attacks": 1,
+                    "damage": 1,
+                    "short": 12,
+                    "medium": 24,
+                    "strength": 7,
+                    "ap": 3,
+                    "rules": [
+                        "rapid_fire"
+                    ]
+                },
+                {
+                    "name": "Supercharge",
+                    "attacks": 1,
+                    "damage": 2,
+                    "short": 12,
+                    "medium": 24,
+                    "strength": 8,
+                    "ap": 3,
+                    "rules": [
+                        "rapid_fire"
+                    ]
+                }
+            ]
         },
         "wolf_standard": {
             "name": "Wolf standard",
