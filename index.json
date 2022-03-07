@@ -22,9 +22,24 @@
       "alliance": "alien_swarm",
       "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes.",
       "subfactions": {
-        "kaiju_focus": {"name": "Kaiju", "id": "kaiju_focus", "color": "#3d3354", "description": "An alien swarm focused on big, stompy aliens."},
-        "swarm_focus": {"name": "Swarm", "id": "swarm_focus", "color": "#3d3354", "description": "An alien swarm focused on swarms of smaller alien."},
-        "hunter_focus": {"name": "Hunter", "id": "hunter_focus", "color": "#3d3354", "description": "An alien cult focused on hunting down targets with stealth and mobility."}
+        "kaiju_focus": {
+          "name": "Kaiju",
+          "id": "kaiju_focus",
+          "color": "#3d3354",
+          "description": "An alien swarm focused on big, stompy aliens."
+        },
+        "swarm_focus": {
+          "name": "Swarm",
+          "id": "swarm_focus",
+          "color": "#3d3354",
+          "description": "An alien swarm focused on swarms of smaller alien."
+        },
+        "hunter_focus": {
+          "name": "Hunter",
+          "id": "hunter_focus",
+          "color": "#3d3354",
+          "description": "An alien cult focused on hunting down targets with stealth and mobility."
+        }
       }
     },
     "undying_machines": {
@@ -36,8 +51,16 @@
       "description": "The Undying Machines are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating soldiers and advanced ancient technology to win their battles.",
       "alliance": "corrupted_pact",
       "subfactions": {
-        "solar_fire": {"name": "Solar Fire", "id": "solar_fire", "description": "Undying Machines focused on overwhelming firepower."},
-        "combat_focus": {"name": "Close Combat", "id": "combat_focus", "description": "Undying Machines focused on deadly close assaults."}
+        "solar_fire": {
+          "name": "Solar Fire",
+          "id": "solar_fire",
+          "description": "Undying Machines focused on overwhelming firepower."
+        },
+        "combat_focus": {
+          "name": "Close Combat",
+          "id": "combat_focus",
+          "description": "Undying Machines focused on deadly close assaults."
+        }
       }
     },
     "free_colonies": {
@@ -49,8 +72,16 @@
       "color": "#008080",
       "description": "The Free Colonies are an alliance of several alien worlds cooperating together in the name of survival and prosperity. They rely on a mix of advanced battle warsuits and deadly pulse weaponry to defeat their enemies.",
       "subfactions": {
-        "vigilance_focus": {"name": "Vigilance", "id": "vigilance_focus", "description": "Free Colonies troops focused on readyness and vigiliant tactics."},
-        "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "Free Colonies troops focused on mobile firing tactics."}
+        "vigilance_focus": {
+          "name": "Vigilance",
+          "id": "vigilance_focus",
+          "description": "Free Colonies troops focused on readyness and vigiliant tactics."
+        },
+        "mobility_focus": {
+          "name": "Mobility",
+          "id": "mobility_focus",
+          "description": "Free Colonies troops focused on mobile firing tactics."
+        }
       }
     },
     "machine_guilds": {
@@ -62,10 +93,26 @@
       "alliance": "imperial_alliance",
       "description": "The Machine Guilds are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Machine Guilds rely on technological augmentation and deadly weapons to destroy their enemies.",
       "subfactions": {
-        "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "A Machine Guild focused on surprise and infiltration."},
-        "firepower_focus": {"name": "Firepower", "id": "firepower_focus", "description": "A Machine Guild focused on overwhelming firepower."},
-        "defense_focus": {"name": "Defense", "id": "defense_focus", "description": "A Machine Guild focused on heavy defense and survival."},
-        "assault_focus": {"name": "Assault", "id": "assault_focus", "description": "A Machine Guild focused on melee assaults and close quarters fighting."}
+        "stealth_focus": {
+          "name": "Stealth",
+          "id": "stealth_focus",
+          "description": "A Machine Guild focused on surprise and infiltration."
+        },
+        "firepower_focus": {
+          "name": "Firepower",
+          "id": "firepower_focus",
+          "description": "A Machine Guild focused on overwhelming firepower."
+        },
+        "defense_focus": {
+          "name": "Defense",
+          "id": "defense_focus",
+          "description": "A Machine Guild focused on heavy defense and survival."
+        },
+        "assault_focus": {
+          "name": "Assault",
+          "id": "assault_focus",
+          "description": "A Machine Guild focused on melee assaults and close quarters fighting."
+        }
       }
     },
     "imperial_marines": {
@@ -77,14 +124,53 @@
       "alliance": "imperial_alliance",
       "description": "The Imperial Marines are the pride of the Human Empire and its elite order-keeping force should they need to be deployed. The Imperial Marines rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies.",
       "subfactions": {
-        "combined_arms_focus": {"name": "Combined Arms", "id": "combined_arms_focus", "color": "#ffffff", "description": "Imperial Marines who specialize in combined arms tactics."},
-        "zeal_focus": {"name": "Zeal", "id": "zeal_focus", "color": "#ffffff", "description": "Imperial Marines with a righteous zeal."},
-        "mobility_masters": {"name": "Mobility", "id": "mobility_masters", "color": "#ffffff", "description": "Imperial Marines focused on using mobility and speed to outflank their enemies."},
-        "siege_masters": {"name": "Siege", "id": "siege_masters", "color": "#f0c251", "description": "Imperial Marines focused on sieges and defeating entrenched enemies."},
-        "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "color": "#f0c251", "description": "Imperial Marines that are tougher than the rest."},
-        "forge_focus": {"name": "Craftsmen", "id": "forge_focus", "color": "#f0c251", "description": "Imperial Marines that are expert craftsmen and tough in battle."},
-        "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "Imperial Marines focused on stealth and ambush tactics."},
-        "tactical_masters": {"name": "Tactical", "id": "tactical_masters", "color": "#4272b8", "description": "Imperial Marines focused on using tactics and cunning to outsmart their enemies."},
+        "combined_arms_focus": {
+          "name": "Combined Arms",
+          "id": "combined_arms_focus",
+          "color": "#ffffff",
+          "description": "Imperial Marines who specialize in combined arms tactics."
+        },
+        "zeal_focus": {
+          "name": "Zeal",
+          "id": "zeal_focus",
+          "color": "#ffffff",
+          "description": "Imperial Marines with a righteous zeal."
+        },
+        "mobility_masters": {
+          "name": "Mobility",
+          "id": "mobility_masters",
+          "color": "#ffffff",
+          "description": "Imperial Marines focused on using mobility and speed to outflank their enemies."
+        },
+        "siege_masters": {
+          "name": "Siege",
+          "id": "siege_masters",
+          "color": "#f0c251",
+          "description": "Imperial Marines focused on sieges and defeating entrenched enemies."
+        },
+        "toughness_focus": {
+          "name": "Toughness",
+          "id": "toughness_focus",
+          "color": "#f0c251",
+          "description": "Imperial Marines that are tougher than the rest."
+        },
+        "forge_focus": {
+          "name": "Craftsmen",
+          "id": "forge_focus",
+          "color": "#f0c251",
+          "description": "Imperial Marines that are expert craftsmen and tough in battle."
+        },
+        "stealth_focus": {
+          "name": "Stealth",
+          "id": "stealth_focus",
+          "description": "Imperial Marines focused on stealth and ambush tactics."
+        },
+        "tactical_masters": {
+          "name": "Tactical",
+          "id": "tactical_masters",
+          "color": "#4272b8",
+          "description": "Imperial Marines focused on using tactics and cunning to outsmart their enemies."
+        },
         "wolf_marines": {
           "name": "Counter Attack",
           "id": "wolf_marines",
@@ -92,9 +178,27 @@
           "description": "Imperial Marines that specialize in brutal counter-assaults in close combat.",
           "restricted": true
         },
-        "assault_focus": {"name": "Assault", "id": "assault_focus", "color": "#4272b8", "description": "Imperial Marines focused on all-out assaults and aggression.", "restricted": true},
-        "psychic_focus": {"name": "Psychic", "id": "psychic_focus", "color": "#C0C0C0", "description": "Imperial Marines focused on psychic tactics and hunting demons.", "restricted": true},
-        "alien_hunters": {"name": "Alien Hunters", "id": "alien_hunters", "color": "#231f20", "description": "Imperial Marines focused on hunting aliens.", "restricted": true}
+        "assault_focus": {
+          "name": "Assault",
+          "id": "assault_focus",
+          "color": "#4272b8",
+          "description": "Imperial Marines focused on all-out assaults and aggression.",
+          "restricted": true
+        },
+        "psychic_focus": {
+          "name": "Psychic",
+          "id": "psychic_focus",
+          "color": "#C0C0C0",
+          "description": "Imperial Marines focused on psychic tactics and hunting demons.",
+          "restricted": true
+        },
+        "alien_hunters": {
+          "name": "Alien Hunters",
+          "id": "alien_hunters",
+          "color": "#231f20",
+          "description": "Imperial Marines focused on hunting aliens.",
+          "restricted": true
+        }
       }
     },
     "orc_clans": {
@@ -106,33 +210,176 @@
       "color": "#50974A",
       "description": "The Orc Clans are a mostly disconnected species of clans who are constantly at war with others and each other. The Orc Clans rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes.",
       "subfactions": {
-        "combat_focus": {"name": "Close Combat", "id": "combat_focus", "description": "An Orc Clan with a focus on close combat assaults."},
-        "speed_focus": {"name": "Speed", "id": "speed_focus", "description": "An Orc Clan with a need for speed."},
-        "shooting_focus": {"name": "Shooting", "id": "shooting_focus", "description": "An Orc Clan with an addiction for shiny weapons."},
-        "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "An Orc Clan with a knack for stealthy operations."},
-        "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "An Orc Clan that can take a hit and keep on fighting."},
-        "scavenge_focus": {"name": "Scavenger", "id": "scavenge_focus", "description": "An Orc Clan that has a knack for scavenging and looting."}
+        "combat_focus": {
+          "name": "Close Combat",
+          "id": "combat_focus",
+          "description": "An Orc Clan with a focus on close combat assaults."
+        },
+        "speed_focus": {
+          "name": "Speed",
+          "id": "speed_focus",
+          "description": "An Orc Clan with a need for speed."
+        },
+        "shooting_focus": {
+          "name": "Shooting",
+          "id": "shooting_focus",
+          "description": "An Orc Clan with an addiction for shiny weapons."
+        },
+        "stealth_focus": {
+          "name": "Stealth",
+          "id": "stealth_focus",
+          "description": "An Orc Clan with a knack for stealthy operations."
+        },
+        "toughness_focus": {
+          "name": "Toughness",
+          "id": "toughness_focus",
+          "description": "An Orc Clan that can take a hit and keep on fighting."
+        },
+        "scavenge_focus": {
+          "name": "Scavenger",
+          "id": "scavenge_focus",
+          "description": "An Orc Clan that has a knack for scavenging and looting."
+        }
+      }
+    },
+    "asgardian_marines": {
+      "version": "1.0",
+      "name": "Asgardian Marines",
+      "id": "asgardian_marines",
+      "url": "asgardian_marines.json",
+      "color": "#94A6B4",
+      "alliance": "imperial_alliance",
+      "description": "The Imperial Marines are the pride of the Human Empire and its elite order-keeping force should they need to be deployed. The Imperial Marines rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies.",
+      "subfactions": {
+        "combined_arms_focus": {
+          "name": "Combined Arms",
+          "id": "combined_arms_focus",
+          "color": "#ffffff",
+          "description": "Imperial Marines who specialize in combined arms tactics."
+        },
+        "zeal_focus": {
+          "name": "Zeal",
+          "id": "zeal_focus",
+          "color": "#ffffff",
+          "description": "Imperial Marines with a righteous zeal."
+        },
+        "mobility_masters": {
+          "name": "Mobility",
+          "id": "mobility_masters",
+          "color": "#ffffff",
+          "description": "Imperial Marines focused on using mobility and speed to outflank their enemies."
+        },
+        "siege_masters": {
+          "name": "Siege",
+          "id": "siege_masters",
+          "color": "#f0c251",
+          "description": "Imperial Marines focused on sieges and defeating entrenched enemies."
+        },
+        "toughness_focus": {
+          "name": "Toughness",
+          "id": "toughness_focus",
+          "color": "#f0c251",
+          "description": "Imperial Marines that are tougher than the rest."
+        },
+        "forge_focus": {
+          "name": "Craftsmen",
+          "id": "forge_focus",
+          "color": "#f0c251",
+          "description": "Imperial Marines that are expert craftsmen and tough in battle."
+        },
+        "stealth_focus": {
+          "name": "Stealth",
+          "id": "stealth_focus",
+          "description": "Imperial Marines focused on stealth and ambush tactics."
+        },
+        "tactical_masters": {
+          "name": "Tactical",
+          "id": "tactical_masters",
+          "color": "#4272b8",
+          "description": "Imperial Marines focused on using tactics and cunning to outsmart their enemies."
+        },
+        "wolf_marines": {
+          "name": "Counter Attack",
+          "id": "wolf_marines",
+          "color": "#547588",
+          "description": "Imperial Marines that specialize in brutal counter-assaults in close combat.",
+          "restricted": true
+        },
+        "assault_focus": {
+          "name": "Assault",
+          "id": "assault_focus",
+          "color": "#4272b8",
+          "description": "Imperial Marines focused on all-out assaults and aggression.",
+          "restricted": true
+        },
+        "psychic_focus": {
+          "name": "Psychic",
+          "id": "psychic_focus",
+          "color": "#C0C0C0",
+          "description": "Imperial Marines focused on psychic tactics and hunting demons.",
+          "restricted": true
+        },
+        "alien_hunters": {
+          "name": "Alien Hunters",
+          "id": "alien_hunters",
+          "color": "#231f20",
+          "description": "Imperial Marines focused on hunting aliens.",
+          "restricted": true
+        }
       }
     }
   },
   "alliances": {
-    "alien_swarm": {"name": "Alien Swarm"},
-    "imperial_alliance": {"name": "Imperial Alliance"},
-    "elven_coaliation": {"name": "Elven Coalition"},
-    "corrupted_pact": {"name": "Corrupted Pact"},
-    "federation": {"name": "Federated Species"},
-    "greenskins": {"name": "Greenskin Tribes"},
-    "mercenaries": {"name": "Mercenaries"}
+    "alien_swarm": {
+      "name": "Alien Swarm"
+    },
+    "imperial_alliance": {
+      "name": "Imperial Alliance"
+    },
+    "elven_coaliation": {
+      "name": "Elven Coalition"
+    },
+    "corrupted_pact": {
+      "name": "Corrupted Pact"
+    },
+    "federation": {
+      "name": "Federated Species"
+    },
+    "greenskins": {
+      "name": "Greenskin Tribes"
+    },
+    "mercenaries": {
+      "name": "Mercenaries"
+    }
   },
   "categories": {
-    "command": {"name": "Command"},
-    "core": {"name": "Core"},
-    "specialist": {"name": "Specialist"},
-    "strike": {"name": "Strike"},
-    "heavy": {"name": "Heavy"},
-    "transport": {"name": "Transport"},
-    "super_heavy": {"name": "Super Heavy"},
-    "fortification": {"name": "Fortification"}
+    "command": {
+      "name": "Command"
+    },
+    "core": {
+      "name": "Core"
+    },
+    "specialist": {
+      "name": "Specialist"
+    },
+    "strike": {
+      "name": "Strike"
+    },
+    "heavy": {
+      "name": "Heavy"
+    },
+    "transport": {
+      "name": "Transport"
+    },
+    "super_heavy": {
+      "name": "Super Heavy"
+    },
+    "fortification": {
+      "name": "Fortification"
+    },
+    "flyers": {
+      "name": "Flyers"
+    }
   },
   "organizations": {
     "skirmish": {
@@ -140,13 +387,29 @@
       "cost": 0,
       "description": "A well-rounded force for taking on any mission.",
       "categories": {
-        "command": {"min": 1, "max": 2},
-        "core": {"min": 2, "max": 5},
-        "specialist": {"max": 3},
-        "strike": {"max": 3},
-        "heavy": {"max": 2},
-        "transport": {"max": 5},
-        "fortification": {"max": 4}
+        "command": {
+          "min": 1,
+          "max": 2
+        },
+        "core": {
+          "min": 2,
+          "max": 5
+        },
+        "specialist": {
+          "max": 3
+        },
+        "strike": {
+          "max": 3
+        },
+        "heavy": {
+          "max": 2
+        },
+        "transport": {
+          "max": 5
+        },
+        "fortification": {
+          "max": 4
+        }
       }
     },
     "strike": {
@@ -154,13 +417,29 @@
       "cost": 1,
       "description": "A strike force for outflanking or shock assaulting.",
       "categories": {
-        "command": {"min": 1, "max": 2},
-        "core": {"max": 3},
-        "specialist": {"max": 3},
-        "strike": {"min": 2, "max": 5},
-        "heavy": {"max": 2},
-        "transport": {"max": 5},
-        "fortification": {"max": 4}
+        "command": {
+          "min": 1,
+          "max": 2
+        },
+        "core": {
+          "max": 3
+        },
+        "specialist": {
+          "max": 3
+        },
+        "strike": {
+          "min": 2,
+          "max": 5
+        },
+        "heavy": {
+          "max": 2
+        },
+        "transport": {
+          "max": 5
+        },
+        "fortification": {
+          "max": 4
+        }
       }
     },
     "specialist": {
@@ -168,13 +447,29 @@
       "cost": 1,
       "description": "An elite force to deal with specific targets.",
       "categories": {
-        "command": {"min": 1, "max": 2},
-        "core": {"max": 3},
-        "specialist": {"min": 2, "max": 5},
-        "strike": {"max": 3},
-        "heavy": {"max": 2},
-        "transport": {"max": 5},
-        "fortification": {"max": 4}
+        "command": {
+          "min": 1,
+          "max": 2
+        },
+        "core": {
+          "max": 3
+        },
+        "specialist": {
+          "min": 2,
+          "max": 5
+        },
+        "strike": {
+          "max": 3
+        },
+        "heavy": {
+          "max": 2
+        },
+        "transport": {
+          "max": 5
+        },
+        "fortification": {
+          "max": 4
+        }
       }
     },
     "heavy": {
@@ -182,23 +477,81 @@
       "cost": 1,
       "description": "A heavy force to pack a punch on the field.",
       "categories": {
-        "command": {"min": 1, "max": 2},
-        "core": {"max": 2},
-        "specialist": {"max": 3},
-        "strike": {"max": 3},
-        "heavy": {"min": 2, "max": 4},
-        "transport": {"max": 4},
-        "fortification": {"max": 4}
+        "command": {
+          "min": 1,
+          "max": 2
+        },
+        "core": {
+          "max": 2
+        },
+        "specialist": {
+          "max": 3
+        },
+        "strike": {
+          "max": 3
+        },
+        "heavy": {
+          "min": 2,
+          "max": 4
+        },
+        "transport": {
+          "max": 4
+        },
+        "fortification": {
+          "max": 4
+        }
       }
     },
     "support": {
       "name": "Support",
       "cost": 1,
       "description": "A small supporting force.",
-      "categories": {"command": {"max": 1}, "core": {"max": 2}, "specialist": {"max": 2}, "strike": {"max": 2}, "heavy": {"max": 1}, "transport": {"max": 2}, "fortification": {"max": 4}}
+      "categories": {
+        "command": {
+          "max": 1
+        },
+        "core": {
+          "max": 2
+        },
+        "specialist": {
+          "max": 2
+        },
+        "strike": {
+          "max": 2
+        },
+        "heavy": {
+          "max": 1
+        },
+        "transport": {
+          "max": 2
+        },
+        "fortification": {
+          "max": 4
+        }
+      }
     },
-    "super_heavy_support": {"name": "Super Heavy Support", "cost": 1, "description": "A supporting super-heavy unit.", "categories": {"super_heavy": {"min": 1, "max": 1}}},
-    "super_heavy": {"name": "Super Heavy", "cost": 2, "description": "A group of super-heavy units.", "categories": {"super_heavy": {"min": 2, "max": 4}}}
+    "super_heavy_support": {
+      "name": "Super Heavy Support",
+      "cost": 1,
+      "description": "A supporting super-heavy unit.",
+      "categories": {
+        "super_heavy": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    "super_heavy": {
+      "name": "Super Heavy",
+      "cost": 2,
+      "description": "A group of super-heavy units.",
+      "categories": {
+        "super_heavy": {
+          "min": 2,
+          "max": 4
+        }
+      }
+    }
   },
   "relics": {
     "inspired": {
@@ -224,39 +577,104 @@
     }
   },
   "powerCategories": {
-    "fire": {"name": "Fire"},
-    "water": {"name": "Water"},
-    "earth": {"name": "Earth"},
-    "air": {"name": "Air"},
-    "ice": {"name": "Ice"},
-    "nature": {"name": "Nature"},
-    "metal": {"name": "Metal"},
-    "light": {"name": "Light"},
-    "shadow": {"name": "Shadow"},
-    "death": {"name": "Death"}
+    "fire": {
+      "name": "Fire"
+    },
+    "water": {
+      "name": "Water"
+    },
+    "earth": {
+      "name": "Earth"
+    },
+    "air": {
+      "name": "Air"
+    },
+    "ice": {
+      "name": "Ice"
+    },
+    "nature": {
+      "name": "Nature"
+    },
+    "metal": {
+      "name": "Metal"
+    },
+    "light": {
+      "name": "Light"
+    },
+    "shadow": {
+      "name": "Shadow"
+    },
+    "death": {
+      "name": "Death"
+    }
   },
   "powers": {
-    "searing_bolt": {"name": "Searing Bolt", "description": "Target enemy unit within 12\" takes 1 hits with AP(4).", "charge": 6, "category": "fire"},
-    "fireball": {"name": "Fireball", "description": "Target enemy unit within 12\" takes 3 hit with AP(1). This power may be cast unlimited times per turn.", "charge": 7, "category": "fire"},
+    "searing_bolt": {
+      "name": "Searing Bolt",
+      "description": "Target enemy unit within 12\" takes 1 hits with AP(4).",
+      "charge": 6,
+      "category": "fire"
+    },
+    "fireball": {
+      "name": "Fireball",
+      "description": "Target enemy unit within 12\" takes 3 hit with AP(1). This power may be cast unlimited times per turn.",
+      "charge": 7,
+      "category": "fire"
+    },
     "flaming_sword": {
       "name": "Flaming Sword",
       "description": "This unit gains +1 Strength and may make one additional attack with any Melee weapon until the end of the turn.",
       "charge": 5,
       "category": "fire"
     },
-    "crushing_waves": {"name": "Crushing Waves", "description": "Target enemy unit within 12\" takes 4 hits with AP(4).", "charge": 5, "category": "water"},
+    "crushing_waves": {
+      "name": "Crushing Waves",
+      "description": "Target enemy unit within 12\" takes 4 hits with AP(4).",
+      "charge": 5,
+      "category": "water"
+    },
     "aqueous_form": {
       "name": "Aqueous Form",
       "description": "Target friendly unit within 12\" gets +2\" Movement and may treat Difficult Ground as normal terrain until the end of the turn.",
       "charge": 6,
       "category": "water"
     },
-    "whirlpool": {"name": "Whirlpool", "description": "Target enemy unit within 24\" takes 3 hit with AP(0).", "charge": 7, "category": "water"},
-    "lightning_bolt": {"name": "Lightning Bolt", "description": "Target enemy unit within 18\" takes 1 hit with AP(7).", "charge": 5, "category": "air"},
-    "violent_gale": {"name": "Violent Gale", "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pushed 3\" away from this model.", "charge": 7, "category": "air"},
-    "haste": {"name": "Haste", "description": "Target friendly unit within 12\" may immediately make a free move action.", "charge": 6, "category": "air"},
-    "crystal_volley": {"name": "Crystal Volley", "description": "Target enemy unit within 12\" takes 5 hits each with AP(1).", "charge": 7, "category": "earth"},
-    "earthen_armor": {"name": "Earthen Armor", "description": "Target friendly unit within 12\" gains +1 Save until the end of the turn.", "charge": 6, "category": "earth"},
+    "whirlpool": {
+      "name": "Whirlpool",
+      "description": "Target enemy unit within 24\" takes 3 hit with AP(0).",
+      "charge": 7,
+      "category": "water"
+    },
+    "lightning_bolt": {
+      "name": "Lightning Bolt",
+      "description": "Target enemy unit within 18\" takes 1 hit with AP(7).",
+      "charge": 5,
+      "category": "air"
+    },
+    "violent_gale": {
+      "name": "Violent Gale",
+      "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pushed 3\" away from this model.",
+      "charge": 7,
+      "category": "air"
+    },
+    "haste": {
+      "name": "Haste",
+      "description": "Target friendly unit within 12\" may immediately make a free move action.",
+      "charge": 6,
+      "category": "air"
+    },
+    "crystal_volley": {
+      "name": "Crystal Volley",
+      "description": "Target enemy unit within 12\" takes 5 hits each with AP(1).",
+      "charge": 7,
+      "category": "earth"
+    },
+    "earthen_armor": {
+      "name": "Earthen Armor",
+      "description": "Target friendly unit within 12\" gains +1 Save until the end of the turn.",
+      "charge": 6,
+      "category": "earth"
+    },
     "earthquake": {
       "name": "Earthquake",
       "description": "Target enemy unit within 12\" takes 3 hits with AP(1). Roll a d10 for all units within 3\" of it. On a 5 or less that unit is hit as well",
@@ -275,9 +693,24 @@
       "charge": 6,
       "category": "nature"
     },
-    "poison_spores": {"name": "Poison Spores", "description": "Target enemy unit within 12\" takes 3 hits with AP(2).", "charge": 7, "category": "nature"},
-    "molten_iron": {"name": "Rust", "description": "Target enemy unit within 12\" has -1 Save until end of turn.", "charge": 5, "category": "metal"},
-    "silver_bolt": {"name": "Silver Bolt", "description": "Target enemy unit within 12\" takes 1 hit with AP(3). This power may be cast unlimited times per turn.", "charge": 7, "category": "metal"},
+    "poison_spores": {
+      "name": "Poison Spores",
+      "description": "Target enemy unit within 12\" takes 3 hits with AP(2).",
+      "charge": 7,
+      "category": "nature"
+    },
+    "molten_iron": {
+      "name": "Rust",
+      "description": "Target enemy unit within 12\" has -1 Save until end of turn.",
+      "charge": 5,
+      "category": "metal"
+    },
+    "silver_bolt": {
+      "name": "Silver Bolt",
+      "description": "Target enemy unit within 12\" takes 1 hit with AP(3). This power may be cast unlimited times per turn.",
+      "charge": 7,
+      "category": "metal"
+    },
     "magic_shield": {
       "name": "Magic Shield",
       "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 3 or less, that hit is ignored. This power may be cast unlimited times.",
@@ -290,417 +723,3047 @@
       "charge": 6,
       "category": "shadow"
     },
-    "soul_dagger": {"name": "Soul Dagger", "description": "Target enemy model within 12\" takes 1 hit with AP(3).", "charge": 7, "category": "shadow"},
-    "fright": {"name": "Fright", "description": "Target enemy unit within 12\" gains 2 Shock.", "charge": 5, "category": "shadow"},
-    "inspiration": {"name": "Inspiration", "description": "Target friendly unit within 12\" removes 2 Shock.", "charge": 5, "category": "light"},
+    "soul_dagger": {
+      "name": "Soul Dagger",
+      "description": "Target enemy model within 12\" takes 1 hit with AP(3).",
+      "charge": 7,
+      "category": "shadow"
+    },
+    "fright": {
+      "name": "Fright",
+      "description": "Target enemy unit within 12\" gains 2 Shock.",
+      "charge": 5,
+      "category": "shadow"
+    },
+    "inspiration": {
+      "name": "Inspiration",
+      "description": "Target friendly unit within 12\" removes 2 Shock.",
+      "charge": 5,
+      "category": "light"
+    },
     "blinding_shield": {
       "name": "Blinding Shield",
       "description": "Target a friendly unit within 12\". Until the end of the turn models suffer -1 Strength when targeting this unit with a melee attack.",
       "charge": 6,
       "category": "light"
     },
-    "smite": {"name": "Smite", "description": "Target enemy unit within 18\" takes 3 hits with AP(0). This power may be cast unlimited times per turn.", "charge": 7, "category": "light"},
+    "smite": {
+      "name": "Smite",
+      "description": "Target enemy unit within 18\" takes 3 hits with AP(0). This power may be cast unlimited times per turn.",
+      "charge": 7,
+      "category": "light"
+    },
     "drain_life": {
       "name": "Drain Life",
       "description": "Target enemy model within 12\" takes 1 hit with AP(3). If the model is slain restore 1 wound to this model.",
       "charge": 5,
       "category": "death"
     },
-    "doom": {"name": "Doom", "description": "Target enemy unit within 12\" has -1 Courage until the end of the turn.", "charge": 6, "category": "death"},
-    "spectral_grasp": {"name": "Spectral Grasp", "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pulled 3\" towards this model.", "charge": 7, "category": "death"},
-    "frost_lance": {"name": "Frost Lance", "description": "Target enemy unit within 24\" takes 1 hit with AP(3).", "charge": 7, "category": "ice"},
-    "hailstorm": {"name": "Hailstorm", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Accuracy until the end of the turn.", "charge": 6, "category": "ice"},
-    "avalanche": {"name": "Avalanche", "description": "Roll a d10 for each enemy units with 9\". On a roll of 5 or lower the unit hit takes 3 hits with AP(3).", "charge": 5, "category": "ice"}
+    "doom": {
+      "name": "Doom",
+      "description": "Target enemy unit within 12\" has -1 Courage until the end of the turn.",
+      "charge": 6,
+      "category": "death"
+    },
+    "spectral_grasp": {
+      "name": "Spectral Grasp",
+      "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pulled 3\" towards this model.",
+      "charge": 7,
+      "category": "death"
+    },
+    "frost_lance": {
+      "name": "Frost Lance",
+      "description": "Target enemy unit within 24\" takes 1 hit with AP(3).",
+      "charge": 7,
+      "category": "ice"
+    },
+    "hailstorm": {
+      "name": "Hailstorm",
+      "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Accuracy until the end of the turn.",
+      "charge": 6,
+      "category": "ice"
+    },
+    "avalanche": {
+      "name": "Avalanche",
+      "description": "Roll a d10 for each enemy units with 9\". On a roll of 5 or lower the unit hit takes 3 hits with AP(3).",
+      "charge": 5,
+      "category": "ice"
+    }
   },
   "weapons": {
-    "power_blast": {"name": "Shock Wave", "medium": 24, "attacks": 3, "ap": 3},
+    "power_blast": {
+      "name": "Shock Wave",
+      "medium": 24,
+      "attacks": 3,
+      "ap": 3
+    },
     "plasma_grenade": {
       "name": "Plasma Grenades",
       "profiles": [
-        {"name": "Standard", "attacks": 1, "short": 6, "ap": 1, "rules": ["grenade", {"id": "blast", "x": 3}]},
-        {"name": "Overcharge", "attacks": 1, "short": 6, "ap": 5, "rules": ["grenade", "overcharge"]}
+        {
+          "name": "Standard",
+          "attacks": 1,
+          "short": 6,
+          "ap": 1,
+          "rules": [
+            "grenade",
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "Overcharge",
+          "attacks": 1,
+          "short": 6,
+          "ap": 5,
+          "rules": [
+            "grenade",
+            "overcharge"
+          ]
+        }
       ]
     },
-    "frags": {"name": "Frag Grenades", "attacks": 1, "short": 6, "rules": ["grenade", {"id": "blast", "x": 3}]},
+    "frags": {
+      "name": "Frag Grenades",
+      "attacks": 1,
+      "short": 6,
+      "rules": [
+        "grenade",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
     "at_grenade": {
       "name": "Grenades",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 6, "rules": ["grenade", {"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 6, "ap": 4, "rules": ["grenade"]}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 6,
+          "rules": [
+            "grenade",
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 6,
+          "ap": 4,
+          "rules": [
+            "grenade"
+          ]
+        }
+      ]
     },
     "blasting_charges": {
       "name": "Blasting Charges",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 6, "rules": ["grenade", {"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 6, "ap": 4, "rules": ["grenade"]}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 6,
+          "rules": [
+            "grenade",
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 6,
+          "ap": 4,
+          "rules": [
+            "grenade"
+          ]
+        }
+      ]
     },
     "grenade_launcher_attachment": {
       "name": "Grenade Launcher Attachment",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 6, "medium": 12, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 6, "medium": 12, "ap": 3}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 6,
+          "medium": 12,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 6,
+          "medium": 12,
+          "ap": 3
+        }
+      ]
     },
     "grenade_launcher": {
       "name": "Grenade Launcher",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 12, "medium": 24, "ap": 3}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "ap": 3
+        }
+      ]
     },
-    "railgun": {"name": "Railgun", "attacks": 1, "short": 24, "ap": 4, "medium": 48, "rules": [{"id": "blast", "x": 2}]},
-    "ccw": {"name": "Light CCW", "attacks": 1, "short": "Melee"},
-    "heavy_ccw": {"name": "CCW", "attacks": 1, "ap": 1, "short": "Melee"},
-    "chainsword": {"name": "Chainsword", "attacks": 1, "ap": 1, "short": "Melee"},
-    "chainaxe": {"name": "Chainaxe", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["rending"]},
-    "chainfist": {"name": "Chainfist", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["rending", "cumbersome"]},
-    "heavy_chainsword": {"name": "Heavy Chainsword", "attacks": 1, "ap": 3, "short": "Melee"},
-    "pistol": {"name": "Pistol", "attacks": 1, "short": 6, "rules": ["pistol"]},
-    "marine_pistol": {"name": "Marine Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol"]},
-    "marine_rifle": {"name": "Marine Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "veteran_marine_rifle": {"name": "Veteran Marine Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
-    "auto_rifle": {"name": "Auto Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 1, "rules": ["assault"]},
-    "storm_rifle": {"name": "Storm Rifle", "attacks": 1, "short": 6, "ap": 1, "medium": 12, "rules": ["rapid_fire"]},
-    "twin_twin_marine_rifle": {"name": "Twin Storm Rifle", "attacks": 4, "short": 12, "ap": 1, "medium": 24, "rules": ["rapid_fire"]},
-    "energy_pick": {"name": "Energy Pick", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
-    "energy_sword": {"name": "Energy Sword", "attacks": 1, "short": "Melee", "ap": 2},
-    "servo_arm": {"name": "Energy Sword", "attacks": 1, "short": "Melee", "ap": 3},
-    "energy_staff": {"name": "Energy Staff", "attacks": 1, "short": "Melee", "ap": 3},
-    "energy_lance": {"name": "Energy Lance", "attacks": 1, "short": "Melee", "ap": 3},
-    "heavy_machinegun": {"name": "Heavy Machinegun", "attacks": 3, "short": 18, "medium": 36, "ap": 2},
-    "minigun": {"name": "Minigun", "attacks": 5, "short": 12, "medium": 24, "ap": 2},
-    "mortar": {"name": "Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": ["indirect", "scatter", {"id": "blast", "x": 3}]},
-    "heavy_mortar": {"name": "Heavy Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": ["indirect", "scatter", {"id": "blast", "x": 3}]},
+    "railgun": {
+      "name": "Railgun",
+      "attacks": 1,
+      "short": 24,
+      "ap": 4,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ]
+    },
+    "ccw": {
+      "name": "Light CCW",
+      "attacks": 1,
+      "short": "Melee"
+    },
+    "heavy_ccw": {
+      "name": "CCW",
+      "attacks": 1,
+      "ap": 1,
+      "short": "Melee"
+    },
+    "chainsword": {
+      "name": "Chainsword",
+      "attacks": 1,
+      "ap": 1,
+      "short": "Melee"
+    },
+    "chainaxe": {
+      "name": "Chainaxe",
+      "attacks": 1,
+      "ap": 2,
+      "short": "Melee",
+      "rules": [
+        "rending"
+      ]
+    },
+    "chainfist": {
+      "name": "Chainfist",
+      "attacks": 1,
+      "ap": 4,
+      "short": "Melee",
+      "rules": [
+        "rending",
+        "cumbersome"
+      ]
+    },
+    "heavy_chainsword": {
+      "name": "Heavy Chainsword",
+      "attacks": 1,
+      "ap": 3,
+      "short": "Melee"
+    },
+    "pistol": {
+      "name": "Pistol",
+      "attacks": 1,
+      "short": 6,
+      "rules": [
+        "pistol"
+      ]
+    },
+    "marine_pistol": {
+      "name": "Marine Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "rules": [
+        "pistol"
+      ]
+    },
+    "marine_rifle": {
+      "name": "Marine Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "veteran_marine_rifle": {
+      "name": "Veteran Marine Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 2,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "auto_rifle": {
+      "name": "Auto Rifle",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        "assault"
+      ]
+    },
+    "storm_rifle": {
+      "name": "Storm Rifle",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "medium": 12,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "twin_twin_marine_rifle": {
+      "name": "Twin Storm Rifle",
+      "attacks": 4,
+      "short": 12,
+      "ap": 1,
+      "medium": 24,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "energy_pick": {
+      "name": "Energy Pick",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 2,
+      "rules": [
+        "rending"
+      ]
+    },
+    "energy_sword": {
+      "name": "Energy Sword",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 2
+    },
+    "servo_arm": {
+      "name": "Energy Sword",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "energy_staff": {
+      "name": "Energy Staff",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "energy_lance": {
+      "name": "Energy Lance",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "heavy_machinegun": {
+      "name": "Heavy Machinegun",
+      "attacks": 3,
+      "short": 18,
+      "medium": 36,
+      "ap": 2
+    },
+    "minigun": {
+      "name": "Minigun",
+      "attacks": 5,
+      "short": 12,
+      "medium": 24,
+      "ap": 2
+    },
+    "mortar": {
+      "name": "Mortar",
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "ap": 1,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "heavy_mortar": {
+      "name": "Heavy Mortar",
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "ap": 2,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
     "missile_launcher": {
       "name": "Missile Launcher",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 24,
+          "medium": 48,
+          "ap": 1,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 24,
+          "medium": 48,
+          "ap": 6
+        }
+      ]
     },
     "twin_missile_launcher": {
       "name": "Twin Missile Launcher",
-      "profiles": [{"name": "Frag", "attacks": 2, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 2, "short": 24, "medium": 48, "ap": 6}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 2,
+          "short": 24,
+          "medium": 48,
+          "ap": 1,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 2,
+          "short": 24,
+          "medium": 48,
+          "ap": 6
+        }
+      ]
     },
-    "assault_missile_launcher": {"name": "Assault Missile Launcher", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
-    "laser_cannon": {"name": "Laser Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48},
-    "twin_laser_cannon": {"name": "Twin Laser Cannon", "ap": 7, "attacks": 2, "short": 24, "medium": 48, "rules": []},
-    "shred_rifle": {"name": "Shred Rifle", "attacks": 2, "short": 9, "medium": 18, "rules": ["rending"]},
-    "shred_pistol": {"name": "Shred Pistol", "attacks": 2, "short": 6, "rules": ["rending"]},
-    "twin_heavy_machinegun": {"name": "Twin Heavy Machinegun", "attacks": 6, "short": 18, "medium": 36, "ap": 2},
-    "twin_minigun": {"name": "Twin Minigun", "attacks": 10, "short": 12, "medium": 24, "ap": 2},
-    "flamethrower": {"name": "Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-    "twin_flamethrower": {"name": "Twin Flamethrower", "attacks": 6, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-    "flamethrower_pistol": {"name": "Flamethrower Pistol", "attacks": 2, "short": 6, "rules": ["pistol", "flame"]},
-    "flamethrower_cannon": {"name": "Flamethrower Cannon", "attacks": 3, "ap": 4, "short": 6, "medium": 12, "rules": ["flame"]},
-    "light_machinegun": {"name": "Light Machinegun", "attacks": 3, "short": 18, "medium": 36},
-    "laser_machinegun": {"name": "Laser Machinegun", "attacks": 3, "short": 18, "medium": 36, "ap": 3},
-    "twin_laser_machinegun": {"name": "Twin Laser Machinegun", "attacks": 6, "short": 18, "medium": 36, "ap": 3},
-    "strike_missiles": {"name": "Strike Missiles", "attacks": 1, "short": 24, "medium": 48, "ap": 6},
-    "rocket_pod": {"name": "Rocket Pod", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": [{"id": "blast", "x": 3}]},
-    "twin_light_machinegun": {"name": "Twin Light Machingun", "attacks": 6, "short": 18, "medium": 36},
-    "aa_light_machinegun": {"name": "AA Light Machingun", "attacks": 3, "short": 18, "medium": 36, "rules": ["anti_air"]},
-    "twin_aa_light_machinegun": {"name": "Twin AA Light Machingun", "attacks": 6, "short": 18, "medium": 36, "rules": ["anti_air"]},
-    "sniper_rifle": {"name": "Sniper Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["sniper"]},
+    "assault_missile_launcher": {
+      "name": "Assault Missile Launcher",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ]
+    },
+    "laser_cannon": {
+      "name": "Laser Cannon",
+      "ap": 7,
+      "attacks": 1,
+      "short": 24,
+      "medium": 48
+    },
+    "twin_laser_cannon": {
+      "name": "Twin Laser Cannon",
+      "ap": 7,
+      "attacks": 2,
+      "short": 24,
+      "medium": 48,
+      "rules": []
+    },
+    "shred_rifle": {
+      "name": "Shred Rifle",
+      "attacks": 2,
+      "short": 9,
+      "medium": 18,
+      "rules": [
+        "rending"
+      ]
+    },
+    "shred_pistol": {
+      "name": "Shred Pistol",
+      "attacks": 2,
+      "short": 6,
+      "rules": [
+        "rending"
+      ]
+    },
+    "twin_heavy_machinegun": {
+      "name": "Twin Heavy Machinegun",
+      "attacks": 6,
+      "short": 18,
+      "medium": 36,
+      "ap": 2
+    },
+    "twin_minigun": {
+      "name": "Twin Minigun",
+      "attacks": 10,
+      "short": 12,
+      "medium": 24,
+      "ap": 2
+    },
+    "flamethrower": {
+      "name": "Flamethrower",
+      "attacks": 3,
+      "short": 6,
+      "medium": 12,
+      "ap": 1,
+      "rules": [
+        "flame"
+      ]
+    },
+    "twin_flamethrower": {
+      "name": "Twin Flamethrower",
+      "attacks": 6,
+      "short": 6,
+      "medium": 12,
+      "ap": 1,
+      "rules": [
+        "flame"
+      ]
+    },
+    "flamethrower_pistol": {
+      "name": "Flamethrower Pistol",
+      "attacks": 2,
+      "short": 6,
+      "rules": [
+        "pistol",
+        "flame"
+      ]
+    },
+    "flamethrower_cannon": {
+      "name": "Flamethrower Cannon",
+      "attacks": 3,
+      "ap": 4,
+      "short": 6,
+      "medium": 12,
+      "rules": [
+        "flame"
+      ]
+    },
+    "light_machinegun": {
+      "name": "Light Machinegun",
+      "attacks": 3,
+      "short": 18,
+      "medium": 36
+    },
+    "laser_machinegun": {
+      "name": "Laser Machinegun",
+      "attacks": 3,
+      "short": 18,
+      "medium": 36,
+      "ap": 3
+    },
+    "twin_laser_machinegun": {
+      "name": "Twin Laser Machinegun",
+      "attacks": 6,
+      "short": 18,
+      "medium": 36,
+      "ap": 3
+    },
+    "strike_missiles": {
+      "name": "Strike Missiles",
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "ap": 6
+    },
+    "rocket_pod": {
+      "name": "Rocket Pod",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 2,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "twin_light_machinegun": {
+      "name": "Twin Light Machingun",
+      "attacks": 6,
+      "short": 18,
+      "medium": 36
+    },
+    "aa_light_machinegun": {
+      "name": "AA Light Machingun",
+      "attacks": 3,
+      "short": 18,
+      "medium": 36,
+      "rules": [
+        "anti_air"
+      ]
+    },
+    "twin_aa_light_machinegun": {
+      "name": "Twin AA Light Machingun",
+      "attacks": 6,
+      "short": 18,
+      "medium": 36,
+      "rules": [
+        "anti_air"
+      ]
+    },
+    "sniper_rifle": {
+      "name": "Sniper Rifle",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 2,
+      "rules": [
+        "sniper"
+      ]
+    },
     "prime_sniper_rifle": {
       "name": "Prime Sniper Rifle",
       "profiles": [
-        {"name": "Execution", "attacks": 1, "short": 18, "medium": 36, "ap": 3, "rules": ["sniper"]},
-        {"name": "Frag", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["sniper", {"id": "blast", "x": 2}]}
+        {
+          "name": "Execution",
+          "attacks": 1,
+          "short": 18,
+          "medium": 36,
+          "ap": 3,
+          "rules": [
+            "sniper"
+          ]
+        },
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 18,
+          "medium": 36,
+          "ap": 1,
+          "rules": [
+            "sniper",
+            {
+              "id": "blast",
+              "x": 2
+            }
+          ]
+        }
       ]
     },
-    "light_laser_cannon": {"name": "Light Laser Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 7},
-    "marine_shotgun": {"name": "Marine Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["brutal", "assault"]},
-    "shotgun": {"name": "Shotgun", "attacks": 1, "short": 6, "medium": 12, "rules": ["assault", "brutal"]},
-    "combat_shotgun": {"name": "Combat Shotgun", "attacks": 1, "short": 6, "ap": 1, "medium": 12, "rules": ["assault", "brutal"]},
-    "energy_claws": {"name": "Energy Claws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
-    "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "rules": ["pistol", "overcharge"]},
-    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
+    "light_laser_cannon": {
+      "name": "Light Laser Cannon",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 7
+    },
+    "marine_shotgun": {
+      "name": "Marine Shotgun",
+      "attacks": 1,
+      "short": 6,
+      "medium": 12,
+      "ap": 1,
+      "rules": [
+        "brutal",
+        "assault"
+      ]
+    },
+    "shotgun": {
+      "name": "Shotgun",
+      "attacks": 1,
+      "short": 6,
+      "medium": 12,
+      "rules": [
+        "assault",
+        "brutal"
+      ]
+    },
+    "combat_shotgun": {
+      "name": "Combat Shotgun",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "medium": 12,
+      "rules": [
+        "assault",
+        "brutal"
+      ]
+    },
+    "energy_claws": {
+      "name": "Energy Claws",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 2,
+      "rules": [
+        "rending"
+      ]
+    },
+    "plasma_pistol": {
+      "name": "Plasma Pistol",
+      "ap": 5,
+      "short": 6,
+      "attacks": 1,
+      "rules": [
+        "pistol",
+        "overcharge"
+      ]
+    },
+    "plasma_rifle": {
+      "name": "Plasma Rifle",
+      "rules": [
+        "rapid_fire",
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 24,
+      "short": 12,
+      "attacks": 1
+    },
     "combi_plasma": {
       "name": "Combi-plasma",
       "profiles": [
-        {"name": "Standard", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire", "overcharge"]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
+        {
+          "name": "Standard",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "ap": 5,
+          "rules": [
+            "rapid_fire",
+            "overcharge"
+          ]
+        },
+        {
+          "name": "Rifle",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "ap": 1,
+          "rules": [
+            "rapid_fire"
+          ]
+        }
       ]
     },
-    "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 2},
-    "plasma_cannon": {"name": "Plasma Cannon", "rules": [{"id": "blast", "x": 2}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 1},
-    "twin_plasma_cannon": {"name": "Twin Plasma Cannon", "rules": [{"id": "blast", "x": 2}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
-    "twin_marine_rifle": {"name": "Twin Marine Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "energy_axe": {"name": "Energy Axe", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
-    "energy_mace": {"name": "Energy Mace", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["lethal"]},
-    "energy_glaive": {"name": "Energy Glaive", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending", {"id": "reach", "x": 1}]},
-    "energy_spear": {"name": "Energy Spear", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
-    "energy_halberd": {"name": "Energy Halberd", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending", {"id": "reach", "x": 1}]},
-    "energy_greataxe": {"name": "Energy Greataxe", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["rending"]},
-    "energy_greatblade": {"name": "Energy Greatblade", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
-    "energy_fist": {"name": "Energy Fist", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["cumbersome"]},
-    "energy_hammer": {"name": "Energy Hammer", "attacks": 1, "short": "Melee", "ap": 6, "rules": ["cumbersome"]},
+    "twin_plasma_rifle": {
+      "name": "Twin Plasma Rifle",
+      "rules": [
+        "rapid_fire",
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 24,
+      "short": 12,
+      "attacks": 2
+    },
+    "plasma_cannon": {
+      "name": "Plasma Cannon",
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        },
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 36,
+      "short": 18,
+      "attacks": 1
+    },
+    "twin_plasma_cannon": {
+      "name": "Twin Plasma Cannon",
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        },
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 36,
+      "short": 18,
+      "attacks": 2
+    },
+    "twin_marine_rifle": {
+      "name": "Twin Marine Rifle",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "energy_axe": {
+      "name": "Energy Axe",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        "rending"
+      ]
+    },
+    "energy_mace": {
+      "name": "Energy Mace",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        "lethal"
+      ]
+    },
+    "energy_glaive": {
+      "name": "Energy Glaive",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        "rending",
+        {
+          "id": "reach",
+          "x": 1
+        }
+      ]
+    },
+    "energy_spear": {
+      "name": "Energy Spear",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        {
+          "id": "reach",
+          "x": 1
+        }
+      ]
+    },
+    "energy_halberd": {
+      "name": "Energy Halberd",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        "rending",
+        {
+          "id": "reach",
+          "x": 1
+        }
+      ]
+    },
+    "energy_greataxe": {
+      "name": "Energy Greataxe",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 4,
+      "rules": [
+        "rending"
+      ]
+    },
+    "energy_greatblade": {
+      "name": "Energy Greatblade",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 2,
+      "rules": [
+        "rending"
+      ]
+    },
+    "energy_fist": {
+      "name": "Energy Fist",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 5,
+      "rules": [
+        "cumbersome"
+      ]
+    },
+    "energy_hammer": {
+      "name": "Energy Hammer",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 6,
+      "rules": [
+        "cumbersome"
+      ]
+    },
     "combi_flamer": {
       "name": "Combi-flamer",
       "profiles": [
-        {"name": "Flamer", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
+        {
+          "name": "Flamer",
+          "attacks": 3,
+          "short": 6,
+          "medium": 12,
+          "ap": 1,
+          "rules": [
+            "flame"
+          ]
+        },
+        {
+          "name": "Rifle",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "ap": 1,
+          "rules": [
+            "rapid_fire"
+          ]
+        }
       ]
     },
     "combi_fusion": {
       "name": "Combi-fusion",
       "profiles": [
-        {"name": "Fusion", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
+        {
+          "name": "Fusion",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "ap": 6,
+          "rules": [
+            {
+              "id": "critical",
+              "x": 1
+            }
+          ]
+        },
+        {
+          "name": "Rifle",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "ap": 1,
+          "rules": [
+            "rapid_fire"
+          ]
+        }
       ]
     },
-    "assassin_sniper": {"name": "Assassin's Sniper Rifle", "attacks": 1, "ap": 5, "short": 24, "medium": 48, "rules": ["sniper", {"id": "deadly", "x": 3}]},
-    "fusion_pistol": {"name": "Fusion Pistol", "attacks": 1, "short": 6, "ap": 6, "rules": ["pistol", {"id": "critical", "x": 1}]},
-    "fusion_bomb": {"name": "Fusion Bombs", "attacks": 1, "short": 6, "ap": 7, "rules": [{"id": "ammo", "x": 1}]},
-    "fusion_rifle": {"name": "Fusion Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
-    "twin_fusion_rifle": {"name": "Twin Fusion Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
-    "hunter_missiles": {"name": "Hunter Missile", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "rules": [{"id": "ammo", "x": 1}]},
-    "autocannon": {"name": "Autocannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4},
-    "twin_autocannon": {"name": "Twin Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4},
-    "aa_autocannon": {"name": "AA Autocannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["anti_air"]},
-    "twin_aa_autocannon": {"name": "Twin AA Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["anti_air"]},
-    "heavy_autocannon": {"name": "Heavy Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4},
-    "battle_cannon": {"name": "Battle Cannon", "attacks": 1, "ap": 6, "short": 24, "medium": 48, "rules": [{"id": "blast", "x": 3}]},
-    "crab_cannon": {"name": "Crab Cannon", "attacks": 1, "ap": 5, "short": 18, "medium": 36, "rules": [{"id": "blast", "x": 3}]},
-    "defense_rifle": {"name": "Defense Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
-    "defense_rifle_array": {"name": "Defense Rifle Array", "attacks": 3, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
-    "assault_rifle": {"name": "Assault Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["assault"]},
-    "defense_carbine": {"name": "Defense Carbine", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
-    "craft_defense_carbine": {"name": "Craftmade Defense Carbine", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault", "unreliable"]},
-    "defense_mac": {"name": "Defense Automatic PDW", "attacks": 2, "short": 6, "medium": 12, "rules": ["assault"]},
-    "heavy_defense_rifle": {"name": "Heavy Defense Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "volley_gun": {"name": "Volley Gun", "attacks": 2, "short": 12, "ap": 2, "medium": 24},
-    "heavy_pistol": {"name": "Heavy Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol"]},
-    "daemon_sword": {"name": "Daemon Sword", "attacks": 1, "short": "Melee", "ap": 5},
-    "daemon_axe": {"name": "Daemon Axe", "attacks": 1, "short": "Melee", "ap": 6},
-    "daemon_claws": {"name": "Daemon Claws", "attacks": 1, "short": "Melee", "ap": 3},
-    "reaper_cannon": {"name": "Reaper Autocannon", "attacks": 4, "short": 18, "medium": 36, "ap": 4},
-    "heavy_flamethrower": {"name": "Heavy Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 2, "rules": ["flame"]},
-    "mutated_claws": {"name": "Mutated Claws", "attacks": 2, "short": "Melee", "ap": 3, "rules": ["rending"]},
-    "huge_mutated_claw": {"name": "Huge Mutated Claw", "attacks": 1, "short": "Melee", "ap": 3},
-    "mutated_fists": {"name": "Mutated Fists", "attacks": 1, "short": "Melee", "ap": 3},
-    "mutated_guns": {"name": "Mutated Guns", "attacks": 3, "short": 12, "medium": 24, "ap": 6, "rules": ["rending"]},
-    "havoc_missiles": {"name": "Havoc Missiles", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": [{"id": "blast", "x": 3}]},
-    "demolition_cannon": {"name": "Demolition Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 8, "rules": [{"id": "blast", "x": 3}]},
-    "brute_fist": {"name": "Brute Fist", "attacks": 1, "short": "Melee", "ap": 5},
-    "brute_flail": {"name": "Brute Flail", "attacks": 1, "short": "Melee", "ap": 4},
-    "brute_hammer": {"name": "Brute Hammer", "attacks": 1, "short": "Melee", "ap": 9},
-    "bane_flamethrower": {"name": "Bane Flamethrower", "attacks": 3, "short": 9, "medium": 18, "ap": 4, "rules": ["flame"]},
-    "fiend_jaws": {"name": "Fiend Jaws", "attacks": 1, "short": "Melee", "ap": 3},
-    "maul_cutter": {"name": "Maul Cutter", "attacks": 1, "short": 6, "ap": 5},
-    "chainsaw_glaive": {"name": "Chainsaw Glaive", "attacks": 1, "short": "Melee", "ap": 4},
-    "virus_injector": {"name": "Virus Injector", "attacks": 1, "short": "Melee", "ap": 6},
-    "fiend_claws": {"name": "Fiend Claws", "attacks": 1, "short": "Melee", "ap": 7},
-    "dragon_claws": {"name": "Dragon Claws", "attacks": 1, "short": "Melee", "ap": 4},
-    "steel_tails": {"name": "Steel Tails", "attacks": 1, "short": "Melee", "ap": 2},
-    "ecto_cannon": {"name": "Ecto Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
-    "forge_cannon": {"name": "Forge Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 5},
-    "excruciating_cannons": {"name": "Excruciating Cannons", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
-    "claws_and_tendrils": {"name": "Claws and Tendrils", "attacks": 1, "short": "Melee", "ap": 6},
-    "stomp": {"name": "Stomp", "attacks": 1, "short": "Melee", "ap": 1},
-    "heavy_stomp": {"name": "Heavy Stomp", "attacks": 1, "short": "Melee", "ap": 2},
-    "heavy_fusion_rifle": {"name": "Heavy Fusion Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
-    "twin_heavy_fusion_rifle": {"name": "Twin Heavy Fusion Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
-    "crab_claw": {"name": "Crab Claw", "profiles": [{"name": "Strike", "attacks": 3, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 6, "short": "Melee", "ap": 3}]},
-    "walker_talons": {"name": "Walker Talons", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["rending"]},
-    "walker_fist": {"name": "Walker Fist", "attacks": 1, "short": "Melee", "ap": 5},
-    "heavy_walker_fist": {"name": "Heavy Walker Fist", "attacks": 1, "short": "Melee", "ap": 6},
-    "crab_flail": {"name": "Crab Flail", "attacks": 1, "short": "Melee", "ap": 3},
-    "twin_heavy_flamethrower": {"name": "Twin Heavy Flamethrower", "attacks": 6, "short": 6, "medium": 12, "ap": 2, "rules": ["flame"]},
-    "forge_flamethrower": {"name": "Forge Flamethrower", "attacks": 3, "short": 9, "medium": 18, "ap": 4, "rules": ["flame"]},
-    "gravity_pistol": {"name": "Gravity Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["gravity"]},
-    "gravity_rifle": {"name": "Gravity Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": ["gravity"]},
-    "gravity_cannon": {"name": "Gravity Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 3, "rules": ["gravity"]},
-    "heavy_gravity_cannon": {"name": "Heavy Gravity Cannon", "attacks": 3, "short": 24, "medium": 48, "ap": 3, "rules": ["gravity"]},
+    "assassin_sniper": {
+      "name": "Assassin's Sniper Rifle",
+      "attacks": 1,
+      "ap": 5,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        "sniper",
+        {
+          "id": "deadly",
+          "x": 3
+        }
+      ]
+    },
+    "fusion_pistol": {
+      "name": "Fusion Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 6,
+      "rules": [
+        "pistol",
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "fusion_bomb": {
+      "name": "Fusion Bombs",
+      "attacks": 1,
+      "short": 6,
+      "ap": 7,
+      "rules": [
+        {
+          "id": "ammo",
+          "x": 1
+        }
+      ]
+    },
+    "fusion_rifle": {
+      "name": "Fusion Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "twin_fusion_rifle": {
+      "name": "Twin Fusion Rifle",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "hunter_missiles": {
+      "name": "Hunter Missile",
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "ammo",
+          "x": 1
+        }
+      ]
+    },
+    "autocannon": {
+      "name": "Autocannon",
+      "attacks": 2,
+      "short": 24,
+      "medium": 48,
+      "ap": 4
+    },
+    "twin_autocannon": {
+      "name": "Twin Autocannon",
+      "attacks": 4,
+      "short": 24,
+      "medium": 48,
+      "ap": 4
+    },
+    "aa_autocannon": {
+      "name": "AA Autocannon",
+      "attacks": 2,
+      "short": 24,
+      "medium": 48,
+      "ap": 4,
+      "rules": [
+        "anti_air"
+      ]
+    },
+    "twin_aa_autocannon": {
+      "name": "Twin AA Autocannon",
+      "attacks": 4,
+      "short": 24,
+      "medium": 48,
+      "ap": 4,
+      "rules": [
+        "anti_air"
+      ]
+    },
+    "heavy_autocannon": {
+      "name": "Heavy Autocannon",
+      "attacks": 4,
+      "short": 24,
+      "medium": 48,
+      "ap": 4
+    },
+    "battle_cannon": {
+      "name": "Battle Cannon",
+      "attacks": 1,
+      "ap": 6,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "crab_cannon": {
+      "name": "Crab Cannon",
+      "attacks": 1,
+      "ap": 5,
+      "short": 18,
+      "medium": 36,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "defense_rifle": {
+      "name": "Defense Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "defense_rifle_array": {
+      "name": "Defense Rifle Array",
+      "attacks": 3,
+      "short": 12,
+      "medium": 24,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "assault_rifle": {
+      "name": "Assault Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "rules": [
+        "assault"
+      ]
+    },
+    "defense_carbine": {
+      "name": "Defense Carbine",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "rules": [
+        "assault"
+      ]
+    },
+    "craft_defense_carbine": {
+      "name": "Craftmade Defense Carbine",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "rules": [
+        "assault",
+        "unreliable"
+      ]
+    },
+    "defense_mac": {
+      "name": "Defense Automatic PDW",
+      "attacks": 2,
+      "short": 6,
+      "medium": 12,
+      "rules": [
+        "assault"
+      ]
+    },
+    "heavy_defense_rifle": {
+      "name": "Heavy Defense Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "volley_gun": {
+      "name": "Volley Gun",
+      "attacks": 2,
+      "short": 12,
+      "ap": 2,
+      "medium": 24
+    },
+    "heavy_pistol": {
+      "name": "Heavy Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "rules": [
+        "pistol"
+      ]
+    },
+    "daemon_sword": {
+      "name": "Daemon Sword",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 5
+    },
+    "daemon_axe": {
+      "name": "Daemon Axe",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 6
+    },
+    "daemon_claws": {
+      "name": "Daemon Claws",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "reaper_cannon": {
+      "name": "Reaper Autocannon",
+      "attacks": 4,
+      "short": 18,
+      "medium": 36,
+      "ap": 4
+    },
+    "heavy_flamethrower": {
+      "name": "Heavy Flamethrower",
+      "attacks": 3,
+      "short": 6,
+      "medium": 12,
+      "ap": 2,
+      "rules": [
+        "flame"
+      ]
+    },
+    "mutated_claws": {
+      "name": "Mutated Claws",
+      "attacks": 2,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        "rending"
+      ]
+    },
+    "huge_mutated_claw": {
+      "name": "Huge Mutated Claw",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "mutated_fists": {
+      "name": "Mutated Fists",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "mutated_guns": {
+      "name": "Mutated Guns",
+      "attacks": 3,
+      "short": 12,
+      "medium": 24,
+      "ap": 6,
+      "rules": [
+        "rending"
+      ]
+    },
+    "havoc_missiles": {
+      "name": "Havoc Missiles",
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "ap": 2,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "demolition_cannon": {
+      "name": "Demolition Cannon",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 8,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "brute_fist": {
+      "name": "Brute Fist",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 5
+    },
+    "brute_flail": {
+      "name": "Brute Flail",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 4
+    },
+    "brute_hammer": {
+      "name": "Brute Hammer",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 9
+    },
+    "bane_flamethrower": {
+      "name": "Bane Flamethrower",
+      "attacks": 3,
+      "short": 9,
+      "medium": 18,
+      "ap": 4,
+      "rules": [
+        "flame"
+      ]
+    },
+    "fiend_jaws": {
+      "name": "Fiend Jaws",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "maul_cutter": {
+      "name": "Maul Cutter",
+      "attacks": 1,
+      "short": 6,
+      "ap": 5
+    },
+    "chainsaw_glaive": {
+      "name": "Chainsaw Glaive",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 4
+    },
+    "virus_injector": {
+      "name": "Virus Injector",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 6
+    },
+    "fiend_claws": {
+      "name": "Fiend Claws",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 7
+    },
+    "dragon_claws": {
+      "name": "Dragon Claws",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 4
+    },
+    "steel_tails": {
+      "name": "Steel Tails",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 2
+    },
+    "ecto_cannon": {
+      "name": "Ecto Cannon",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 5,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ]
+    },
+    "forge_cannon": {
+      "name": "Forge Cannon",
+      "attacks": 2,
+      "short": 18,
+      "medium": 36,
+      "ap": 5
+    },
+    "excruciating_cannons": {
+      "name": "Excruciating Cannons",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ]
+    },
+    "claws_and_tendrils": {
+      "name": "Claws and Tendrils",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 6
+    },
+    "stomp": {
+      "name": "Stomp",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 1
+    },
+    "heavy_stomp": {
+      "name": "Heavy Stomp",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 2
+    },
+    "heavy_fusion_rifle": {
+      "name": "Heavy Fusion Rifle",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "twin_heavy_fusion_rifle": {
+      "name": "Twin Heavy Fusion Rifle",
+      "attacks": 2,
+      "short": 18,
+      "medium": 36,
+      "ap": 6,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "crab_claw": {
+      "name": "Crab Claw",
+      "profiles": [
+        {
+          "name": "Strike",
+          "attacks": 3,
+          "short": "Melee",
+          "ap": 7
+        },
+        {
+          "name": "Sweep",
+          "attacks": 6,
+          "short": "Melee",
+          "ap": 3
+        }
+      ]
+    },
+    "walker_talons": {
+      "name": "Walker Talons",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 4,
+      "rules": [
+        "rending"
+      ]
+    },
+    "walker_fist": {
+      "name": "Walker Fist",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 5
+    },
+    "heavy_walker_fist": {
+      "name": "Heavy Walker Fist",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 6
+    },
+    "crab_flail": {
+      "name": "Crab Flail",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "twin_heavy_flamethrower": {
+      "name": "Twin Heavy Flamethrower",
+      "attacks": 6,
+      "short": 6,
+      "medium": 12,
+      "ap": 2,
+      "rules": [
+        "flame"
+      ]
+    },
+    "forge_flamethrower": {
+      "name": "Forge Flamethrower",
+      "attacks": 3,
+      "short": 9,
+      "medium": 18,
+      "ap": 4,
+      "rules": [
+        "flame"
+      ]
+    },
+    "gravity_pistol": {
+      "name": "Gravity Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 3,
+      "rules": [
+        "gravity"
+      ]
+    },
+    "gravity_rifle": {
+      "name": "Gravity Rifle",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "ap": 3,
+      "rules": [
+        "gravity"
+      ]
+    },
+    "gravity_cannon": {
+      "name": "Gravity Cannon",
+      "attacks": 2,
+      "short": 18,
+      "medium": 36,
+      "ap": 3,
+      "rules": [
+        "gravity"
+      ]
+    },
+    "heavy_gravity_cannon": {
+      "name": "Heavy Gravity Cannon",
+      "attacks": 3,
+      "short": 24,
+      "medium": 48,
+      "ap": 3,
+      "rules": [
+        "gravity"
+      ]
+    },
     "psychic_grenade": {
       "name": "Psychic Grenades",
       "profiles": [
-        {"name": "Frag", "attacks": 1, "short": 6, "rules": ["grenade", {"id": "blast", "x": 3}]},
-        {"name": "AT", "attacks": 1, "short": 6, "ap": 3, "rules": ["grenade"]},
-        {"name": "Psychic", "attacks": 1, "short": 6, "rules": ["grenade", "psych_out", {"id": "blast", "x": 3}]}
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 6,
+          "rules": [
+            "grenade",
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 6,
+          "ap": 3,
+          "rules": [
+            "grenade"
+          ]
+        },
+        {
+          "name": "Psychic",
+          "attacks": 1,
+          "short": 6,
+          "rules": [
+            "grenade",
+            "psych_out",
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        }
       ]
     },
-    "dread_fist": {"name": "Dread Fist", "attacks": 1, "short": "Melee", "ap": 5},
-    "psychic_sword": {"name": "Psychic Sword", "attacks": 1, "ap": 2, "short": "Melee"},
-    "psychic_greatsword": {"name": "Psychic Greatsword", "attacks": 1, "short": "Melee", "ap": 6},
-    "psychic_staff": {"name": "Psychic Staff", "attacks": 1, "short": "Melee", "ap": 1},
-    "psychic_staff_shielding": {"name": "Psychic Staff (Shield)", "attacks": 0, "short": "Melee", "rules": ["shielding"]},
-    "psychic_halberd": {"name": "Psychic Halberd", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
-    "psychic_falchion": {"name": "Psychic Falchions", "attacks": 1, "ap": 2, "short": "Melee"},
-    "psychic_hammer": {"name": "Psychic Hammer", "attacks": 1, "ap": 6, "short": "Melee", "rules": ["cumbersome"]},
-    "psychic_greathammer": {"name": "Psychic Greathammer", "attacks": 1, "ap": 7, "short": "Melee"},
-    "incinerator": {"name": "Incinerator", "attacks": 3, "short": 6, "medium": 12, "ap": 3, "rules": ["flame"]},
-    "heavy_incinerator": {"name": "Heavy Incinerator", "attacks": 3, "short": 9, "medium": 18, "ap": 4, "rules": ["flame"]},
-    "psychic_silencer": {"name": "Psychic Silencer", "attacks": 4, "short": 12, "medium": 24, "ap": 1},
-    "gatling_psychic_silencer": {"name": "Gatling Psychic Silencer", "attacks": 8, "short": 12, "medium": 24, "ap": 1},
-    "psychic_cannon": {"name": "Psychic Cannon", "attacks": 3, "short": 12, "medium": 24, "ap": 4},
-    "heavy_psychic_cannon": {"name": "Heavy Psychic Cannon", "attacks": 5, "short": 12, "medium": 24, "ap": 4},
-    "twin_assault_light_machinegun": {"name": "Twin Assault Light Machingun", "attacks": 6, "short": 24, "medium": 48},
-    "heavy_plasma_cannon": {"name": "Heavy Plasma Cannon", "rules": [{"id": "blast", "x": 3}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 1},
-    "twin_heavy_plasma_cannon": {"name": "Twin Heavy Plasma Cannon", "rules": [{"id": "blast", "x": 3}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
-    "holy_mace": {"name": "Holy Mace", "attacks": 1, "short": "Melee", "ap": 3},
-    "incendiary_cannon": {"name": "Incendiary Cannon", "attacks": 6, "ap": 2, "short": 6, "medium": 12, "rules": []},
-    "heavy_gatling_gun": {"name": "Heavy Gatling Gun", "attacks": 6, "short": 15, "medium": 30, "ap": 2},
-    "twin_heavy_gatling_gun": {"name": "Twin Heavy Gatling Gun", "attacks": 12, "short": 15, "medium": 30, "ap": 2},
-    "gatling_gun": {"name": "Gatling Gun", "attacks": 4, "short": 12, "medium": 24, "ap": 2},
-    "twin_gatling_gun": {"name": "Twin Gatling Gun", "attacks": 8, "short": 12, "medium": 24, "ap": 2},
-    "heavy_laser_destroyer": {"name": "Heavy Laser Destroyer", "ap": 8, "attacks": 2, "short": 36, "medium": 72, "rules": []},
-    "twin_heavy_laser_cannon": {"name": "Twin Heavy Laser Cannon", "ap": 8, "attacks": 2, "short": 36, "medium": 72, "rules": []},
-    "laser_talon": {"name": "Laser Talon", "ap": 7, "attacks": 2, "short": 12, "medium": 24},
-    "twin_laser_talon": {"name": "Twin Laser Talon", "ap": 7, "attacks": 4, "short": 12, "medium": 24},
-    "prime_rifle": {"name": "Prime Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rapid_fire"]},
-    "twin_prime_rifle": {"name": "Twin Prime Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 1, "rules": ["rapid_fire"]},
-    "twin_grenade_launcher": {"name": "Twin Grenade Launcher", "attacks": 2, "short": 12, "medium": 24, "ap": 1, "rules": [{"id": "blast", "x": 3}]},
-    "heavy_fragmentation_cannon": {"name": "Heavy Fragmentation Cannon", "attacks": 2, "short": 9, "medium": 18, "ap": 4, "rules": [{"id": "blast", "x": 2}]},
-    "at_grenade_launcher": {"name": "AT Grenade Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 3},
+    "dread_fist": {
+      "name": "Dread Fist",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 5
+    },
+    "psychic_sword": {
+      "name": "Psychic Sword",
+      "attacks": 1,
+      "ap": 2,
+      "short": "Melee"
+    },
+    "psychic_greatsword": {
+      "name": "Psychic Greatsword",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 6
+    },
+    "psychic_staff": {
+      "name": "Psychic Staff",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 1
+    },
+    "psychic_staff_shielding": {
+      "name": "Psychic Staff (Shield)",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "shielding"
+      ]
+    },
+    "psychic_halberd": {
+      "name": "Psychic Halberd",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3,
+      "rules": [
+        "rending"
+      ]
+    },
+    "psychic_falchion": {
+      "name": "Psychic Falchions",
+      "attacks": 1,
+      "ap": 2,
+      "short": "Melee"
+    },
+    "psychic_hammer": {
+      "name": "Psychic Hammer",
+      "attacks": 1,
+      "ap": 6,
+      "short": "Melee",
+      "rules": [
+        "cumbersome"
+      ]
+    },
+    "psychic_greathammer": {
+      "name": "Psychic Greathammer",
+      "attacks": 1,
+      "ap": 7,
+      "short": "Melee"
+    },
+    "incinerator": {
+      "name": "Incinerator",
+      "attacks": 3,
+      "short": 6,
+      "medium": 12,
+      "ap": 3,
+      "rules": [
+        "flame"
+      ]
+    },
+    "heavy_incinerator": {
+      "name": "Heavy Incinerator",
+      "attacks": 3,
+      "short": 9,
+      "medium": 18,
+      "ap": 4,
+      "rules": [
+        "flame"
+      ]
+    },
+    "psychic_silencer": {
+      "name": "Psychic Silencer",
+      "attacks": 4,
+      "short": 12,
+      "medium": 24,
+      "ap": 1
+    },
+    "gatling_psychic_silencer": {
+      "name": "Gatling Psychic Silencer",
+      "attacks": 8,
+      "short": 12,
+      "medium": 24,
+      "ap": 1
+    },
+    "psychic_cannon": {
+      "name": "Psychic Cannon",
+      "attacks": 3,
+      "short": 12,
+      "medium": 24,
+      "ap": 4
+    },
+    "heavy_psychic_cannon": {
+      "name": "Heavy Psychic Cannon",
+      "attacks": 5,
+      "short": 12,
+      "medium": 24,
+      "ap": 4
+    },
+    "twin_assault_light_machinegun": {
+      "name": "Twin Assault Light Machingun",
+      "attacks": 6,
+      "short": 24,
+      "medium": 48
+    },
+    "heavy_plasma_cannon": {
+      "name": "Heavy Plasma Cannon",
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        },
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 36,
+      "short": 18,
+      "attacks": 1
+    },
+    "twin_heavy_plasma_cannon": {
+      "name": "Twin Heavy Plasma Cannon",
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        },
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 36,
+      "short": 18,
+      "attacks": 2
+    },
+    "holy_mace": {
+      "name": "Holy Mace",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "incendiary_cannon": {
+      "name": "Incendiary Cannon",
+      "attacks": 6,
+      "ap": 2,
+      "short": 6,
+      "medium": 12,
+      "rules": []
+    },
+    "heavy_gatling_gun": {
+      "name": "Heavy Gatling Gun",
+      "attacks": 6,
+      "short": 15,
+      "medium": 30,
+      "ap": 2
+    },
+    "twin_heavy_gatling_gun": {
+      "name": "Twin Heavy Gatling Gun",
+      "attacks": 12,
+      "short": 15,
+      "medium": 30,
+      "ap": 2
+    },
+    "gatling_gun": {
+      "name": "Gatling Gun",
+      "attacks": 4,
+      "short": 12,
+      "medium": 24,
+      "ap": 2
+    },
+    "twin_gatling_gun": {
+      "name": "Twin Gatling Gun",
+      "attacks": 8,
+      "short": 12,
+      "medium": 24,
+      "ap": 2
+    },
+    "heavy_laser_destroyer": {
+      "name": "Heavy Laser Destroyer",
+      "ap": 8,
+      "attacks": 2,
+      "short": 36,
+      "medium": 72,
+      "rules": []
+    },
+    "twin_heavy_laser_cannon": {
+      "name": "Twin Heavy Laser Cannon",
+      "ap": 8,
+      "attacks": 2,
+      "short": 36,
+      "medium": 72,
+      "rules": []
+    },
+    "laser_talon": {
+      "name": "Laser Talon",
+      "ap": 7,
+      "attacks": 2,
+      "short": 12,
+      "medium": 24
+    },
+    "twin_laser_talon": {
+      "name": "Twin Laser Talon",
+      "ap": 7,
+      "attacks": 4,
+      "short": 12,
+      "medium": 24
+    },
+    "prime_rifle": {
+      "name": "Prime Rifle",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 1,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "twin_prime_rifle": {
+      "name": "Twin Prime Rifle",
+      "attacks": 2,
+      "short": 18,
+      "medium": 36,
+      "ap": 1,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "twin_grenade_launcher": {
+      "name": "Twin Grenade Launcher",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "heavy_fragmentation_cannon": {
+      "name": "Heavy Fragmentation Cannon",
+      "attacks": 2,
+      "short": 9,
+      "medium": 18,
+      "ap": 4,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ]
+    },
+    "at_grenade_launcher": {
+      "name": "AT Grenade Launcher",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 3
+    },
     "missile_array": {
       "name": "Missile Array",
       "profiles": [
-        {"name": "HE", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "blast", "x": 3}]},
-        {"name": "AT", "attacks": 1, "short": 6, "medium": 12, "ap": 6},
-        {"name": "AA", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": [{"id": "anti_air"}, {"id": "blast", "x": 2}]}
+        {
+          "name": "HE",
+          "attacks": 1,
+          "short": 6,
+          "medium": 12,
+          "ap": 6,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 6,
+          "medium": 12,
+          "ap": 6
+        },
+        {
+          "name": "AA",
+          "attacks": 1,
+          "short": 6,
+          "medium": 12,
+          "ap": 4,
+          "rules": [
+            {
+              "id": "anti_air"
+            },
+            {
+              "id": "blast",
+              "x": 2
+            }
+          ]
+        }
       ]
     },
-    "aa_rocket_pod": {"name": "AA Rocket Pod", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": [{"id": "blast", "x": 2}]},
-    "artillery_relay": {"name": "Artillery Relay", "attacks": 1, "ap": 1, "short": 24, "medium": 48, "rules": [{"id": "blast", "x": 6}]},
-    "prime_heavy_carbine": {"name": "Heavy Carbine", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rending", "assault"]},
-    "prime_sniper_carbine": {"name": "Sniper Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "sniper", "rending"]},
-    "prime_pistol": {"name": "Prime Pistol", "attacks": 1, "short": 9, "ap": 1, "rules": ["pistol"]},
-    "prime_auto_rifle": {"name": "Prime Auto-Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["assault"]},
-    "prime_precision_rifle": {"name": "Prime Precision Rifle", "attacks": 1, "short": 24, "medium": 48, "ap": 2},
-    "prime_chainsword": {"name": "Prime Chainsword", "attacks": 1, "ap": 1, "short": "Melee"},
-    "prime_fusion_rifle": {"name": "Prime Fusion Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["rapid_fire", {"id": "critical", "x": 1}]},
-    "heavy_plasma_rifle": {"rules": ["overcharge"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
-    "plasma_assault_rifle": {"name": "Plasma Assault Rifle", "rules": ["assault", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
-    "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
-    "assault_carbine": {"name": "Assault Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "assault"}]},
-    "twin_assault_carbine": {"name": "Twin Assault Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "assault"}]},
-    "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
-    "prime_energy_sword": {"name": "Prime Energy Sword", "attacks": 1, "short": "Melee", "ap": 3},
-    "fist_carbine": {"name": "Fist Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
-    "fist_flamethrower": {"name": "Fist Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "flame"]},
-    "fist_pistol": {"name": "Fist Pistol", "attacks": 3, "short": 6, "ap": 1, "rules": ["pistol"]},
-    "assault_rifle_array": {"name": "Assault Rifle Array", "attacks": 6, "short": 12, "medium": 24, "ap": 1},
-    "twin_marine_rifle_array": {"name": "Storm Rifle Array", "attacks": 4, "short": 12, "medium": 24, "ap": 1},
-    "heavy_fist": {"name": "Heavy Fist", "attacks": 1, "ap": 3, "short": "Melee"},
-    "assault_drill": {"name": "Assault Drill", "attacks": 1, "ap": 6, "short": "Melee"},
-    "axe_halberd": {"name": "Axe-Halberd", "attacks": 1, "ap": 3, "short": "Melee"},
-    "grenade_launcher_backpack": {"name": "Fear Grenade Launcher", "attacks": 1, "short": 9, "medium": 18, "rules": [{"id": "shocking", "x": 1}, {"id": "blast", "x": 2}], "ap": 2},
-    "emp_cannon": {"name": "EMP Cannon", "attacks": 3, "short": 12, "medium": 24, "ap": 3, "rules": ["emp", "assault"]},
-    "emp_rifle": {"name": "EMP Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 3, "rules": ["emp", "assault"]},
-    "shard_cannon": {"name": "Shard Cannon", "attacks": 3, "short": 12, "medium": 24, "ap": 3, "rules": ["assault", "rending"]},
-    "twin_shard_cannon": {"name": "Twin Shard Cannon", "attacks": 6, "short": 12, "medium": 24, "ap": 3, "rules": ["assault", "rending"]},
+    "aa_rocket_pod": {
+      "name": "AA Rocket Pod",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 4,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ]
+    },
+    "artillery_relay": {
+      "name": "Artillery Relay",
+      "attacks": 1,
+      "ap": 1,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 6
+        }
+      ]
+    },
+    "prime_heavy_carbine": {
+      "name": "Heavy Carbine",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        "rending",
+        "assault"
+      ]
+    },
+    "prime_sniper_carbine": {
+      "name": "Sniper Carbine",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "ap": 1,
+      "rules": [
+        "assault",
+        "sniper",
+        "rending"
+      ]
+    },
+    "prime_pistol": {
+      "name": "Prime Pistol",
+      "attacks": 1,
+      "short": 9,
+      "ap": 1,
+      "rules": [
+        "pistol"
+      ]
+    },
+    "prime_auto_rifle": {
+      "name": "Prime Auto-Rifle",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "rules": [
+        "assault"
+      ]
+    },
+    "prime_precision_rifle": {
+      "name": "Prime Precision Rifle",
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "ap": 2
+    },
+    "prime_chainsword": {
+      "name": "Prime Chainsword",
+      "attacks": 1,
+      "ap": 1,
+      "short": "Melee"
+    },
+    "prime_fusion_rifle": {
+      "name": "Prime Fusion Rifle",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 6,
+      "rules": [
+        "rapid_fire",
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "heavy_plasma_rifle": {
+      "rules": [
+        "overcharge"
+      ],
+      "name": "Heavy Plasma Rifle",
+      "ap": 6,
+      "medium": 36,
+      "short": 18,
+      "attacks": 1
+    },
+    "plasma_assault_rifle": {
+      "name": "Plasma Assault Rifle",
+      "rules": [
+        "assault",
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 24,
+      "short": 12,
+      "attacks": 1
+    },
+    "plasma_carbine": {
+      "name": "Plasma Carbine",
+      "rules": [
+        "assault",
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 18,
+      "short": 9,
+      "attacks": 1
+    },
+    "assault_carbine": {
+      "name": "Assault Carbine",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "ap": 2,
+      "rules": [
+        {
+          "id": "assault"
+        }
+      ]
+    },
+    "twin_assault_carbine": {
+      "name": "Twin Assault Carbine",
+      "attacks": 2,
+      "short": 9,
+      "medium": 18,
+      "ap": 2,
+      "rules": [
+        {
+          "id": "assault"
+        }
+      ]
+    },
+    "twin_plasma_carbine": {
+      "name": "Twin Plasma Carbine",
+      "rules": [
+        "assault",
+        "overcharge"
+      ],
+      "ap": 5,
+      "medium": 18,
+      "short": 9,
+      "attacks": 2
+    },
+    "prime_energy_sword": {
+      "name": "Prime Energy Sword",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 3
+    },
+    "fist_carbine": {
+      "name": "Fist Carbine",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "ap": 1,
+      "rules": [
+        "assault"
+      ]
+    },
+    "fist_flamethrower": {
+      "name": "Fist Flamethrower",
+      "attacks": 3,
+      "short": 6,
+      "medium": 12,
+      "ap": 1,
+      "rules": [
+        "assault",
+        "flame"
+      ]
+    },
+    "fist_pistol": {
+      "name": "Fist Pistol",
+      "attacks": 3,
+      "short": 6,
+      "ap": 1,
+      "rules": [
+        "pistol"
+      ]
+    },
+    "assault_rifle_array": {
+      "name": "Assault Rifle Array",
+      "attacks": 6,
+      "short": 12,
+      "medium": 24,
+      "ap": 1
+    },
+    "twin_marine_rifle_array": {
+      "name": "Storm Rifle Array",
+      "attacks": 4,
+      "short": 12,
+      "medium": 24,
+      "ap": 1
+    },
+    "heavy_fist": {
+      "name": "Heavy Fist",
+      "attacks": 1,
+      "ap": 3,
+      "short": "Melee"
+    },
+    "assault_drill": {
+      "name": "Assault Drill",
+      "attacks": 1,
+      "ap": 6,
+      "short": "Melee"
+    },
+    "axe_halberd": {
+      "name": "Axe-Halberd",
+      "attacks": 1,
+      "ap": 3,
+      "short": "Melee"
+    },
+    "grenade_launcher_backpack": {
+      "name": "Fear Grenade Launcher",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "rules": [
+        {
+          "id": "shocking",
+          "x": 1
+        },
+        {
+          "id": "blast",
+          "x": 2
+        }
+      ],
+      "ap": 2
+    },
+    "emp_cannon": {
+      "name": "EMP Cannon",
+      "attacks": 3,
+      "short": 12,
+      "medium": 24,
+      "ap": 3,
+      "rules": [
+        "emp",
+        "assault"
+      ]
+    },
+    "emp_rifle": {
+      "name": "EMP Rifle",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "ap": 3,
+      "rules": [
+        "emp",
+        "assault"
+      ]
+    },
+    "shard_cannon": {
+      "name": "Shard Cannon",
+      "attacks": 3,
+      "short": 12,
+      "medium": 24,
+      "ap": 3,
+      "rules": [
+        "assault",
+        "rending"
+      ]
+    },
+    "twin_shard_cannon": {
+      "name": "Twin Shard Cannon",
+      "attacks": 6,
+      "short": 12,
+      "medium": 24,
+      "ap": 3,
+      "rules": [
+        "assault",
+        "rending"
+      ]
+    },
     "irridescent_cannon": {
       "name": "Irridescent Cannon",
       "profiles": [
-        {"name": "Focus", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": ["assault"]},
-        {"name": "Lance", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["assault", {"id": "critical", "x": 1}]},
-        {"name": "Dispersed", "attacks": 6, "short": 18, "medium": 36, "ap": 2, "rules": ["assault"]}
+        {
+          "name": "Focus",
+          "attacks": 2,
+          "short": 18,
+          "medium": 36,
+          "ap": 5,
+          "rules": [
+            "assault"
+          ]
+        },
+        {
+          "name": "Lance",
+          "attacks": 1,
+          "short": 18,
+          "medium": 36,
+          "ap": 7,
+          "rules": [
+            "assault",
+            {
+              "id": "critical",
+              "x": 1
+            }
+          ]
+        },
+        {
+          "name": "Dispersed",
+          "attacks": 6,
+          "short": 18,
+          "medium": 36,
+          "ap": 2,
+          "rules": [
+            "assault"
+          ]
+        }
       ]
     },
-    "shard_pistol": {"name": "Shard Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "rending"]},
-    "shard_carbine": {"name": "Shard Carbine", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["rending", "assault"]},
-    "shard_rifle": {"name": "Shard Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rending", "assault"]},
-    "twin_shard_rifle": {"name": "Twin Shard Rifle", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["rending", "assault"]},
-    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "critical", "x": 1}]},
-    "twin_fusion_cannon": {"name": "Twin Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "critical", "x": 1}]},
-    "shard_sniper": {"name": "Shard Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rending", "sniper"]},
-    "elven_blade": {"name": "Elven Blade", "attacks": 1, "short": "Melee", "rules": ["rending"]},
+    "shard_pistol": {
+      "name": "Shard Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "rules": [
+        "pistol",
+        "rending"
+      ]
+    },
+    "shard_carbine": {
+      "name": "Shard Carbine",
+      "attacks": 1,
+      "short": 6,
+      "medium": 12,
+      "ap": 1,
+      "rules": [
+        "rending",
+        "assault"
+      ]
+    },
+    "shard_rifle": {
+      "name": "Shard Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 1,
+      "rules": [
+        "rending",
+        "assault"
+      ]
+    },
+    "twin_shard_rifle": {
+      "name": "Twin Shard Rifle",
+      "attacks": 2,
+      "short": 9,
+      "medium": 18,
+      "ap": 1,
+      "rules": [
+        "rending",
+        "assault"
+      ]
+    },
+    "fusion_cannon": {
+      "name": "Fusion Cannon",
+      "ap": 7,
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "twin_fusion_cannon": {
+      "name": "Twin Fusion Cannon",
+      "ap": 7,
+      "attacks": 1,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "shard_sniper": {
+      "name": "Shard Sniper",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 1,
+      "rules": [
+        "rending",
+        "sniper"
+      ]
+    },
+    "elven_blade": {
+      "name": "Elven Blade",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "rending"
+      ]
+    },
     "elven_missile_launcher": {
       "name": "Elven Missile Launcher",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 2, "short": 24, "medium": 48, "ap": 6}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 24,
+          "medium": 48,
+          "ap": 1,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 2,
+          "short": 24,
+          "medium": 48,
+          "ap": 6
+        }
+      ]
     },
     "twin_elven_missile_launcher": {
       "name": "Twin Elven Missile Launcher",
-      "profiles": [{"name": "Frag", "attacks": 2, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 4, "short": 24, "medium": 48, "ap": 6}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 2,
+          "short": 24,
+          "medium": 48,
+          "ap": 1,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 3
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 4,
+          "short": 24,
+          "medium": 48,
+          "ap": 6
+        }
+      ]
     },
     "heavy_fusion_cannon": {
       "name": "Heavy Fusion Cannon",
       "profiles": [
-        {"name": "Focus", "attacks": 2, "short": 30, "medium": 60, "ap": 7},
-        {"name": "Lance", "attacks": 1, "short": 30, "medium": 60, "ap": 9, "rules": [{"id": "critical", "x": 1}]},
-        {"name": "Dispersed", "attacks": 3, "short": 30, "medium": 60, "ap": 4}
+        {
+          "name": "Focus",
+          "attacks": 2,
+          "short": 30,
+          "medium": 60,
+          "ap": 7
+        },
+        {
+          "name": "Lance",
+          "attacks": 1,
+          "short": 30,
+          "medium": 60,
+          "ap": 9,
+          "rules": [
+            {
+              "id": "critical",
+              "x": 1
+            }
+          ]
+        },
+        {
+          "name": "Dispersed",
+          "attacks": 3,
+          "short": 30,
+          "medium": 60,
+          "ap": 4
+        }
       ]
     },
-    "nova_cannon": {"name": "Nova Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": [{"id": "blast", "x": 3}]},
-    "siege_cannon": {"name": "Siege Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": [{"id": "blast", "x": 3}]},
-    "tank_hunter_cannon": {"name": "Tank Hunter Cannon", "attacks": 2, "short": 36, "medium": 72, "ap": 7, "rules": [{"id": "critical", "x": 1}]},
-    "gatling_cannon": {"name": "Gatling Cannon", "attacks": 8, "short": 12, "medium": 24, "ap": 2},
-    "walker_chainsaw": {"name": "Walker Chainsaw", "attacks": 2, "ap": 2, "short": "Melee"},
-    "rider_lance": {"name": "Rider Lance", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "impact", "x": 1}]},
-    "heavy_shotgun": {"name": "Heavy Shotgun", "attacks": 2, "short": 6, "medium": 12, "ap": 2},
-    "wrist_grenades": {"name": "Wrist Grenades", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", {"id": "blast", "x": 3}]},
-    "heavy_volley_gun": {"name": "Heavy Volley Gun", "attacks": 4, "short": 12, "medium": 24, "ap": 2},
-    "ogre_maul": {"name": "Ogre Maul", "attacks": 2, "ap": 5, "short": "Melee"},
-    "light_battle_cannon": {"name": "Light Battle Cannon", "attacks": 1, "ap": 5, "short": 24, "medium": 48, "rules": [{"id": "blast", "x": 3}]},
-    "acid_cannon": {"name": "Acid Cannon", "attacks": 3, "ap": 1, "short": 24, "medium": 48, "rules": [{"id": "poison", "x": 3}]},
-    "flamestorm_cannon": {"name": "Flamestorm Cannon", "attacks": 6, "short": 9, "medium": 18, "ap": 3, "rules": ["flame"]},
-    "artillery_cannon": {"name": "Artillery Cannon", "attacks": 1, "ap": 7, "short": 42, "medium": 84, "rules": ["indirect", "scatter", {"id": "blast", "x": 6}]},
-    "artillery_barrage": {"name": "Artillery Barrage", "attacks": 1, "ap": 6, "short": 18, "medium": 36, "rules": ["indirect", "scatter", {"id": "blast", "x": 3}]},
-    "eagle_rockets": {"name": "Eagle Rockets", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": ["indirect", "scatter", {"id": "blast", "x": 3}]},
-    "death_missile": {"name": "Death Missile", "attacks": 1, "ap": 3, "short": 36, "medium": 72, "rules": ["indirect", "scatter", {"id": "blast", "x": 10}]},
-    "storm_missiles": {"name": "Storm Missiles", "attacks": 1, "ap": 6, "short": 36, "medium": 72},
-    "twin_shard_mortar": {"name": "Twin Shard Mortar", "attacks": 2, "ap": 2, "short": 24, "medium": 48, "rules": ["indirect", "scatter", {"id": "blast", "x": 3}]},
+    "nova_cannon": {
+      "name": "Nova Cannon",
+      "attacks": 1,
+      "short": 18,
+      "medium": 36,
+      "ap": 4,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "siege_cannon": {
+      "name": "Siege Cannon",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "ap": 8,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "tank_hunter_cannon": {
+      "name": "Tank Hunter Cannon",
+      "attacks": 2,
+      "short": 36,
+      "medium": 72,
+      "ap": 7,
+      "rules": [
+        {
+          "id": "critical",
+          "x": 1
+        }
+      ]
+    },
+    "gatling_cannon": {
+      "name": "Gatling Cannon",
+      "attacks": 8,
+      "short": 12,
+      "medium": 24,
+      "ap": 2
+    },
+    "walker_chainsaw": {
+      "name": "Walker Chainsaw",
+      "attacks": 2,
+      "ap": 2,
+      "short": "Melee"
+    },
+    "rider_lance": {
+      "name": "Rider Lance",
+      "attacks": 1,
+      "ap": 3,
+      "short": "Melee",
+      "rules": [
+        {
+          "id": "impact",
+          "x": 1
+        }
+      ]
+    },
+    "heavy_shotgun": {
+      "name": "Heavy Shotgun",
+      "attacks": 2,
+      "short": 6,
+      "medium": 12,
+      "ap": 2
+    },
+    "wrist_grenades": {
+      "name": "Wrist Grenades",
+      "attacks": 1,
+      "short": 6,
+      "medium": 12,
+      "ap": 1,
+      "rules": [
+        "assault",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "heavy_volley_gun": {
+      "name": "Heavy Volley Gun",
+      "attacks": 4,
+      "short": 12,
+      "medium": 24,
+      "ap": 2
+    },
+    "ogre_maul": {
+      "name": "Ogre Maul",
+      "attacks": 2,
+      "ap": 5,
+      "short": "Melee"
+    },
+    "light_battle_cannon": {
+      "name": "Light Battle Cannon",
+      "attacks": 1,
+      "ap": 5,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "acid_cannon": {
+      "name": "Acid Cannon",
+      "attacks": 3,
+      "ap": 1,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        {
+          "id": "poison",
+          "x": 3
+        }
+      ]
+    },
+    "flamestorm_cannon": {
+      "name": "Flamestorm Cannon",
+      "attacks": 6,
+      "short": 9,
+      "medium": 18,
+      "ap": 3,
+      "rules": [
+        "flame"
+      ]
+    },
+    "artillery_cannon": {
+      "name": "Artillery Cannon",
+      "attacks": 1,
+      "ap": 7,
+      "short": 42,
+      "medium": 84,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 6
+        }
+      ]
+    },
+    "artillery_barrage": {
+      "name": "Artillery Barrage",
+      "attacks": 1,
+      "ap": 6,
+      "short": 18,
+      "medium": 36,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "eagle_rockets": {
+      "name": "Eagle Rockets",
+      "attacks": 2,
+      "ap": 8,
+      "short": 36,
+      "medium": 72,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
+    "death_missile": {
+      "name": "Death Missile",
+      "attacks": 1,
+      "ap": 3,
+      "short": 36,
+      "medium": 72,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 10
+        }
+      ]
+    },
+    "storm_missiles": {
+      "name": "Storm Missiles",
+      "attacks": 1,
+      "ap": 6,
+      "short": 36,
+      "medium": 72
+    },
+    "twin_shard_mortar": {
+      "name": "Twin Shard Mortar",
+      "attacks": 2,
+      "ap": 2,
+      "short": 24,
+      "medium": 48,
+      "rules": [
+        "indirect",
+        "scatter",
+        {
+          "id": "blast",
+          "x": 3
+        }
+      ]
+    },
     "missile_rack": {
       "name": "Missile Rack",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
+      "profiles": [
+        {
+          "name": "Frag",
+          "attacks": 1,
+          "short": 24,
+          "medium": 48,
+          "ap": 1,
+          "rules": [
+            {
+              "id": "blast",
+              "x": 6
+            }
+          ]
+        },
+        {
+          "name": "AT",
+          "attacks": 1,
+          "short": 24,
+          "medium": 48,
+          "ap": 6
+        }
+      ]
     },
-    "piercing_claws": {"name": "Piercing Claws", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
-    "smoke_grenades": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["grenade", "smoke", "indirect"]},
-    "razor_talons": {"name": "Razor Talons", "attacks": 1, "short": "Melee", "ap": 1},
-    "light_razor_talons": {"name": "Light Razor Talons", "attacks": 1, "short": "Melee"},
-    "buckler": {"name": "Buckler", "attacks": 0, "short": "Melee", "rules": ["buckler"]},
-    "heavy_buckler": {"name": "Heavy Buckler", "attacks": 0, "short": "Melee", "rules": ["heavy_buckler"]},
-    "shield": {"name": "Shield", "attacks": 0, "short": "Melee", "rules": ["shield"]},
-    "heavy_shield": {"name": "Heavy Shield", "attacks": 0, "short": "Melee", "rules": ["heavy_shield"]},
-    "enchanted_shield": {"name": "Enchanted Shield", "attacks": 0, "short": "Melee", "rules": ["enchanted_shield"]},
-    "tower_shield": {"name": "Tower Shield", "attacks": 0, "short": "Melee", "rules": ["tower_shield"]},
-    "relic_shield": {"name": "Relic Shield", "attacks": 0, "short": "Melee", "rules": ["relic_shield"]},
-    "spiked_buckler": {"name": "Spiked Buckler", "attacks": 1, "short": "Melee", "rules": ["buckler"]},
-    "spiked_heavy_buckler": {"name": "Spiked Heavy Buckler", "attacks": 1, "short": "Melee", "rules": ["heavy_buckler"]},
-    "spiked_shield": {"name": "Spiked Shield", "attacks": 1, "short": "Melee", "rules": ["shield"]},
-    "spiked_heavy_shield": {"name": "Spiked Heavy Shield", "attacks": 1, "short": "Melee", "rules": ["heavy_shield"]},
-    "spiked_enchanted_shield": {"name": "Spiked Enchanted Shield", "attacks": 1, "short": "Melee", "rules": ["enchanted_shield"]},
-    "spiked_tower_shield": {"name": "Spiked Tower Shield", "attacks": 1, "short": "Melee", "rules": ["tower_shield"]},
-    "spiked_relic_shield": {"name": "Spiked Relic Shield", "attacks": 1, "short": "Melee", "rules": ["relic_shield"]},
-    "titan_shield": {"name": "Titan Shield", "attacks": 0, "short": "Melee", "rules": ["titan_shield"]},
-    "burst_pistol": {"name": "Burst Pistol", "attacks": 1, "short": 6, "rules": ["pistol", "rapid_fire"]},
-    "heavy_burst_pistol": {"name": "Heavy Burst Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "rapid_fire"]},
-    "assault_pistol": {"name": "Assault Pistol", "attacks": 1, "short": 6, "rules": ["pistol", "assault"]},
-    "heavy_assault_pistol": {"name": "Heavy Assault Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "assault"]},
-    "energy_knife": {"name": "Energy Knife", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
-    "barb_carbine": {"name": "Poison Carbine", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault", "poison"]},
-    "barb_pistol": {"name": "Poison Pistol", "attacks": 1, "short": 6, "medium": 12, "rules": ["poison"]},
-    "barb_rifle": {"name": "Poison Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire", "poison"]},
-    "barb_knife": {"name": "Poison Knife", "attacks": 1, "short": "Melee", "rules": ["poison"]},
-    "barb_sword": {"name": "Poison Sword", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison"]},
+    "piercing_claws": {
+      "name": "Piercing Claws",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 1,
+      "rules": [
+        "rending"
+      ]
+    },
+    "smoke_grenades": {
+      "name": "Smokes",
+      "attacks": 1,
+      "short": 6,
+      "rules": [
+        "grenade",
+        "smoke",
+        "indirect"
+      ]
+    },
+    "razor_talons": {
+      "name": "Razor Talons",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 1
+    },
+    "light_razor_talons": {
+      "name": "Light Razor Talons",
+      "attacks": 1,
+      "short": "Melee"
+    },
+    "buckler": {
+      "name": "Buckler",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "buckler"
+      ]
+    },
+    "heavy_buckler": {
+      "name": "Heavy Buckler",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "heavy_buckler"
+      ]
+    },
+    "shield": {
+      "name": "Shield",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "shield"
+      ]
+    },
+    "heavy_shield": {
+      "name": "Heavy Shield",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "heavy_shield"
+      ]
+    },
+    "enchanted_shield": {
+      "name": "Enchanted Shield",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "enchanted_shield"
+      ]
+    },
+    "tower_shield": {
+      "name": "Tower Shield",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "tower_shield"
+      ]
+    },
+    "relic_shield": {
+      "name": "Relic Shield",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "relic_shield"
+      ]
+    },
+    "spiked_buckler": {
+      "name": "Spiked Buckler",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "buckler"
+      ]
+    },
+    "spiked_heavy_buckler": {
+      "name": "Spiked Heavy Buckler",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "heavy_buckler"
+      ]
+    },
+    "spiked_shield": {
+      "name": "Spiked Shield",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "shield"
+      ]
+    },
+    "spiked_heavy_shield": {
+      "name": "Spiked Heavy Shield",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "heavy_shield"
+      ]
+    },
+    "spiked_enchanted_shield": {
+      "name": "Spiked Enchanted Shield",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "enchanted_shield"
+      ]
+    },
+    "spiked_tower_shield": {
+      "name": "Spiked Tower Shield",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "tower_shield"
+      ]
+    },
+    "spiked_relic_shield": {
+      "name": "Spiked Relic Shield",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "relic_shield"
+      ]
+    },
+    "titan_shield": {
+      "name": "Titan Shield",
+      "attacks": 0,
+      "short": "Melee",
+      "rules": [
+        "titan_shield"
+      ]
+    },
+    "burst_pistol": {
+      "name": "Burst Pistol",
+      "attacks": 1,
+      "short": 6,
+      "rules": [
+        "pistol",
+        "rapid_fire"
+      ]
+    },
+    "heavy_burst_pistol": {
+      "name": "Heavy Burst Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "rules": [
+        "pistol",
+        "rapid_fire"
+      ]
+    },
+    "assault_pistol": {
+      "name": "Assault Pistol",
+      "attacks": 1,
+      "short": 6,
+      "rules": [
+        "pistol",
+        "assault"
+      ]
+    },
+    "heavy_assault_pistol": {
+      "name": "Heavy Assault Pistol",
+      "attacks": 1,
+      "short": 6,
+      "ap": 1,
+      "rules": [
+        "pistol",
+        "assault"
+      ]
+    },
+    "energy_knife": {
+      "name": "Energy Knife",
+      "attacks": 1,
+      "short": "Melee",
+      "ap": 1,
+      "rules": [
+        "rending"
+      ]
+    },
+    "barb_carbine": {
+      "name": "Poison Carbine",
+      "attacks": 1,
+      "short": 9,
+      "medium": 18,
+      "rules": [
+        "assault",
+        "poison"
+      ]
+    },
+    "barb_pistol": {
+      "name": "Poison Pistol",
+      "attacks": 1,
+      "short": 6,
+      "medium": 12,
+      "rules": [
+        "poison"
+      ]
+    },
+    "barb_rifle": {
+      "name": "Poison Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24,
+      "rules": [
+        "rapid_fire",
+        "poison"
+      ]
+    },
+    "barb_knife": {
+      "name": "Poison Knife",
+      "attacks": 1,
+      "short": "Melee",
+      "rules": [
+        "poison"
+      ]
+    },
+    "barb_sword": {
+      "name": "Poison Sword",
+      "attacks": 1,
+      "ap": 1,
+      "short": "Melee",
+      "rules": [
+        "poison"
+      ]
+    },
     "combi_barb_rifle": {
       "name": "Combi-Poison Rifle",
-      "profiles": [{"name": "Poison", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire", "poison"]}, {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]}]
+      "profiles": [
+        {
+          "name": "Poison",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "rules": [
+            "rapid_fire",
+            "poison"
+          ]
+        },
+        {
+          "name": "Rifle",
+          "attacks": 1,
+          "short": 12,
+          "medium": 24,
+          "rules": [
+            "rapid_fire"
+          ]
+        }
+      ]
     },
-    "rifle": {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24},
-    "twin_storm_rifle": {"name": "Twin Storm Rifle", "attacks": 2, "ap": 1, "short": 6, "medium": 12, "rules": ["rapid_fire"]},
-    "seismic_cannon": {"name": "Seismic Cannon", "attacks": 1, "ap": 3, "rules": [{"id": "knockback", "x": 1}, {"id": "shocking", "x": 1}, "unreliable"], "short": 12, "medium": 24},
-    "smg": {"name": "Submachine Gun", "attacks": 1, "short": 6, "medium": 12, "rules": ["assault"]},
-    "twin_defense_rifle": {"name": "Twin Defense Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["rapid_fire"]}
+    "rifle": {
+      "name": "Rifle",
+      "attacks": 1,
+      "short": 12,
+      "medium": 24
+    },
+    "twin_storm_rifle": {
+      "name": "Twin Storm Rifle",
+      "attacks": 2,
+      "ap": 1,
+      "short": 6,
+      "medium": 12,
+      "rules": [
+        "rapid_fire"
+      ]
+    },
+    "seismic_cannon": {
+      "name": "Seismic Cannon",
+      "attacks": 1,
+      "ap": 3,
+      "rules": [
+        {
+          "id": "knockback",
+          "x": 1
+        },
+        {
+          "id": "shocking",
+          "x": 1
+        },
+        "unreliable"
+      ],
+      "short": 12,
+      "medium": 24
+    },
+    "smg": {
+      "name": "Submachine Gun",
+      "attacks": 1,
+      "short": 6,
+      "medium": 12,
+      "rules": [
+        "assault"
+      ]
+    },
+    "twin_defense_rifle": {
+      "name": "Twin Defense Rifle",
+      "attacks": 2,
+      "short": 12,
+      "medium": 24,
+      "rules": [
+        "rapid_fire"
+      ]
+    }
   },
   "rules": {
-    "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is on the table you gain 1 additional Strategy Point per round.", "points": 20},
-    "legend_wounds": {"name": "Resilient", "description": "This model gains Wounds(+1).", "points": 10},
-    "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},
-    "legend_quick_reflexes": {"name": "Quick Reflexes", "description": "This model gains +1 Initiative.", "points": 10},
-    "legend_expert_fighter": {"name": "Expert Fighter", "description": "This model may make one additional attack with any Melee weapon.", "points": 10},
-    "wings": {"name": "Wings", "description": "Increases movement by 4\". This model may ignore models and terrain when moving.", "points": 10},
-    "scrambler": {"name": "Scrambler", "description": "Enemy units arriving from reserves within 18\" of this model suffer -2 Initiative on reserve tests.", "points": 5},
-    "assault_ramp": {"name": "Assault Ramp", "description": "Units may disembark from this model even after it has taken two Move actions.", "points": 5},
-    "banner_of_justice": {"name": "Banner of Justice", "description": "Enemy units within 6\" get -1 courage.", "points": 10},
-    "banner_of_wrath": {"name": "Banner of Wrath", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 10},
-    "banner_of_focus": {"name": "Banner of Focus", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Shooting weapons.", "points": 10},
-    "dozer": {"name": "Dozer", "description": "This model may cross low obstacles without penalty.", "points": 5},
-    "psych_out": {"name": "Dangerous(Psychic)", "description": "This weapon has +1 AP against units with the Psychic special rule."},
+    "legend_strategist": {
+      "name": "Brilliant Strategist",
+      "description": "While this model is on the table you gain 1 additional Strategy Point per round.",
+      "points": 20
+    },
+    "legend_wounds": {
+      "name": "Resilient",
+      "description": "This model gains Wounds(+1).",
+      "points": 10
+    },
+    "legend_courage": {
+      "name": "Inspired",
+      "description": "This model gains +1 Courage.",
+      "points": 10
+    },
+    "legend_quick_reflexes": {
+      "name": "Quick Reflexes",
+      "description": "This model gains +1 Initiative.",
+      "points": 10
+    },
+    "legend_expert_fighter": {
+      "name": "Expert Fighter",
+      "description": "This model may make one additional attack with any Melee weapon.",
+      "points": 10
+    },
+    "wings": {
+      "name": "Wings",
+      "description": "Increases movement by 4\". This model may ignore models and terrain when moving.",
+      "points": 10
+    },
+    "scrambler": {
+      "name": "Scrambler",
+      "description": "Enemy units arriving from reserves within 18\" of this model suffer -2 Initiative on reserve tests.",
+      "points": 5
+    },
+    "assault_ramp": {
+      "name": "Assault Ramp",
+      "description": "Units may disembark from this model even after it has taken two Move actions.",
+      "points": 5
+    },
+    "banner_of_justice": {
+      "name": "Banner of Justice",
+      "description": "Enemy units within 6\" get -1 courage.",
+      "points": 10
+    },
+    "banner_of_wrath": {
+      "name": "Banner of Wrath",
+      "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.",
+      "points": 10
+    },
+    "banner_of_focus": {
+      "name": "Banner of Focus",
+      "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Shooting weapons.",
+      "points": 10
+    },
+    "dozer": {
+      "name": "Dozer",
+      "description": "This model may cross low obstacles without penalty.",
+      "points": 5
+    },
+    "psych_out": {
+      "name": "Dangerous(Psychic)",
+      "description": "This weapon has +1 AP against units with the Psychic special rule."
+    },
     "dark_prism": {
       "name": "Dark Prism",
       "description": "Once per round, when a model with Power(x) casts a power within 24\", roll a D10. If the die roll is lower than or equal to the casting roll, the power is prevented.",
       "points": 5
     },
-    "spiked_ram": {"name": "Spiked Ram", "hidden": true, "description": "This model gains Impact(+3).", "description_short": "Impact +3", "points": 6},
+    "spiked_ram": {
+      "name": "Spiked Ram",
+      "hidden": true,
+      "description": "This model gains Impact(+3).",
+      "description_short": "Impact +3",
+      "points": 6
+    },
     "heavy_impact": {
       "name": "Heavy Impact",
-      "inputs": ["x"],
+      "inputs": [
+        "x"
+      ],
       "description": "When this model successfully charges an enemy unit, make X Strength tests. For each success, the enemy takes 1 hit with AP 1.",
-      "points": ["rule.x", {"multiply": 3}]
+      "points": [
+        "rule.x",
+        {
+          "multiply": 3
+        }
+      ]
     },
-    "jetpack_character": {"name": "Jetpack", "hidden": true, "description_short": "Fly, Ambush, Movement +2\"", "points": 15, "description": "Fly, Ambush, Movement +2\""},
-    "jetpack": {"name": "Jetpacks", "description_short": "Fly, Ambush, Movement +2\"", "hidden": true, "points": 4, "description": "Fly, Ambush, Movement +2\""},
-    "destroyer_armor": {"name": "Destroyer Armor", "hidden": true, "description_short": "Ambush, Save +1, Movement -1\"", "points": 15, "description": "Ambush, Save +1, Movement -1\""},
+    "jetpack_character": {
+      "name": "Jetpack",
+      "hidden": true,
+      "description_short": "Fly, Ambush, Movement +2\"",
+      "points": 15,
+      "description": "Fly, Ambush, Movement +2\""
+    },
+    "jetpack": {
+      "name": "Jetpacks",
+      "description_short": "Fly, Ambush, Movement +2\"",
+      "hidden": true,
+      "points": 4,
+      "description": "Fly, Ambush, Movement +2\""
+    },
+    "destroyer_armor": {
+      "name": "Destroyer Armor",
+      "hidden": true,
+      "description_short": "Ambush, Save +1, Movement -1\"",
+      "points": 15,
+      "description": "Ambush, Save +1, Movement -1\""
+    },
     "mutations": {
       "name": "Mutations",
       "description": "At the beginning of the game choose one of the following effects to be applied to this unit: \n * Strength rolls of 1 or 2 gain +1 AP \n * Strength rolls of 1 or 2 cause 2 hits instead of 1. \n * +1 Save ",
@@ -728,34 +3791,81 @@
     },
     "stormtrooper_tactics": {
       "name": "Storm Trooper Tactics",
-      "inputs": ["x"],
+      "inputs": [
+        "x"
+      ],
       "description": "When this unit is activated, choose up to X friendly _Storm Trooper_ _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
-      "points": ["rule.x", {"multiply": 10}]
+      "points": [
+        "rule.x",
+        {
+          "multiply": 10
+        }
+      ]
     },
     "psychic_prowess": {
       "name": "Prowess",
-      "inputs": ["x"],
+      "inputs": [
+        "x"
+      ],
       "description": "All Power charge values are increased by X for this model. For example a power requiring a 6 or less now requires 6+X or less.",
-      "points": [5]
+      "points": [
+        5
+      ]
     },
     "hover_mode": {
       "name": "Hover Mode",
       "description": "When this Aircraft is activated, it may choose to fly in Hover mode. If it does, units do not suffer -1 Accuracy when targeting this unit, but it is not required to make a move action when activated."
     },
-    "marking_flares": {"name": "Marking Flares", "description": "Once per round, a friendly _Biker_ unit may gain +4\" of Movement.", "points": 5},
-    "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
-    "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
-    "titan_shield": {"name": "Combat Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
-    "no_retreat": {"name": "No Retreat", "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.", "points": 2}
+    "marking_flares": {
+      "name": "Marking Flares",
+      "description": "Once per round, a friendly _Biker_ unit may gain +4\" of Movement.",
+      "points": 5
+    },
+    "surveying_device": {
+      "name": "Surveying Device",
+      "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.",
+      "points": 10
+    },
+    "spotting_device": {
+      "name": "Spotting Device",
+      "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".",
+      "points": 5
+    },
+    "titan_shield": {
+      "name": "Combat Shield",
+      "description": "This unit subtracts 1 from all Damage Chart rolls.",
+      "points": 10
+    },
+    "no_retreat": {
+      "name": "No Retreat",
+      "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.",
+      "points": 2
+    }
   },
   "units": {
     "defense_line": {
       "name": "Defense Line",
       "description": "A prepared defense wall.",
       "category": "fortification",
-      "keywords": ["Fortification"],
+      "keywords": [
+        "Fortification"
+      ],
       "models": [
-        {"name": "Large Wall (8\" Section)", "courage": "-", "movement": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-", "rules": ["terrain", "soft_cover"], "min": 1, "max": 4},
+        {
+          "name": "Large Wall (8\" Section)",
+          "courage": "-",
+          "movement": "-",
+          "shoot": "-",
+          "fight": "-",
+          "defense": "-",
+          "reflexes": "-",
+          "rules": [
+            "terrain",
+            "soft_cover"
+          ],
+          "min": 1,
+          "max": 4
+        },
         {
           "name": "Twin Small Wall (4\" Sections)",
           "courage": "-",
@@ -765,7 +3875,10 @@
           "defense": "-",
           "reflexes": "-",
           "weapons": [],
-          "rules": ["terrain", "soft_cover"],
+          "rules": [
+            "terrain",
+            "soft_cover"
+          ],
           "min": 0,
           "max": 2
         }
@@ -775,7 +3888,9 @@
       "name": "Improvised Barricade (8\"x1\" Sections)",
       "description": "A hastily constructed barricade.",
       "category": "fortification",
-      "keywords": ["Fortification"],
+      "keywords": [
+        "Fortification"
+      ],
       "models": [
         {
           "name": "Improvised Barricade (8\"x1\" Section)",
@@ -785,7 +3900,15 @@
           "fight": "-",
           "defense": "-",
           "reflexes": "-",
-          "rules": ["terrain", "clearable", {"id": "impassable", "x": "Artillery, Vehicle"}, "soft_cover"],
+          "rules": [
+            "terrain",
+            "clearable",
+            {
+              "id": "impassable",
+              "x": "Artillery, Vehicle"
+            },
+            "soft_cover"
+          ],
           "min": 1,
           "max": 2
         }
