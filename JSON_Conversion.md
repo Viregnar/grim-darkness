@@ -7,7 +7,7 @@
     "author": "",
     "color": "",
     "background": "",
-    "strengths": "",
+    "strength": "",
     "weaknesses": "",
     "units": {},
     "models": {},
