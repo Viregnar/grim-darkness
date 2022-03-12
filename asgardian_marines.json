@@ -577,7 +577,8 @@
             "attacks": 1,
             "strength": 4,
             "ap": 0,
-            "rules": ["pistol"]
+            "rules": ["pistol"],
+            "points":0
         },
         "boltgun": {
             "name": "Boltgun",
@@ -587,7 +588,8 @@
             "attacks": 1,
             "strength": 4,
             "ap": 0,
-            "rules": ["rapid_fire"]
+            "rules": ["rapid_fire"],
+            "points":0
         },
         "frag_grenade": {
             "name": "Frag grenades",
@@ -597,7 +599,8 @@
             "attacks": "D6",
             "strength": 3,
             "ap": 0,
-            "rules": ["grenade", "blast"]
+            "rules": ["grenade", "blast"],
+            "points":0
         },
         "krak_grenade": {
             "name": "Krak grenades",
@@ -607,7 +610,8 @@
             "attacks": 1,
             "strength": 6,
             "ap": 1,
-            "rules": ["grenade"]
+            "rules": ["grenade"],
+            "points":0
         },
         "plasma_pistol": {
             "name": "Plasma pistol",
@@ -622,7 +626,8 @@
                     "ap": 3,
                     "rules": [
                         "pistol"
-                    ]
+                    ],
+                    "points":0
                 },
                 {
                     "name": "Supercharge",
@@ -634,7 +639,8 @@
                     "ap": 3,
                     "rules": [
                         "pistol"
-                    ]
+                    ],
+                    "points":0
                 }
             ]
         },
@@ -646,7 +652,8 @@
             "attacks": 2,
             "strength": 4,
             "ap": 0,
-            "rules": ["rapid_fire"]
+            "rules": ["rapid_fire"],
+            "points":0
         },
         "astartes_chainsword": {
             "name": "Astartes chainsword",
@@ -655,7 +662,8 @@
             "attacks": "User",
             "strength": "User",
             "ap": 1,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "chainfist": {
             "name": "Chainfist",
@@ -664,7 +672,8 @@
             "attacks": "User",
             "strength": "x2",
             "ap": 4,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "lightning_claw": {
             "name": "Lightning claw",
@@ -673,7 +682,8 @@
             "attacks": "User",
             "strength": "User",
             "ap": 2,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "power_axe": {
             "name": "Power axe",
@@ -682,7 +692,8 @@
             "attacks": "User",
             "strength": "+2",
             "ap": 2,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "power_fist": {
             "name": "Power fist",
@@ -691,7 +702,8 @@
             "attacks": "User",
             "strength": "x2",
             "ap": 3,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "power_maul": {
             "name": "Power maul",
@@ -700,7 +712,8 @@
             "attacks": "User",
             "strength": "+3",
             "ap": 1,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "power_sword": {
             "name": "Power sword",
@@ -709,7 +722,8 @@
             "attacks": "User",
             "strength": "+1",
             "ap": 3,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "thunder_hammer": {
             "name": "Thunder hammer",
@@ -718,7 +732,8 @@
             "attacks": "User",
             "strength": "x2",
             "ap": 2,
-            "rules": ["Melee"]
+            "rules": ["Melee"],
+            "points":0
         },
         "flamer": {
             "name": "Flamer",
@@ -728,7 +743,8 @@
             "attacks": "D6",
             "strength": 4,
             "ap": 0,
-            "rules": ["assault"]
+            "rules": ["assault"],
+            "points":0
         },
         "grav_gun": {
             "name": "Grav-gun",
@@ -738,7 +754,8 @@
             "attacks": 1,
             "strength": 5,
             "ap": 3,
-            "rules": ["rapid_fire"]
+            "rules": ["rapid_fire"],
+            "points":0
         },
         "meltagun": {
             "name": "Meltagun",
@@ -748,7 +765,8 @@
             "attacks": 1,
             "strength": 8,
             "ap": 4,
-            "rules": ["assault"]
+            "rules": ["assault"],
+            "points":0
         },
         "plasma_gun": {
             "name": "Plasma gun",
@@ -763,7 +781,8 @@
                     "ap": 3,
                     "rules": [
                         "rapid_fire"
-                    ]
+                    ],
+                    "points":0
                 },
                 {
                     "name": "Supercharge",
@@ -775,13 +794,15 @@
                     "ap": 3,
                     "rules": [
                         "rapid_fire"
-                    ]
+                    ],
+                    "points":0
                 }
             ]
         },
         "wolf_standard": {
             "name": "Wolf standard",
-            "rules": ["wolf_standard"]
+            "rules": ["wolf_standard"],
+            "points":0
         },
         "crushing_claws_and_bite": {
             "name": "Griffes et crocs broyeurs",
@@ -790,7 +811,8 @@
             "ap": 1,
             "rules": [
                 "train_wolf_mount"
-            ]
+            ],
+            "points":0
         },
         "claws_and_bite": {
             "name": "Griffes et crocs",
@@ -805,32 +827,35 @@
             "short": "Melee",
             "rules": [
                 "storm_shield"
-            ]
+            ],
+            "points":0
         }
     },
     "rules": {
         "angels_of_death": {
             "name": "Ange de la mort",
             "description": "Ajoute 1 attaque pour les charges et intervention héroïque",
-            "points": 5
+            "points":0
         },
         "train_wolf_mount": {
             "name": "Attaque loup tonnerre",
             "description": "Cette figurine peut faire 3 attaque avec ce profil si le cavalier a attaqué.",
-            "points": 5
+            "points":0
         },
         "storm_shield": {
             "name": "Bouclier Storm",
             "description": "Une figurine équipée d'un bouclier Storm gagne +2 sauvegarde.",
-            "points": 15
+            "points":0
         },
         "wolf_standard": {
             "name": "Wolf standard",
-            "description": "Chaque fois qu'un avance ou une charge roll est faites on peut relancer les 1."
+            "description": "Chaque fois qu'un avance ou une charge roll est faites on peut relancer les 1.",
+            "points":0
         },
         "agile_hunter": {
             "name": "Chasseur agile",
-            "description": "L'unité peut se déplacer et charger pour 1 action."
+            "description": "L'unité peut se déplacer et charger pour 1 action.",
+            "points":0
         }
     },
     "hidden_relics": [
