@@ -13,7 +13,7 @@
             "models": [
                 {
                     "name": "Doom Barge",
-                    "courage": 7,
+                    "courage": 1,
                     "movement": 8,
                     "shoot": 7,
                     "fight": 7,
