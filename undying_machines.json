@@ -286,8 +286,8 @@
             "name": "Warriors",
             "description": "A group of machines, bent on reclaiming their land.",
             "category": "core",
+            "rules": [],
             "keywords": ["Infantry"],
-            "rules": [Reanimation_Protocols],
             "models": [
                 {
                     "name": "Warrior",
@@ -302,22 +302,13 @@
                     "points": 13,
                     "wounds": 1,
                     "attack": 1,
-                    "weapons": [
-                        "gauss_rifle", 
-                        "heavy_ccw"],
-                    "options": [
-                        {
-                            "withWeapon": [
-                                {
-                            "id": "reaper_rifle",
-                            "point": 1
-                                }
-                            ]
-                        }
+                    "weapons": ["gauss_rifle", "heavy_ccw"],
+                    "options": [{"replaceWeapon": "gauss_rifle", "withWeapon": ["reaper_rifle"]}],
                     "rules": [],
                     "min": 10,
                     "max": 20
                 }
+            ]
         },
         "eternals": {
             "name": "Eternals",
@@ -910,23 +901,8 @@
             ]
         }
     },
-    "models": {
-    },
     "weapons": {
-        "heat_ray": {
-            "name": "Heat Ray",
-            "short": 6,
-            "medium": 12,
-            "damage": 1,
-            "attacks": 1,
-            "strength": 4,
-            "ap": 0,
-            "rules": ["pistol"],
-            "points":0
-            "profiles": [
-            {"name": "Focused", "attacks": 2, "short": 12, "medium": 24, "ap": 6}, 
-            {"name": "Dispersed", "attacks": 6, "short": 6, "medium": 12, "ap": 2},
-        ]
+        "heat_ray": {"name": "Heat Ray", "profiles": [{"name": "Focused", "attacks": 2, "short": 12, "medium": 24, "ap": 6}, {"name": "Dispersed", "attacks": 6, "short": 6, "medium": 12, "ap": 2}]},
         "doom_cannon": {
             "name": "Doom Cannon",
             "profiles": [
@@ -952,28 +928,8 @@
         "reaper_glaive": {"name": "Reaper Glaive", "attacks": 1, "short": "Melee", "ap": 4},
         "dimensional_strikes": {"name": "Dimensional Strikes", "attacks": 1, "short": "Melee", "ap": 5},
         "metal_claws": {"name": "Metal Claws", "attacks": 1, "ap": 3, "short": "Melee"},
-        "gauss_rifle": {
-            "name": "Gauss Rifle", 
-            "short": 12,
-            "medium": 24,
-            "damage": 1,
-            "attacks": 1,
-            "strength": 4,
-            "ap": 1,
-            "rules": ["rapid_fire"],
-            "points":0
-        },
-        "reaper_rifle": {
-            "name": "Reaper Rifle",
-            "short": 6,
-            "medium": 12,
-            "damage": 1,
-            "attacks": 1,
-            "strength": 4,
-            "ap": 2,
-            "rules": ["assault"],
-            "points":0
-        },
+        "gauss_rifle": {"name": "Gauss Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+        "reaper_rifle": {"name": "Reaper Rifle", "attacks": 1, "short": 6, "medium": 12, "ap": 2, "rules": ["assault"]},
         "gauss_rifle_array": {"name": "Gauss Rifle Array", "attacks": 3, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
         "gauss_cannon": {"name": "Gauss Cannon", "attacks": 2, "short": 12, "medium": 24, "ap": 4},
         "heavy_gauss_exterminator": {"name": "Heavy Gauss Exterminator", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": [{"id": "blast", "x": 3}]},
@@ -1034,13 +990,6 @@
         }
     },
     "rules": {
-        "Reanimation_Protocols": {"name": "Reanimation Protocols", "description": "Each time a unit's reanimation protocols are enacted, make Reanimation Protocol rolls for that unit by rolling a number of D6 equal to the combined Wounds characteristics of all the reassembling models. 
-        Each Reanimation Protocol roll of 5+ is put into a pool. A Reanimation Protocol roll can never be modified by more than -1 or +1.
-        If the number of dice in that pool is greater than or equal to the Wounds characteristic of any of the reassembling models, select one of those models to be Reanimated. 
-        A Reanimated model: Is added back to its unit with its full wounds remaining. Can only set up within Engagement Range of enemy units that are already within Engagement Range of the Reanimated model's unit.
-        Cannot, if it is your Charge phase, be set up closer to any enemy units that are targets of a charge declared by its unit this phase. No longer counts as having been destroyed for the purposes of Morale tests this turn. 
-        You then reduce the number of dice in that pool by a number equal to the Wounds characteristic of the Reanimated model and repeat this process until either there are no more reassembling models, or the number of dice remaining in the pool is less than the Wounds characteristic of any of the reassembling models.
-        Any models that did not Reanimate fail to reassemble, and any dice remaining in the pool are discarded.", "points": 0},
         "coil_body": {"name": "Coil Body", "description": "Enemy models suffer -1 Strength when targeting this model with a Melee attack.", "points": 1},
         "prideful_leader": {"name": "Prideful Leader", "description": "When this model activates, friendly _Infantry_ units within 6\" may remove one Shock.", "points": 1},
         "legend_nanobot_cloak": {"name": "Nanorobot Cloak", "description": "When this model is hit by an attack, roll a D10. On a 3 or less, that attack is prevented.", "points": 1},
